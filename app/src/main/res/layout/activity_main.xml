@@ -97,7 +97,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Meat"
+                        android:text="@string/img_meat"
                         android:textAlignment="center"/>
                 </LinearLayout>
 
@@ -122,7 +122,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Egg"
+                        android:text="@string/img_egg"
                         android:textAlignment="center"/>
                 </LinearLayout>
 
@@ -147,24 +147,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Egg"
+                        android:text="@string/img_vegetable"
                         android:textAlignment="center"/>
                 </LinearLayout>
-
-<!--                <ImageButton-->
-<!--                    android:id="@+id/btnBean"-->
-<!--                    android:layout_width="50dp"-->
-<!--                    android:layout_height="50dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:background="@drawable/shape_rounded_button"-->
-<!--                    android:contentDescription="@string/img_bean"-->
-<!--                    android:scaleType="centerInside"-->
-<!--                    android:src="@drawable/bean1"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintHorizontal_bias="0.5"-->
-<!--                    app:layout_constraintStart_toEndOf="@+id/btnVegetable"-->
-<!--                    app:layout_constraintTop_toTopOf="parent"-->
-<!--                    app:layout_constraintVertical_bias="0.0" />-->
 
                 <LinearLayout
                     android:id="@+id/btnBean"
@@ -187,7 +172,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Egg"
+                        android:text="@string/img_bean"
                         android:textAlignment="center"/>
                 </LinearLayout>
 
@@ -432,30 +417,10 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomAppBar"
+    <fragment
+        android:id="@+id/fragment_bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:fabCradleMargin="15dp"
-        app:fabCradleRoundedCornerRadius="20dp"
-        app:fabCradleVerticalOffset="10dp">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_nav_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="16dp"
-            android:background="@android:color/transparent"
-            app:menu="@menu/bottom_nav_menu" />
-
-    </com.google.android.material.bottomappbar.BottomAppBar>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_scan"
-        app:layout_anchor="@id/bottomAppBar" />
-
+        android:layout_height="90dp"
+        android:name="hungnp12.demo.daubep.BottomNavMenuFragment"
+        android:layout_gravity="bottom"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

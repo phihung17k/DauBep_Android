@@ -36,16 +36,6 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setBackground(null);
         bottomNavigationView.getMenu().getItem(1).setEnabled(true);
 
-
-//        //if you have an activity, you can use setContentView from the DataBindingUtils. Don't forget to delete the generic setContentView
-//        HelloWorldBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_my_activity);
-//
-//
-////Once you have accomplished the above, you can access your data-bound fields like this:
-//        binding.hello.setText(“Hello”);
-//        binding.world1.world.setText(“First World”);
-//        binding.world2.world.setText(“Second World”);
-
         headerHello = findViewById(R.id.header_hello);
         String stringHeaderHello = headerHello.getText().toString();
         SpannableString tempHello = new SpannableString(stringHeaderHello);
