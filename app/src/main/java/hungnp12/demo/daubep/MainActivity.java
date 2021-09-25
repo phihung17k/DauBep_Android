@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setBackground(null);
         bottomNavigationView.getMenu().getItem(1).setEnabled(true);
 
-
+//
 //        //if you have an activity, you can use setContentView from the DataBindingUtils. Don't forget to delete the generic setContentView
 //        HelloWorldBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_my_activity);
 //
