@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -14,7 +15,7 @@ import java.util.List;
 
 import hungnp12.demo.daubep.model.Post;
 
-public class SearchActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity  {
     private EditText edtSearch;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -43,6 +44,10 @@ public class SearchActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+
+
+
     }
     public List<Post> initListData(List<Post> posts){
         posts = new ArrayList<Post>();
@@ -54,4 +59,6 @@ public class SearchActivity extends AppCompatActivity {
         }
         return posts;
     }
+
+
 }

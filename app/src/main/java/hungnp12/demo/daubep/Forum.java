@@ -46,7 +46,12 @@ public class Forum extends AppCompatActivity {
         Intent intent = new Intent(Forum.this,SearchActivity.class);
         startActivity(intent);
     }
-
+//    public void clickGoDetail(View view){
+//        // edit later, it's just example
+//        System.out.println("Event:"+view.toString());
+//        Intent intent = new Intent(Forum.this,DetailPostActivity.class);
+//        startActivity(intent);
+//    }
     public void ClickToShowMenu(View view) {
     }
 
@@ -60,7 +65,7 @@ public class Forum extends AppCompatActivity {
         Post post;
 
         for(int i=0;i<10;i++){
-            post = new Post(i,R.drawable.bun_rieu,"Title:"+i+1,"Michael",Integer.toString(i+25),true);
+            post = new Post(i,R.drawable.bun_rieu,"How to cook chicken?","Michael",Integer.toString(i+25),true);
             posts.add(post);
         }
         return posts;
