@@ -13,7 +13,6 @@
         android:layout_marginTop="16dp"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
-        android:onClick="clickGoDetail"
         android:background="@drawable/layout_bg"
         >
 
@@ -71,7 +70,7 @@
                         android:layout_width="25dp"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginRight="23dp"
                         android:background="@color/cardview_light_background"
                         android:src="@drawable/fill_heart_foreground" />
 

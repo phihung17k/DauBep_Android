@@ -1,8 +1,10 @@
 package hungnp12.demo.daubep;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageButton;
@@ -16,15 +18,19 @@ import java.util.List;
 import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import hungnp12.demo.daubep.model.ItemClickListener;
 import hungnp12.demo.daubep.model.Post;
 
-public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostViewHolder> implements Filterable {
+public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostViewHolder> implements Filterable{
     private List<Post> postList;
     private List<Post>  staticList;
-    public PostViewAdapter(List<Post> list) {
+    static private  ItemClickListener clickListener;
+    public PostViewAdapter(List<Post> list, ItemClickListener clickListener) {
 
         this.staticList = list;
         this.postList = list;
+        this.clickListener = clickListener;
+
     }
 
     @NonNull
@@ -34,6 +40,7 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
         PostViewHolder holder = new PostViewHolder(view);
         return holder;
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull PostViewHolder holder, int position) {
@@ -46,7 +53,7 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
             }else{
                 holder.iconAction.setImageResource(R.drawable.unfill_heart_foreground);
             }
-            holder.circleImageView.setImageResource(R.drawable.bun_rieu);
+            holder.circleImageView.setImageResource(post.getImg());
     }
 
     @Override
@@ -90,6 +97,8 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
         };
     }
 
+
+
     public static class PostViewHolder extends RecyclerView.ViewHolder{
         private TextView title,name,replyNum;
         private ImageButton iconAction;
@@ -101,7 +110,15 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
             replyNum = itemView.findViewById(R.id.txtReply);
             iconAction = itemView.findViewById(R.id.imageButton);
             circleImageView = itemView.findViewById(R.id.imgUser);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    clickListener.onclickItem(getAdapterPosition());
+                }
+            });
+
         }
+
     }
 
 }

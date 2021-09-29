@@ -13,9 +13,10 @@ import android.widget.ImageButton;
 import java.util.ArrayList;
 import java.util.List;
 
+import hungnp12.demo.daubep.model.ItemClickListener;
 import hungnp12.demo.daubep.model.Post;
 
-public class Forum extends AppCompatActivity {
+public class Forum extends AppCompatActivity implements ItemClickListener {
     private ImageButton btnSearch,btnMenu;
     private Button btnFeatured,btnRecent;
     private RecyclerView recyclerView;
@@ -27,7 +28,7 @@ public class Forum extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum);
         btnSearch = findViewById(R.id.btnSearch);
-        btnMenu = findViewById(R.id.btnCollapse);
+//        btnMenu = findViewById(R.id.btnCollapse);
         btnFeatured = findViewById(R.id.btnFeatured);
         btnRecent = findViewById(R.id.btnMostRecent);
         recyclerView = findViewById(R.id.postList);
@@ -37,7 +38,9 @@ public class Forum extends AppCompatActivity {
 
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setHasFixedSize(true);
-        adapter = new PostViewAdapter(listPost);
+
+        adapter = new PostViewAdapter(listPost,this);
+
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
     }
@@ -63,11 +66,22 @@ public class Forum extends AppCompatActivity {
     public List<Post> initListData(List<Post> posts){
         posts = new ArrayList<Post>();
         Post post;
-
-        for(int i=0;i<10;i++){
-            post = new Post(i,R.drawable.bun_rieu,"How to cook chicken?","Michael",Integer.toString(i+25),true);
-            posts.add(post);
-        }
+        post = new Post(1,R.drawable.chicken,"Cách làm gà chiên  ngon?","Long",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.bun_rieu,"Cách nấu bún riêu?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.thiheo,"Bí quyết ướp thịt?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.caloc,"Khử tanh cá hiệu quả?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Michael",Integer.toString(15),true);
+        posts.add(post);
         return posts;
+    }
+
+    @Override
+    public void onclickItem(int position) {
+        Intent intent = new Intent(this,DetailPostActivity.class);
+        startActivity(intent);
     }
 }

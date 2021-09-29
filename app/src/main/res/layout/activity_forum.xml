@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:layout_marginBottom="80dp"
     tools:context=".Forum">
-
     <RelativeLayout
+        android:id="@+id/topLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -17,34 +22,37 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forum"
             android:layout_marginLeft="20dp"
-            android:textStyle="bold"
-            android:textSize="35dp"/>
+            android:text="Forum"
+            android:textSize="35dp"
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/btnSearch"
             android:layout_width="32.5dp"
             android:layout_height="33dp"
+            android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
-            android:layout_toLeftOf="@+id/btnCollapse"
             android:background="@color/cardview_light_background"
             android:onClick="ClickToSearch"
+            android:layout_marginRight="20dp"
             android:src="@drawable/serach_foreground" />
-        <ImageButton
-            android:layout_alignParentRight="true"
-            android:id="@+id/btnCollapse"
-            android:layout_width="32.5dp"
-            android:layout_height="33dp"
-            android:background="@color/cardview_light_background"
-            android:src="@drawable/hamburge_foreground"
-            android:layout_centerInParent="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:onClick="ClickToShowMenu"
-            />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btnCollapse"-->
+<!--            android:layout_width="32.5dp"-->
+<!--            android:layout_height="33dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:background="@color/cardview_light_background"-->
+<!--            android:onClick="ClickToShowMenu"-->
+<!--            android:src="@drawable/hamburge_foreground" />-->
     </RelativeLayout>
     <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_below="@+id/topLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -68,36 +76,41 @@
             android:onClick="clickToLoadRecentT"
             android:id="@+id/btnMostRecent"/>
     </LinearLayout>
+
     <LinearLayout
+        android:id="@+id/lastLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_below="@+id/bodyLayout"
         android:layout_marginTop="20dp"
-        android:paddingTop="30dp"
-        android:paddingRight="15dp"
-        android:paddingLeft="15dp"
         android:background="#F3F3F3"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
 
         >
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/postList"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:scrollbars="none"
 
 
             />
-        <!--<androidx.recyclerview.widget.RecyclerView-->
-        <!--    android:layout_width="match_parent"-->
-        <!--    android:layout_height="match_parent"-->
-        <!--    android:scrollbars="vertical"-->
-        <!--    android:background="@color/white"-->
-        <!--    android:id="@+id/recycleList"/>-->
-
-
     </LinearLayout>
 
 
 
-</LinearLayout>
+
+</RelativeLayout>
+    <fragment
+
+    android:layout_gravity="bottom"
+    android:id="@+id/fragment_bottom_nav"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:name="hungnp12.demo.daubep.BottomNavMenuFragment"
+    />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

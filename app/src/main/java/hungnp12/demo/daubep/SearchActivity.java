@@ -13,9 +13,10 @@ import android.widget.EditText;
 import java.util.ArrayList;
 import java.util.List;
 
+import hungnp12.demo.daubep.model.ItemClickListener;
 import hungnp12.demo.daubep.model.Post;
 
-public class SearchActivity extends AppCompatActivity  {
+public class SearchActivity extends AppCompatActivity implements ItemClickListener {
     private EditText edtSearch;
     private RecyclerView recyclerView;
     private RecyclerView.Adapter adapter;
@@ -24,13 +25,14 @@ public class SearchActivity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_search);
         listPost = initListData(listPost);
         edtSearch = findViewById(R.id.edtSearch);
         recyclerView = findViewById(R.id.searchResult);
 
 
-        PostViewAdapter adapter = new PostViewAdapter(listPost);
+        PostViewAdapter adapter = new PostViewAdapter(listPost,this);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
@@ -52,13 +54,26 @@ public class SearchActivity extends AppCompatActivity  {
     public List<Post> initListData(List<Post> posts){
         posts = new ArrayList<Post>();
         Post post;
-
-        for(int i=0;i<10;i++){
-            post = new Post(i,R.drawable.bun_rieu,"Title:"+i+1,"Michael",Integer.toString(i+25),true);
-            posts.add(post);
-        }
+        post = new Post(1,R.drawable.chicken,"Cách làm gà chiên  ngon?","Long",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.bun_rieu,"Cách nấu bún riêu?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.thiheo,"Bí quyết ướp thịt?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.caloc,"Khử tanh cá hiệu quả?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Michael",Integer.toString(15),true);
+        posts.add(post);
         return posts;
     }
 
 
+    @Override
+    public void onclickItem(int position) {
+        Intent intent = new Intent(this,DetailPostActivity.class);
+        startActivity(intent);
+    }
+    public void clickToBack(View view){
+        finish();
+    }
 }

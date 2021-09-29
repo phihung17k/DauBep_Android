@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             startIndex = stringHeaderHello.indexOf("Bạn");
         }
-
         tempHello.setSpan(new RelativeSizeSpan(2f), 0, startIndex, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         tempHello.setSpan(new StyleSpan(Typeface.BOLD), 0, startIndex, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         headerHello.setText(tempHello);
