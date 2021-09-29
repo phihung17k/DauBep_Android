@@ -3,6 +3,7 @@ package hungnp12.demo.daubep;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
@@ -13,6 +14,7 @@ import android.text.Spanned;
 import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.view.Display;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -50,5 +52,10 @@ public class MainActivity extends AppCompatActivity {
         tempHello.setSpan(new StyleSpan(Typeface.BOLD), 0, startIndex, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         headerHello.setText(tempHello);
 
+    }
+
+    public void clicktoCongThuc(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        startActivity(intent);
     }
 }

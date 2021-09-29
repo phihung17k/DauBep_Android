@@ -42,7 +42,8 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/personal" />
+            app:srcCompat="@drawable/personal"
+           />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -194,7 +195,9 @@
                     app:layout_constraintHorizontal_bias="0.05"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/barrier" />
+                    app:layout_constraintTop_toBottomOf="@id/barrier"
+                    android:onClick="clicktoCongThuc"
+                    />
 
                 <ScrollView
                     android:id="@+id/sv_recommend"

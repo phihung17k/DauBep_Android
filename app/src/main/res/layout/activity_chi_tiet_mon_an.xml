@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChiTietMonAnActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="6dp"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="630dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/pho" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="270dp"
+                android:layout_marginBottom="10dp"
+                android:text="Thịt Kho Tàu"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="300dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cách chế biến Thịt Kho Tàu :"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="325dp"
+                android:layout_marginBottom="10dp"
+                android:text=" Ướp thịt :
+cho 500g thịt ba chỉ hay thịt chân giò vào tô Lần lượt nêm vào tô 1 muỗng
+canh hành băm, 1 muỗng canh tỏi băm, 3 muỗng canh nước mắm, 2 muỗng canh đường,
+1/3 muỗng canh hạt nêm và 1 muỗng cà phê tiêu, trộn đều.\n
+Thắng nước đường
+Chỉnh công suất lên 700W. Đổ vào nồi 1 muỗng cà phê đường, dùng đũa khuấy đều đến khi nước đường trở màu nâu cánh gián thì tắt bếp.
+
+Chờ đường nguội thì màu sẽ đậm hơn, đổ thêm 1 vá múc canh nước cho loãng bớt.
+\n
+Kho thịt
+Bật bếp chọn chế độ nấu lẩu công suất 1500W, gắp thịt đã ướp cho vào nồi, xào cho đến khi thịt săn lại thì đổ 400ml nước dừa vào.
+
+Đậy nắp nồi lại rồi vặn công suất bếp xuống còn 700W để hầm thịt trong 30 phút. Sau 30 phút, nếu thấy nước cạn quá thì cho thêm nước, múc 5 quả trứng vịt luộc vào nồi, đậy nắp và hầm tiếp trong 30 phút rồi tắt bếp."
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
