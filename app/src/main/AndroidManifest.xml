@@ -38,5 +38,4 @@
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar" />
     </application>
-
 </manifest>

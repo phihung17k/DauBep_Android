@@ -1,6 +1,7 @@
 package hungnp12.demo.daubep;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,6 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +26,7 @@ public class Forum extends AppCompatActivity implements ItemClickListener {
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private List<Post> listPost;
+    private BottomNavigationView bottomNavigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,15 +38,23 @@ public class Forum extends AppCompatActivity implements ItemClickListener {
         recyclerView = findViewById(R.id.postList);
         listPost = initListData(listPost);
 
+        //botom navigation
+        bottomNavigationView = findViewById(R.id.bottom_nav_view);
+        bottomNavigationView.setBackground(null);
+        bottomNavigationView.getMenu().getItem(1).setEnabled(true);
 
 
         layoutManager = new LinearLayoutManager(this);
+
         recyclerView.setHasFixedSize(true);
 
         adapter = new PostViewAdapter(listPost,this);
-
+//        RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(this,DividerItemDecoration.VERTICAL);
+//        recyclerView.addItemDecoration(itemDecoration);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+
+
     }
 
     public void ClickToSearch(View view) {
@@ -73,6 +85,8 @@ public class Forum extends AppCompatActivity implements ItemClickListener {
         post = new Post(1,R.drawable.thiheo,"Bí quyết ướp thịt?","Michael",Integer.toString(15),true);
         posts.add(post);
         post = new Post(1,R.drawable.caloc,"Khử tanh cá hiệu quả?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Michael",Integer.toString(15),true);
         posts.add(post);
         post = new Post(1,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Michael",Integer.toString(15),true);
         posts.add(post);

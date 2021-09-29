@@ -54,6 +54,9 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
                 holder.iconAction.setImageResource(R.drawable.unfill_heart_foreground);
             }
             holder.circleImageView.setImageResource(post.getImg());
+            if (position==postList.size()-1){
+                holder.itemView.setPadding(0,0,0,200);
+            }
     }
 
     @Override
