@@ -19,4 +19,6 @@
     <string name="title_salad">Salad</string>
     <string name="title_barbecue">Thịt nướng</string>
     <string name="title_promotion">Khuyến mãi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
