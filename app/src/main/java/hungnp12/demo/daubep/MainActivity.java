@@ -2,32 +2,21 @@ package hungnp12.demo.daubep;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Point;
-import android.graphics.Typeface;
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.RelativeSizeSpan;
-import android.text.style.StyleSpan;
-import android.view.Display;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity{
 
-    private TextView headerHello;
     private BottomNavigationView bottomNavigationView;
+//    private FloatingActionButton btnChat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +28,14 @@ public class MainActivity extends AppCompatActivity{
 
         bottomNavigationView.setOnNavigationItemSelectedListener(listener);
         getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, new HomeFragment()).commit();
+//        btnChat = findViewById(R.id.btnChat);
+//        btnChat.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 
@@ -62,4 +59,9 @@ public class MainActivity extends AppCompatActivity{
                     return true;
                 }
             };
+
+    public void clickToChat(View view) {
+        Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
 }

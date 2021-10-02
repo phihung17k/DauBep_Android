@@ -424,6 +424,7 @@
         android:layout_marginBottom="60dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/chat"
+        android:onClick="clickToChat"
         />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

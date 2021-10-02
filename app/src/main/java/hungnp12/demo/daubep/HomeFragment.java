@@ -1,5 +1,6 @@
 package hungnp12.demo.daubep;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
@@ -15,9 +16,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class HomeFragment extends Fragment {
 
     private TextView headerHello;
+    private FloatingActionButton btnChat;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -42,7 +46,7 @@ public class HomeFragment extends Fragment {
         String stringHeaderHello = headerHello.getText().toString();
         SpannableString tempHello = new SpannableString(stringHeaderHello);
         int startIndex;
-        if(stringHeaderHello.contains("Which")){
+        if (stringHeaderHello.contains("Which")) {
             startIndex = stringHeaderHello.indexOf("Which");
         } else {
             startIndex = stringHeaderHello.indexOf("Bạn");
@@ -52,4 +56,6 @@ public class HomeFragment extends Fragment {
         tempHello.setSpan(new StyleSpan(Typeface.BOLD), 0, startIndex, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         headerHello.setText(tempHello);
     }
+
+
 }

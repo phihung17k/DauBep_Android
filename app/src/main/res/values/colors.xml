@@ -10,4 +10,9 @@
     <color name="turquoise">#30D5C8</color>
     <color name="titleBar">#7fd4cd</color>
     <color name="solidColor">#bbbfbf</color>
+    <color name="grey_white">#C5C5C5</color>
+    <color name="teal">#5CF2E6</color>
+    <color name="green">#66FF66</color>
+    <color name="grey">#929292</color>
+    <color name="grey_light">#E3E4E4</color>
 </resources>
