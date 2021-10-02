@@ -71,6 +71,7 @@ public class SearchActivity extends AppCompatActivity implements ItemClickListen
     @Override
     public void onclickItem(int position) {
         Intent intent = new Intent(this,DetailPostActivity.class);
+        intent.putExtra("post",listPost.get(position));
         startActivity(intent);
     }
     public void clickToBack(View view){

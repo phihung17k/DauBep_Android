@@ -110,7 +110,8 @@
         android:textSize="18dp"
         android:textColor="@color/black"
         android:id="@+id/txtContent"
-
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         />
     <TextView
         android:layout_width="match_parent"
