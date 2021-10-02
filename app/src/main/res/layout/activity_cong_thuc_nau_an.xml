@@ -168,7 +168,7 @@ Nước màu 1 muỗng cà phê"
                     android:layout_marginLeft="283dp"
                     android:layout_marginTop="320px"
                     android:backgroundTint="#FF30D5C8"
-                    android:onClick="orderMonAn"
+
                     android:text="Liên Hệ "
                     android:textSize="24px" />
 
@@ -245,12 +245,12 @@ Nước màu 1 muỗng cà phê"
                     android:textSize="24px" />
 
                 <Button
-                    android:onClick="orderMonAn"
                     android:layout_width="80dp"
                     android:layout_height="40dp"
                     android:layout_marginLeft="283dp"
                     android:layout_marginTop="320px"
                     android:backgroundTint="#FF30D5C8"
+
                     android:text="Liên Hệ"
                     android:textSize="24px" />
 

@@ -8,15 +8,29 @@
     tools:context=".ChiTietMonAnActivity">
 
     <androidx.cardview.widget.CardView
+
+
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         app:cardCornerRadius="6dp"
         app:cardElevation="8dp">
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:onClick="clickToBack"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
         <RelativeLayout
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
-            android:layout_height="700dp">
+            android:layout_height="654dp">
 
             <ImageView
                 android:layout_width="match_parent"

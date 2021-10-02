@@ -10,10 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DauBep">
         <activity
-            android:name=".DatNauActivity"
-            android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar"/>
-        <activity
             android:name=".ChiTietMonAnActivity"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar"/>

@@ -34,8 +34,9 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void orderMonAn(View view) {
-        Intent intent = new Intent(this , DatNauActivity.class);
-        startActivity(intent);
+
+
+    public void clickToBack(View view){
+        finish();
     }
 }
