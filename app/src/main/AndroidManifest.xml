@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DauBep">
         <activity
+            android:name=".ChiTietMonAnActivity"
+            android:exported="true"
+            android:theme="@style/ActivityTheme.NoActionBar" />
+        <activity
+            android:name=".CongThucNauAnActivity"
+            android:exported="true"
+            android:theme="@style/ActivityTheme.NoActionBar" />
+        <activity
             android:name=".DetailPostActivity"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar"

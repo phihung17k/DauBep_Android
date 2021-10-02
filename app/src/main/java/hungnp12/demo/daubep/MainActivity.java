@@ -70,4 +70,9 @@ public class MainActivity extends AppCompatActivity{
         Intent intent = new Intent(this,SearchActivity.class);
         startActivity(intent);
     }
+
+    public void clicktoCongThuc(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        startActivity(intent);
+    }
 }

@@ -1,5 +1,6 @@
 package hungnp12.demo.daubep;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
@@ -52,4 +53,6 @@ public class HomeFragment extends Fragment {
         tempHello.setSpan(new StyleSpan(Typeface.BOLD), 0, startIndex, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         headerHello.setText(tempHello);
     }
+
+
 }
