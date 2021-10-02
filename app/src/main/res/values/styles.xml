@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents">
+    </style>
+
+    <style name="ActivityTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimaryDark">@color/titleBar</item>
+    </style>
+
+    <style name="ActivityTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

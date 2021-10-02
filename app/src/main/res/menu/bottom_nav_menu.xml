@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="@string/btn_home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/community"
+        android:title="@string/btn_community"
+        android:icon="@drawable/ic_community"/>
+
+    <item android:id="@+id/placeholder"
+        android:title="" />
+
+    <item android:id="@+id/notification"
+        android:title="@string/btn_notification"
+        android:icon="@drawable/ic_notification"/>
+
+    <item android:id="@+id/personal"
+        android:title="@string/btn_personal"
+        android:icon="@drawable/personal"/>
+</menu>

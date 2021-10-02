@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DauBep</string>
+    <string name="header_hello">Xin chào ABC, \nBạn muốn nấu món gì?</string>
+    <string name="personal">Cá nhân</string>
+    <string name="search_hint">Tìm nguyên liệu</string>
+    <string name="btn_home">Trang chủ</string>
+    <string name="btn_community">Cộng đồng</string>
+    <string name="btn_scan">Quét</string>
+    <string name="btn_notification">Thông báo</string>
+    <string name="btn_personal">Cá nhân</string>
+    <string name="img_meat">Thịt</string>
+    <string name="img_egg">Trứng</string>
+    <string name="img_vegetable">Rau củ</string>
+    <string name="img_bean">Hạt</string>
+    <string name="title_recommend">Đề xuất</string>
+    <string name="title_pho">Phở Bò</string>
+    <string name="title_noodle_soup">Bún Riêu</string>
+    <string name="title_hotpot">Lẩu</string>
+    <string name="title_salad">Salad</string>
+    <string name="title_barbecue">Thịt nướng</string>
+    <string name="title_promotion">Khuyến mãi</string>
+
+    <string name="title_search">Tìm kiếm</string>
+</resources>
