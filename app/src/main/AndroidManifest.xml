@@ -10,32 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DauBep">
         <activity
-            android:parentActivityName=".Forum_IGNORE"
             android:name=".DetailPostActivity"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar"
             />
         <activity
-            android:parentActivityName=".Forum_IGNORE"
             android:name=".SearchActivity"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar" />
-
-        <activity
-            android:name=".Forum_IGNORE"
-            android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+            android:theme="@style/ActivityTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
