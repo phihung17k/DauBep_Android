@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DauBep">
         <activity
-            android:parentActivityName=".Forum"
+            android:parentActivityName=".Forum_IGNORE"
             android:name=".DetailPostActivity"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar"
             />
         <activity
-            android:parentActivityName=".Forum"
+            android:parentActivityName=".Forum_IGNORE"
             android:name=".SearchActivity"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar" />
 
         <activity
-            android:name=".Forum"
+            android:name=".Forum_IGNORE"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar"
             >

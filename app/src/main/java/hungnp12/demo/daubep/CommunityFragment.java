@@ -1,64 +1,93 @@
 package hungnp12.demo.daubep;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CommunityFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class CommunityFragment extends Fragment {
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+import java.util.ArrayList;
+import java.util.List;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+import hungnp12.demo.daubep.model.ItemClickListener;
+import hungnp12.demo.daubep.model.Post;
 
+
+public class CommunityFragment extends Fragment implements ItemClickListener {
+    private ImageButton btnSearch,btnMenu;
+    private Button btnFeatured,btnRecent;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
+    private List<Post> listPost;
+
+   private ViewGroup mContainer;
     public CommunityFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CommunityFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CommunityFragment newInstance(String param1, String param2) {
-        CommunityFragment fragment = new CommunityFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_community, container, false);
+        View view = inflater.inflate(R.layout.fragment_forum, container, false);
+        mContainer = container;
+        btnSearch = view.findViewById(R.id.btnSearch);
+
+        btnFeatured = view.findViewById(R.id.btnFeatured);
+        btnRecent = view.findViewById(R.id.btnMostRecent);
+        recyclerView = view.findViewById(R.id.postList);
+        System.out.println("MESSAGE:"+recyclerView);
+        listPost = initListData(listPost);
+        layoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setHasFixedSize(true);
+        adapter = new PostViewAdapter(listPost,this);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+        return view;
+    }
+
+    public void ClickToShowMenu(View view) {
+    }
+
+    public void clickToLoadFeatureT(View view) {
+    }
+
+    public void clickToLoadRecentT(View view) {
+    }
+    public List<Post> initListData(List<Post> posts){
+        posts = new ArrayList<Post>();
+        Post post;
+        post = new Post(1,R.drawable.chicken,"Cách làm gà chiên  ngon?","Long",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.bun_rieu,"Cách nấu bún riêu?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.thiheo,"Bí quyết ướp thịt?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.caloc,"Khử tanh cá hiệu quả?","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Michael",Integer.toString(15),true);
+        posts.add(post);
+        post = new Post(1,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Michael",Integer.toString(15),true);
+        posts.add(post);
+        return posts;
+    }
+
+    @Override
+    public void onclickItem(int position) {
+        Intent intent = new Intent(getActivity(),DetailPostActivity.class);
+        intent.putExtra("post",listPost.get(position));
+        startActivity(intent);
     }
 }

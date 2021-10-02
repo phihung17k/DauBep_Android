@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
@@ -16,6 +17,7 @@ import android.text.style.RelativeSizeSpan;
 import android.text.style.StyleSpan;
 import android.view.Display;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -62,4 +64,10 @@ public class MainActivity extends AppCompatActivity{
                     return true;
                 }
             };
+
+    // for forum searching
+    public void ClickToSearch(View view) {
+        Intent intent = new Intent(this,SearchActivity.class);
+        startActivity(intent);
+    }
 }

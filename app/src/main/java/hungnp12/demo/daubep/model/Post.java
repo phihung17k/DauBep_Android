@@ -1,6 +1,8 @@
 package hungnp12.demo.daubep.model;
 
-public class Post {
+import java.io.Serializable;
+
+public class Post implements Serializable {
     private int id;
     private int img;
     private String title;

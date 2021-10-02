@@ -1,7 +1,6 @@
 package hungnp12.demo.daubep;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,7 +18,7 @@ import java.util.List;
 import hungnp12.demo.daubep.model.ItemClickListener;
 import hungnp12.demo.daubep.model.Post;
 
-public class Forum extends AppCompatActivity implements ItemClickListener {
+public class Forum_IGNORE extends AppCompatActivity implements ItemClickListener {
     private ImageButton btnSearch,btnMenu;
     private Button btnFeatured,btnRecent;
     private RecyclerView recyclerView;
@@ -30,7 +29,7 @@ public class Forum extends AppCompatActivity implements ItemClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forum);
+        setContentView(R.layout.fragment_forum);
         btnSearch = findViewById(R.id.btnSearch);
 //        btnMenu = findViewById(R.id.btnCollapse);
         btnFeatured = findViewById(R.id.btnFeatured);
@@ -58,7 +57,7 @@ public class Forum extends AppCompatActivity implements ItemClickListener {
     }
 
     public void ClickToSearch(View view) {
-        Intent intent = new Intent(Forum.this,SearchActivity.class);
+        Intent intent = new Intent(Forum_IGNORE.this,SearchActivity.class);
         startActivity(intent);
     }
 //    public void clickGoDetail(View view){
