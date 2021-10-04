@@ -22,7 +22,7 @@
         <activity android:name=".Capture"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+            android:theme="@style/zxing_CaptureTheme"/>
         <activity
             android:name=".ScanActivity"
             android:exported="true"
