@@ -11,6 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DauBep">
+        <activity android:name=".ChiTietMonAnActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"/>
+        <activity
+            android:name=".CongThucNauAnActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.FullScreen"/>
         <activity android:name=".Capture"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
