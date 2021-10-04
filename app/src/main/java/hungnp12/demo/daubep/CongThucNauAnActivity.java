@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,19 +13,11 @@ import java.util.List;
 
 public class CongThucNauAnActivity extends AppCompatActivity {
 
-    private EditText edtMaterial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cong_thuc_nau_an);
-
-        edtMaterial = findViewById(R.id.edtMaterial);
-        Intent intent = this.getIntent();
-        if(intent.getStringExtra("info") != null){
-            edtMaterial.setText(intent.getStringExtra("info"));
-        }
-
         Spinner spinner = findViewById(R.id.spinner) ;
         List<String> dataSrc = new ArrayList<>();
         dataSrc.add("1 người") ;
@@ -48,10 +39,5 @@ public class CongThucNauAnActivity extends AppCompatActivity {
 
     public void clickToBack(View view){
         finish();
-    }
-
-    public void clickToContact(View view) {
-        Intent intent = new Intent(this, ContactActivity.class);
-        startActivity(intent);
     }
 }
