@@ -44,8 +44,6 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
     public void clickToBack(View view){
         finish();
     }

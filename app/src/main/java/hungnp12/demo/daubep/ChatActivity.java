@@ -73,4 +73,8 @@ public class ChatActivity extends AppCompatActivity {
             userAdapter.release();
         }
     }
+
+    public void backToHome(View view){
+        finish();
+    }
 }

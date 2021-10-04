@@ -55,8 +55,4 @@ public class ChatDetailActivity extends AppCompatActivity {
         avatar_chat3.setImageResource(resourceID);
         txtName.setText(name);
     }
-
-    public void backToHome(View view) {
-        finish();
-    }
 }
