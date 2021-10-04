@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -104,8 +105,10 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Intent intent = new Intent(this, CongThucNauAnActivity.class);
-        intent.putExtra("info", "Bún");
-        startActivity(intent);
+        if(resultCode == Activity.RESULT_CANCELED) {
+            Intent intent = new Intent(this, CongThucNauAnActivity.class);
+            intent.putExtra("info", "Bún");
+            startActivity(intent);
+        }
     }
 }
