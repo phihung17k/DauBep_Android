@@ -1,6 +1,7 @@
 package hungnp12.demo.daubep;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
@@ -24,12 +25,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity{
 
-    private TextView headerHello;
     private BottomNavigationView bottomNavigationView;
+    private FloatingActionButton fabScan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,8 @@ public class MainActivity extends AppCompatActivity{
         bottomNavigationView.setOnNavigationItemSelectedListener(listener);
         getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, new HomeFragment()).commit();
 
+        fabScan = findViewById(R.id.fabScan);
+        fabScan.setOnClickListener(fabListen);
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener listener =
@@ -78,6 +84,28 @@ public class MainActivity extends AppCompatActivity{
 
     public void clickToChat(View view) {
         Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
+
+    private View.OnClickListener fabListen = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
+            integrator.setPrompt("Get something");
+            integrator.setBeepEnabled(true);
+            integrator.setOrientationLocked(true);
+            integrator.setCaptureActivity(Capture.class);
+            integrator.addExtra("info", "Bún");
+            integrator.setTimeout(4000);
+            integrator.initiateScan();
+        }
+    };
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("info", "Bún");
         startActivity(intent);
     }
 }
