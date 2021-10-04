@@ -18,7 +18,7 @@
         <activity
             android:name=".CongThucNauAnActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar.FullScreen"/>
+            android:theme="@style/ActivityTheme.NoActionBar" />
         <activity android:name=".Capture"
             android:screenOrientation="portrait"
             android:stateNotNeeded="true"
