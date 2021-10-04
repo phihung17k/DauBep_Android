@@ -21,4 +21,12 @@
     <string name="title_promotion">Khuyến mãi</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_msg">Xin chào cậu</string>
+    <string name="second_msg">Chào cậu nha</string>
+    <string name="third_msg">Tớ thấy cậu nấu món gỏi gà ngon quá, cậu chỉ tớ nấu được không?</string>
+    <string name="fourth_msg">Thế thì 4h chiều được không nè?</string>
+    <string name="fifth_msg">Hehe, được chứ. Cậu rảnh mấy giờ để tớ video call chỉ cho?</string>
+    <string name="sixth_msg">Uhm, vậy mình chốt 4h chiều ha</string>
+    <string name="seventh_msg">Nhập tin nhắn ...</string>
+    <string name="title_search">Tìm kiếm</string>
 </resources>

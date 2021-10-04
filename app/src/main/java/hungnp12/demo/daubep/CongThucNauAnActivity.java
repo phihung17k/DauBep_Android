@@ -40,4 +40,9 @@ public class CongThucNauAnActivity extends AppCompatActivity {
     public void clickToBack(View view){
         finish();
     }
+
+    public void clickToContact(View view) {
+        Intent intent = new Intent(this, ContactActivity.class);
+        startActivity(intent);
+    }
 }
