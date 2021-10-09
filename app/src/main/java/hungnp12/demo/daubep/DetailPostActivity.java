@@ -9,6 +9,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 import hungnp12.demo.daubep.model.Post;
 
 public class DetailPostActivity extends AppCompatActivity {
