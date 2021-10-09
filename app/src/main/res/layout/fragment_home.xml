@@ -25,24 +25,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/header_hello"
+            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:contentDescription="@string/personal"
-            android:scaleType="fitXY"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/kontum"
+            android:id="@+id/avatar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/personal" />
+            app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -425,6 +425,7 @@
         android:layout_marginBottom="60dp"
         android:layout_marginEnd="10dp"
         android:src="@drawable/chat"
+        app:backgroundTint="@color/teal"
         android:onClick="clickToChat"
         />
 

@@ -3,9 +3,11 @@ package hungnp12.demo.daubep;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity{
 
     private BottomNavigationView bottomNavigationView;
     private FloatingActionButton fabScan;
+    private int currentPage = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,27 +51,52 @@ public class MainActivity extends AppCompatActivity{
         getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, new HomeFragment()).commit();
 
         fabScan = findViewById(R.id.fabScan);
-        fabScan.setOnClickListener(fabListen);
+        fabScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ScanActivity.class);
+                startActivity(intent);
+            }
+        });
+        if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)){
+        }else{
+            ActivityCompat.requestPermissions(this, new String[] {
+                    Manifest.permission.CAMERA
+            }, 6789);
+        }
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener listener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    int oldPageIndex = currentPage;
                     Fragment selectedFragment = null;
                     switch (item.getItemId()){
                         case R.id.nav_home:
-                            selectedFragment = new HomeFragment();
+                            if(currentPage != 0) {
+                                currentPage = 0;
+                                selectedFragment = new HomeFragment();
+                            }
                             break;
                         case R.id.nav_community:
-                            selectedFragment = new CommunityFragment();
+                            if(currentPage != 1) {
+                                currentPage = 1;
+                                selectedFragment = new CommunityFragment();
+                            }
                             break;
                         default:
-                            selectedFragment = new HomeFragment();
+                            if(currentPage != 0) {
+                                currentPage = 0;
+                                selectedFragment = new HomeFragment();
+                            }
                             break;
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, selectedFragment).commit();
-                    return true;
+                    if(oldPageIndex != currentPage) {
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, selectedFragment).commit();
+                        return true;
+                    }
+                    return false;
                 }
             };
 
@@ -98,6 +126,7 @@ public class MainActivity extends AppCompatActivity{
             integrator.setCaptureActivity(Capture.class);
             integrator.addExtra("info", "Bún");
             integrator.setTimeout(4000);
+            integrator.setBeepEnabled(true);
             integrator.initiateScan();
         }
     };

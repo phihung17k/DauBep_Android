@@ -41,4 +41,7 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview-selection:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+//    // https://mvnrepository.com/artifact/com.karumi/dexter
+//    implementation 'com.karumi:dexter:6.2.2'
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
 }
