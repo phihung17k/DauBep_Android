@@ -56,6 +56,8 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
             holder.circleImageView.setImageResource(post.getImg());
             if (position==postList.size()-1){
                 holder.itemView.setPadding(0,0,0,200);
+            }else{
+                holder.itemView.setPadding(0,0,0,0);
             }
     }
 
@@ -70,7 +72,7 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
         return new Filter() {
             @Override
             protected FilterResults performFiltering(CharSequence charSequence) {
-                String searchKey = charSequence.toString();
+                String searchKey = charSequence.toString().trim();
 
                 if(searchKey.isEmpty()){
                     postList = staticList;
