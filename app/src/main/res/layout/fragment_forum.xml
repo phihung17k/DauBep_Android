@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <Button
-                android:backgroundTint="#FF30D5C8"
+                android:backgroundTint="@color/turquoise"
                 android:backgroundTintMode="add"
 
                 android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
                 android:layout_marginLeft="15dp"
                 />
             <Button
-                android:backgroundTint="#FF30D5C8"
+                android:backgroundTint="@color/turquoise"
                 android:backgroundTintMode="add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
