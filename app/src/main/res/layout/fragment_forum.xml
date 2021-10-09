@@ -64,7 +64,6 @@
                 android:layout_height="wrap_content"
                 android:text="Featured Topic"
                 android:id="@+id/btnFeatured"
-                android:onClick="clickToLoadFeatureT"
                 android:textSize="17dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
@@ -78,7 +77,6 @@
                 android:textSize="17dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
-                android:onClick="clickToLoadRecentT"
                 android:id="@+id/btnMostRecent"/>
         </LinearLayout>
 

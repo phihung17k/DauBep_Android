@@ -1,10 +1,14 @@
 package hungnp12.demo.daubep;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -24,12 +28,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity{
 
-    private TextView headerHello;
     private BottomNavigationView bottomNavigationView;
+    private FloatingActionButton fabScan;
+    private int currentPage = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,26 +50,53 @@ public class MainActivity extends AppCompatActivity{
         bottomNavigationView.setOnNavigationItemSelectedListener(listener);
         getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, new HomeFragment()).commit();
 
+        fabScan = findViewById(R.id.fabScan);
+        fabScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ScanActivity.class);
+                startActivity(intent);
+            }
+        });
+        if(ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CAMERA)){
+        }else{
+            ActivityCompat.requestPermissions(this, new String[] {
+                    Manifest.permission.CAMERA
+            }, 6789);
+        }
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener listener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    int oldPageIndex = currentPage;
                     Fragment selectedFragment = null;
                     switch (item.getItemId()){
                         case R.id.nav_home:
-                            selectedFragment = new HomeFragment();
+                            if(currentPage != 0) {
+                                currentPage = 0;
+                                selectedFragment = new HomeFragment();
+                            }
                             break;
                         case R.id.nav_community:
-                            selectedFragment = new CommunityFragment();
+                            if(currentPage != 1) {
+                                currentPage = 1;
+                                selectedFragment = new CommunityFragment();
+                            }
                             break;
                         default:
-                            selectedFragment = new HomeFragment();
+                            if(currentPage != 0) {
+                                currentPage = 0;
+                                selectedFragment = new HomeFragment();
+                            }
                             break;
                     }
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, selectedFragment).commit();
-                    return true;
+                    if(oldPageIndex != currentPage) {
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frag_container, selectedFragment).commit();
+                        return true;
+                    }
+                    return false;
                 }
             };
 
@@ -69,5 +104,40 @@ public class MainActivity extends AppCompatActivity{
     public void ClickToSearch(View view) {
         Intent intent = new Intent(this,SearchActivity.class);
         startActivity(intent);
+    }
+
+    public void clicktoCongThuc(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickToChat(View view) {
+        Intent intent = new Intent(this, ChatActivity.class);
+        startActivity(intent);
+    }
+
+    private View.OnClickListener fabListen = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            IntentIntegrator integrator = new IntentIntegrator(MainActivity.this);
+            integrator.setPrompt("Get something");
+            integrator.setBeepEnabled(true);
+            integrator.setOrientationLocked(true);
+            integrator.setCaptureActivity(Capture.class);
+            integrator.addExtra("info", "Bún");
+            integrator.setTimeout(4000);
+            integrator.setBeepEnabled(true);
+            integrator.initiateScan();
+        }
+    };
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == Activity.RESULT_CANCELED) {
+            Intent intent = new Intent(this, CongThucNauAnActivity.class);
+            intent.putExtra("info", "Bún");
+            startActivity(intent);
+        }
     }
 }

@@ -58,14 +58,6 @@ public class CommunityFragment extends Fragment implements ItemClickListener {
         return view;
     }
 
-    public void ClickToShowMenu(View view) {
-    }
-
-    public void clickToLoadFeatureT(View view) {
-    }
-
-    public void clickToLoadRecentT(View view) {
-    }
     public List<Post> initListData(List<Post> posts){
         posts = new ArrayList<Post>();
         Post post;
