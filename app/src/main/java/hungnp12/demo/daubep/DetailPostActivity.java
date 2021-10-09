@@ -13,15 +13,15 @@ import hungnp12.demo.daubep.model.Post;
 
 public class DetailPostActivity extends AppCompatActivity {
     static private Post post;
-
     private TextView postTitle,contentPost,btnLike,btnCmt,btnShare;
     private ImageButton likeIcon,cmtIcon,shareIcon;
     private ImageView imgView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_post);
-        Post post = (Post) getIntent().getSerializableExtra("post");
+        post = (Post) getIntent().getSerializableExtra("post");
         postTitle = findViewById(R.id.postTitle);
         contentPost = findViewById(R.id.txtContent);
 
