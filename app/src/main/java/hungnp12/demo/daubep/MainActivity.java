@@ -85,6 +85,12 @@ public class MainActivity extends AppCompatActivity{
                                 selectedFragment = new CommunityFragment();
                             }
                             break;
+                        case R.id.nav_notification:
+                            if(currentPage != 2) {
+                                currentPage = 2;
+                                selectedFragment = new NotificationFragment();
+                            }
+                            break;
                         default:
                             if(currentPage != 0) {
                                 currentPage = 0;
