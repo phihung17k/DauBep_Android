@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
             android:onClick="clickToBack"
-            android:text="Back"
+            android:text="Trở về"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold"/>

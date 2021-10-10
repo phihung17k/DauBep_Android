@@ -41,9 +41,11 @@ public class SearchActivity extends AppCompatActivity implements ItemClickListen
         edtSearch.setOnKeyListener(new View.OnKeyListener() {
             @Override
             public boolean onKey(View view, int i, KeyEvent keyEvent) {
+
                 String keySearch = edtSearch.getText().toString();
+                System.out.println("KEY:"+keySearch);
                 adapter.getFilter().filter(keySearch);
-                return false;
+                return true;
             }
         });
 
