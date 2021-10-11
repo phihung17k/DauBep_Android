@@ -26,13 +26,6 @@
                 android:layout_gravity="center"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginHorizontal="10dp"
-                    android:src="@drawable/back"
-                    android:onClick="clickBack"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -153,20 +146,9 @@
                 android:layout_height="30dp"
                 >
 
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent">
 
-                    <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="match_parent"
-                        android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="10dp"
-                        android:onClick="clickBack"
-                        android:src="@drawable/birday" />
-                </LinearLayout>
                 <LinearLayout
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_width="70dp"
                     android:layout_height="match_parent">
 
@@ -215,19 +197,9 @@
                 android:layout_height="30dp"
                 >
 
+
                 <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="10dp"
-                        android:onClick="clickBack"
-                        android:src="@drawable/giotinh" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_width="70dp"
                     android:layout_height="match_parent">
 
@@ -271,48 +243,7 @@
             </RelativeLayout>
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                >
 
-                <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="10dp"
-                        android:onClick="clickBack"
-                        android:src="@drawable/clock" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="30dp"
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:text="Đang Hoạt Đông"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-
-                        app:layout_constraintHorizontal_bias="0.05"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/barrier" />
-
-
-                </LinearLayout>
-
-
-
-
-
-            </RelativeLayout>
 
         </LinearLayout>
 
@@ -512,19 +443,9 @@
                 android:layout_height="30dp"
                 >
 
+
                 <LinearLayout
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginHorizontal="10dp"
-                        android:onClick="clickBack"
-                        android:src="@drawable/block" />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_width="160dp"
                     android:layout_height="match_parent">
 
@@ -568,7 +489,7 @@
                         />
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_width="140dp"
                     android:layout_height="match_parent">
 
@@ -605,6 +526,7 @@
             android:background="#E7E9EB"/>
 
         <RelativeLayout
+
             android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -628,13 +550,14 @@
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:layout_marginHorizontal="10dp"
-                            android:onClick="clickBack"
-                            />
+                            android:onClick="clickBack" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:layout_marginLeft="30dp"
                         android:layout_width="160dp"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -642,7 +565,7 @@
                             android:text="Đổi mật khẩu"
                             android:textColor="@color/black"
                             android:textSize="14sp"
-
+                            android:textStyle="bold"
                             app:layout_constraintHorizontal_bias="0.05"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
@@ -660,6 +583,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:layout_marginBottom="80dp"
                 android:layout_alignParentLeft="true"
                 android:layout_below="@+id/btnChangePass"
                 android:layout_width="110dp"
@@ -670,34 +594,23 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
                     >
 
-                    <LinearLayout
-                        android:layout_width="40dp"
-                        android:layout_height="match_parent">
 
-                        <ImageView
-                            android:layout_width="16dp"
-                            android:layout_height="match_parent"
-                            android:layout_centerVertical="true"
-                            android:layout_marginHorizontal="10dp"
-                            android:onClick="clickBack"
-                            android:src="@drawable/logout" />
-                    </LinearLayout>
                     <LinearLayout
-                        android:layout_marginLeft="30dp"
+
                         android:layout_width="160dp"
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:layout_marginLeft="5dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:text="Đăng xuất"
                             android:textColor="@color/black"
                             android:textSize="14sp"
-
+                            android:textStyle="bold"
                             app:layout_constraintHorizontal_bias="0.05"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
