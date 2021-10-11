@@ -82,10 +82,11 @@
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="#ffff"
+                android:backgroundTint="#ffffff"
                 android:text="Gợi Ý Bằng Nhập Nguyên Liệu"
                 android:textColor="#ef4c29"
-                android:textSize="13dp" />
+                android:textSize="13dp"
+                android:onClick="clickToInputMaterial"/>
 
 
             <ImageView
@@ -100,10 +101,11 @@
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="#ffff"
+                android:backgroundTint="#ffffff"
                 android:text="Gợi Ý Bằng Quét Nguyên Liệu"
                 android:textColor="#ef4c29"
-                android:textSize="13dp" />
+                android:textSize="13dp"
+                android:onClick="clickToScan"/>
 
 
             <Button
@@ -113,8 +115,9 @@
                 android:layout_gravity="center"
                 android:backgroundTint="@color/black"
                 android:text="Trang Chủ"
-                android:textColor="#ffff"
-                android:textSize="13dp" />
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:onClick="clickToHome"/>
 
 
         </LinearLayout>

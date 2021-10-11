@@ -104,6 +104,10 @@ public class ScanActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void backToBeforePage(View view) {
+        finish();
+    }
+
     public class MaterialAdapter extends ArrayAdapter<String> {
 
         ArrayList<String> list = new ArrayList<>();

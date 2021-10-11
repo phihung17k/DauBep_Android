@@ -12,17 +12,26 @@
         android:layout_width="match_parent"
         android:layout_height="600dp"
         app:autoFocusButtonColor="@android:color/white"
-        app:autoFocusButtonVisible="true"
+        app:autoFocusButtonVisible="false"
         app:flashButtonColor="@android:color/white"
-        app:flashButtonVisible="true"
-        app:frameColor="@android:color/white"
-        app:frameCornersSize="50dp"
-        app:frameCornersRadius="0dp"
-        app:frameAspectRatioWidth="1"
+        app:flashButtonVisible="false"
         app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
         app:frameSize="0.75"
         app:frameThickness="2dp"
         app:maskColor="#77000000"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/back"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:drawableTint="@color/white"
+        android:onClick="backToBeforePage"/>
 
     <TextView
         android:id="@+id/titleScan"
@@ -94,6 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Xóa"
+                android:textSize="18sp"
                 android:layout_marginEnd="15dp"/>
         </LinearLayout>
 

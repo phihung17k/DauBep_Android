@@ -85,6 +85,17 @@ public class MainActivity extends AppCompatActivity{
                                 selectedFragment = new CommunityFragment();
                             }
                             break;
+                        case R.id.nav_personal:
+                            if(currentPage != 3){
+                                currentPage = 3;
+                                selectedFragment = new PersonalFragment();}
+                                break;
+                        case R.id.nav_notification:
+                            if(currentPage != 2) {
+                                currentPage = 2;
+                                selectedFragment = new NotificationFragment();
+                            }
+                            break;
                         default:
                             if(currentPage != 0) {
                                 currentPage = 0;
@@ -139,5 +150,15 @@ public class MainActivity extends AppCompatActivity{
             intent.putExtra("info", "Bún");
             startActivity(intent);
         }
+    }
+
+
+    public void clickToShowChatDetail(View view) {
+        Intent intent = new Intent(this, ChatDetailActivity.class);
+        Bundle bundle = new Bundle();
+        User user = new User(R.drawable.toto, "To To", "20 phút trước", "Đã gửi");
+        bundle.putSerializable("object_user", user);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }

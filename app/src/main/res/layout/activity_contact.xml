@@ -23,8 +23,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginHorizontal="10dp"
-                android:src="@drawable/back"
-                android:onClick="clickBack"/>
+                android:onClick="clickContactBack"
+                android:src="@drawable/back" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -72,7 +72,8 @@ public class ContactActivity extends AppCompatActivity {
         }
     }
 
-    public void clickBack(View view) {
+
+    public void clickContactBack(View view) {
         finish();
     }
 }
