@@ -15,12 +15,15 @@
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout-v31/activity_main.xml" value="0.14635416666666667" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat_detail.xml" value="0.2644927536231884" />
-        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.128" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.35773480662983426" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_detail_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_goiymonan.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_scan.xml" value="0.264" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_search.xml" value="0.13489583333333333" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_welcomedaubep.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_bottom_nav_menu.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_community.xml" value="0.146875" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_forum.xml" value="0.4" />
@@ -57,30 +60,11 @@
         <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/activity_search.xml" value="0.215625" />
         <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/fragment_forum.xml" value="0.215625" />
         <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/fragment_home.xml" value="0.18645833333333334" />
-        <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/fragment_personal.xml" value="0.36666666666666664" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_chat.xml" value="0.221875" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.10208333333333333" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/item_user_contact.xml" value="0.264" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/drawable/icon_profile.xml" value="0.1" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_chat.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_chat_detail.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.2884963768115942" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_contact.xml" value="0.2391304347826087" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_detail_post.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_goiymonan.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_main.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_search.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_welcomedaubep.xml" value="0.1" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/item_user.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/item_user_contact.xml" value="0.1" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/layout_header.xml" value="0.23007246376811594" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/list_row.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/post_item.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/single_input_chip_layout.xml" value="0.22" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/welcomeDauBep.xml" value="0.2033514492753623" />
       </map>
     </option>
   </component>
