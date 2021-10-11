@@ -14,16 +14,15 @@ public class ChiTietMonAnActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chi_tiet_mon_an);
     }
 
-    public void clickToBack(View view){
-        finish();
-    }
+
 
     public void clickToContact(View view) {
         Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
 
-    public void clickDetailBack(View view) {
+
+    public void clickAbcdef(View view) {
         finish();
     }
 }
