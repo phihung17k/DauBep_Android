@@ -59,7 +59,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/berry" />
+                    android:src="@drawable/bun_rieu" />
 
 
                 <TextView
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
 
-                    android:text="Công thức pha chế Celebrated Berry"
+                    android:text="Công thức Chế Biên Bún Riêu"
                     android:textColor="#094067"
                     android:textSize="20sp"
                     android:textStyle="bold" />
