@@ -22,4 +22,8 @@ public class ChiTietMonAnActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
+
+    public void clickAbcdef(View view) {
+        finish();
+    }
 }

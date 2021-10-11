@@ -139,4 +139,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         chipGroup.addView(chip);
     }
 
+    public void clickAbc(View view) {
+        finish();
+    }
 }

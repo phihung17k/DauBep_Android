@@ -29,7 +29,17 @@
                     android:layout_centerVertical="true"
                     android:layout_marginHorizontal="10dp"
                     android:src="@drawable/back"
-                    android:onClick="clickBack"/>
+                    app:tint="@color/white"
+                    android:onClick="clickAbc"/>
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableStart="@drawable/back"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:drawableTint="@color/white"-->
+<!--                    android:onClick="backToBeforePage"/>-->
 
                 <TextView
                     android:layout_width="match_parent"

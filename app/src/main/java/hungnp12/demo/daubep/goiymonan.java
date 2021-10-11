@@ -25,5 +25,7 @@ public class goiymonan extends AppCompatActivity {
     }
 
 
-
+    public void clickAbcde(View view) {
+        finish();
+    }
 }

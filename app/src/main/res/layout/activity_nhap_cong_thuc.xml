@@ -29,7 +29,8 @@
                     android:layout_centerVertical="true"
                     android:layout_marginHorizontal="10dp"
                     android:src="@drawable/back"
-                    android:onClick="clickBack"/>
+                    app:tint="@color/white"
+                    android:onClick="clickAbcd"/>
 
                 <TextView
                     android:layout_width="match_parent"

@@ -88,4 +88,8 @@ public class NhapCongThuc extends AppCompatActivity {
         });
         chipGroup.addView(chip);
     }
+
+    public void clickAbcd(View view) {
+        finish();
+    }
 }
