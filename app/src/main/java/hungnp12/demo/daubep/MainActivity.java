@@ -153,4 +153,12 @@ public class MainActivity extends AppCompatActivity{
     }
 
 
+    public void clickToShowChatDetail(View view) {
+        Intent intent = new Intent(this, ChatDetailActivity.class);
+        Bundle bundle = new Bundle();
+        User user = new User(R.drawable.toto, "To To", "20 phút trước", "Đã gửi");
+        bundle.putSerializable("object_user", user);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 }

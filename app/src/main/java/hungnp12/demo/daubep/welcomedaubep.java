@@ -16,19 +16,16 @@ public class welcomedaubep extends AppCompatActivity {
 
     public void clickToHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
-        finish();
         startActivity(intent);
     }
 
     public void clickToInputMaterial(View view) {
         Intent intent = new Intent(this, CongThucNauAnActivity.class);
-        finish();
         startActivity(intent);
     }
 
     public void clickToScan(View view) {
         Intent intent = new Intent(this, ScanActivity.class);
-        finish();
         startActivity(intent);
     }
 }
