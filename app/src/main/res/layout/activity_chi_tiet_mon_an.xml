@@ -121,7 +121,7 @@ Cam vàng 2 miếng"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:backgroundTint="#ef4c29"
-
+                        android:textStyle="bold"
                     android:onClick="clickToContact"
 
 

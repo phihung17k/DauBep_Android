@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DauBep">
         <activity
+            android:name=".NhapCongThuc"
+            android:exported="true" />
+        <activity
             android:name=".welcomedaubep"
             android:exported="true" />
         <activity
