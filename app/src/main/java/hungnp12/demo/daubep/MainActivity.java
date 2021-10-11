@@ -89,6 +89,10 @@ public class MainActivity extends AppCompatActivity{
                             if(currentPage != 3){
                                 currentPage = 3;
                                 selectedFragment = new PersonalFragment();
+                        case R.id.nav_notification:
+                            if(currentPage != 2) {
+                                currentPage = 2;
+                                selectedFragment = new NotificationFragment();
                             }
                             break;
                         default:
