@@ -228,7 +228,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Name"
+                        android:text="Nam"
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold"
@@ -316,15 +316,15 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="70dp"
+                    android:layout_width="260dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="264dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Địa Chỉ "
+                        android:text="Địa Chỉ : Quận 9 , Thành Phố HCM"
                         android:textColor="@color/black"
                         android:textSize="14sp"
 
@@ -357,7 +357,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="70dp"
+                    android:layout_width="260dp"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="15dp">
 
@@ -365,7 +365,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Email "
+                        android:text="Email : abc@gmail.com "
                         android:textColor="@color/black"
                         android:textSize="14sp"
 

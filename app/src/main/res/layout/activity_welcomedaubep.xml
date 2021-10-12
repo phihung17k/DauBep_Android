@@ -76,6 +76,29 @@
                 android:layout_margin="15dp"
                 android:scaleType="fitXY"
 
+                android:src="@drawable/quet" />
+
+
+
+            <Button
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#ffffff"
+                android:onClick="clickToScan"
+                android:text="Gợi Ý Bằng Quét Nguyên Liệu"
+                android:textColor="#ef4c29"
+                android:textSize="13dp" />
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="15dp"
+                android:scaleType="fitXY"
+
                 android:src="@drawable/nguyenlieu" />
 
             <Button
@@ -85,25 +108,6 @@
                 android:backgroundTint="#ffffff"
                 android:onClick="clickToInputMaterial"
                 android:text="Gợi Ý Bằng Nhập Nguyên Liệu"
-                android:textColor="#ef4c29"
-                android:textSize="13dp" />
-
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_margin="15dp"
-                android:scaleType="fitXY"
-
-                android:src="@drawable/quet" />
-
-            <Button
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="#ffffff"
-                android:onClick="clickToScan"
-                android:text="Gợi Ý Bằng Quét Nguyên Liệu"
                 android:textColor="#ef4c29"
                 android:textSize="13dp" />
 

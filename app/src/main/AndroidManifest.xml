@@ -47,19 +47,19 @@
         <activity
             android:name=".ContactActivity"
             android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ChiTietMonAnActivity"
             android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity
             android:name=".goiymonan"
             android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".CongThucNauAnActivity"
             android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".DetailPostActivity"
             android:exported="true"
