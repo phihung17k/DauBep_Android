@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context=".CongThucNauAnActivity">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,9 +47,7 @@
 
         </LinearLayout>
 
-
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="663dp"
             android:layout_gravity="center"
@@ -76,97 +73,114 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/barrier" />
 
-
-            <RelativeLayout
+            <TextView
+                android:id="@+id/txtNotScan"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center">
-
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="match_parent">
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Action"
-                        android:layout_width="110dp"
-                        android:layout_height="40dp"
-                        android:text="Thịt Heo"
-                        android:textColor="#ef4c29"
-                        android:textStyle="bold"
-
-                        android:theme="@style/Theme.MaterialComponents.Light"
-                        app:closeIconEnabled="true" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="115dp">
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Action"
-                        android:layout_width="110dp"
-                        android:layout_height="40dp"
-
-                        android:text="Thịt Bò"
-                        android:textColor="#ef4c29"
-                        android:textStyle="bold"
-                        android:theme="@style/Theme.MaterialComponents.Light"
-                        app:closeIconEnabled="true" />
-                </LinearLayout>
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="0dp"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                />
 
 
-            </RelativeLayout>
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:gravity="center">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Action"-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:text="Thịt Heo"-->
+<!--                        android:textColor="#ef4c29"-->
+<!--                        android:textStyle="bold"-->
+
+<!--                        android:theme="@style/Theme.MaterialComponents.Light"-->
+<!--                        app:closeIconEnabled="true" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="115dp">-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Action"-->
+<!--                        android:layout_width="110dp"-->
+<!--                        android:layout_height="40dp"-->
+
+<!--                        android:text="Thịt Bò"-->
+<!--                        android:textColor="#ef4c29"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:theme="@style/Theme.MaterialComponents.Light"-->
+<!--                        app:closeIconEnabled="true" />-->
+<!--                </LinearLayout>-->
 
 
-            <RelativeLayout
+<!--            </RelativeLayout>-->
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:gravity="center">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Action"-->
+<!--                        android:layout_width="90dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:text="Bún"-->
+<!--                        android:textColor="#ef4c29"-->
+<!--                        android:textStyle="bold"-->
+
+<!--                        android:theme="@style/Theme.MaterialComponents.Light"-->
+<!--                        app:closeIconEnabled="true" />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="125dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginLeft="95dp">-->
+
+<!--                    <com.google.android.material.chip.Chip-->
+<!--                        style="@style/Widget.MaterialComponents.Chip.Action"-->
+<!--                        android:layout_width="125dp"-->
+<!--                        android:layout_height="40dp"-->
+
+<!--                        android:text="Rau Cải Cúc"-->
+<!--                        android:textColor="#ef4c29"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:theme="@style/Theme.MaterialComponents.Light"-->
+<!--                        app:closeIconEnabled="true" />-->
+<!--                </LinearLayout>-->
+
+
+<!--            </RelativeLayout>-->
+            
+            <ListView
+                android:id="@+id/lvMaterial"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="center">
-
-                <LinearLayout
-                    android:layout_width="110dp"
-                    android:layout_height="match_parent">
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Action"
-                        android:layout_width="90dp"
-                        android:layout_height="40dp"
-                        android:text="Bún"
-                        android:textColor="#ef4c29"
-                        android:textStyle="bold"
-
-                        android:theme="@style/Theme.MaterialComponents.Light"
-                        app:closeIconEnabled="true" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="125dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="95dp">
-
-                    <com.google.android.material.chip.Chip
-                        style="@style/Widget.MaterialComponents.Chip.Action"
-                        android:layout_width="125dp"
-                        android:layout_height="40dp"
-
-                        android:text="Rau Cải Cúc"
-                        android:textColor="#ef4c29"
-                        android:textStyle="bold"
-                        android:theme="@style/Theme.MaterialComponents.Light"
-                        app:closeIconEnabled="true" />
-                </LinearLayout>
-
-
-            </RelativeLayout>
-
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-android:gravity="center"
+                android:gravity="center"
                 android:layout_marginTop="15dp"
                 android:text="Nhập Thêm Nguyên Liệu"
                 android:textColor="@color/black"
@@ -177,32 +191,59 @@ android:gravity="center"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/barrier" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/edtAddMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:layout_weight="0.4"
+                        android:hint="Nguyên liệu"/>
+
+                    <EditText
+                        android:id="@+id/edtAddPrice"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:hint="khối lượng"/>
+
+                    <Spinner
+                        android:id="@+id/spnAddP"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
 
 
-
-            <EditText
-                android:layout_gravity="center"
-                android:id="@+id/editText"
-                android:layout_width="333dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:gravity="center"
-                android:hint="Nhập nguyên liệu -Khối lượng "
-                android:inputType="text"
-                android:textSize="15sp" />
+<!--            <EditText-->
+<!--                android:layout_gravity="center"-->
+<!--                android:id="@+id/editText"-->
+<!--                android:layout_width="333dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:layout_marginRight="50dp"-->
+<!--                android:gravity="center"-->
+<!--                android:hint="Nhập nguyên liệu -Khối lượng "-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="15sp" />-->
 
 
             <Button
-                android:id="@+id/submitEmail"
+                android:id="@+id/btnAddMaterial"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                        android:textStyle="bold"
+                android:textStyle="bold"
                 android:layout_marginTop="0dp"
                 android:backgroundTint="#ffff"
-                android:onClick="goiymonan"
-                android:text="Thêm "
+                android:text="Thêm"
                 android:textColor="#4CAF50"
                 android:textSize="13sp" />
 
@@ -399,4 +440,4 @@ android:gravity="center"
 
 
 
-</ScrollView>
+</LinearLayout>

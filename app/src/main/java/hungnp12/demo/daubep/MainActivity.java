@@ -117,11 +117,11 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
     public void clicktoCongThuc(View view) {
-        Intent intent = new Intent(this, NhapCongThuc.class);
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
         startActivity(intent);
     }
     public void clicktoNguyenLieu(View view) {
-        Intent intent = new Intent(this, NhapCongThuc.class);
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
         startActivity(intent);
     }
 
