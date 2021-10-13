@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+      >
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Forum"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnSearch"
+                android:layout_width="32.5dp"
+                android:layout_height="33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@color/cardview_light_background"
+                android:onClick="ClickToSearch"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/serach_foreground" />
+
+            <!--        <ImageButton-->
+            <!--            android:id="@+id/btnCollapse"-->
+            <!--            android:layout_width="32.5dp"-->
+            <!--            android:layout_height="33dp"-->
+            <!--            android:layout_alignParentRight="true"-->
+            <!--            android:layout_centerInParent="true"-->
+            <!--            android:layout_marginLeft="10dp"-->
+            <!--            android:layout_marginRight="10dp"-->
+            <!--            android:background="@color/cardview_light_background"-->
+            <!--            android:onClick="ClickToShowMenu"-->
+            <!--            android:src="@drawable/hamburge_foreground" />-->
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/bodyLayout"
+            android:layout_below="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:backgroundTint="@color/turquoise"
+                android:backgroundTintMode="add"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bài nổi bật"
+                android:id="@+id/btnFeatured"
+                android:textSize="17dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                />
+            <Button
+                android:backgroundTint="@color/turquoise"
+                android:backgroundTintMode="add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bài mới nhất"
+                android:textSize="17dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/btnMostRecent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lastLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bodyLayout"
+            android:layout_marginTop="20dp"
+            android:background="#F8F9FA"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingRight="15dp"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
