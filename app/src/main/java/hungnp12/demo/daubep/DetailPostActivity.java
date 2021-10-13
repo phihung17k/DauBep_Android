@@ -47,7 +47,7 @@ public class DetailPostActivity extends AppCompatActivity {
         shareIcon = findViewById(R.id.shareIcon);
 
         postTitle.setText(post.getTitle());
-        contentPost.setText(pattern);
+        contentPost.setText(post.getContent());
         imgView.setImageResource(post.getImg());
 
         cmtList = getComments(cmtList);
@@ -76,23 +76,7 @@ public class DetailPostActivity extends AppCompatActivity {
         finish();
     }
 
-    private String pattern = "Nguyên liệu: \n" +
-            "\n" +
-            "5 cánh gà \n" +
-            "Hành khô, tỏi, nước mắm, tiêu xay, dầu ăn, muối, hạt nêm, đường\n" +
-            "Chuẩn bị:\n" +
-            "\n" +
-            "Cánh gà rửa sạch, dùng một ít muối để chà xát nhẹ lên phần da để khử mùi tanh. Xả lại với nước rồi để ráo. Sau đó cắt theo khớp hoặc chặt nhỏ tùy ý.\n" +
-            "Lấy 1 củ hành khô, 2 tép tỏi, bóc vỏ, băm hoặc ép nát.\n" +
-            "Lấy tiếp 10-12 tép tỏi, đập dập và cắt hạt lựu nhỏ, để riêng.\n" +
-            "Cho cánh gà vào tô, ướp vào 1/3 muỗng cafe hạt nêm, 1 muỗng cafe đường, 2 muỗng cafe nước mắm. Sau đó vắt nước hành tỏi băm vào thịt gà, bã để lại. Trộn đều và ướp từ 15p.\n" +
-            "Pha nước mắm theo công thức 3 thìa cơm nước mắm + 2 thìa đường + 1/3 muỗng tiêu xay, khuấy cho hỗn hợp tan.\n" +
-            "Cách chế biến:\n" +
-            "\n" +
-            "Bước 1: Đặt chảo lên bếp, cho dầu vào đợi đến khi dầu nóng rồi cho cánh gà vào chiên (dầu chỉ cao khoảng 1cm và cho từ miếng lớn tới nhỏ). Lưu ý nên để lửa trung bình và lật từng miếng gà cho vàng đều các mặt. Chiên từ 15-20 phút, miếng nào vàng thì gắp ra trước.\n" +
-            "Bước 2: Sau khi chiên xong, đổ dầu dư ra, dùng khăn giấy lau sạch chảo. Tiếp tục cho một muỗng cafe dầu vào chảo để phi hành tỏi đã chuẩn bị. Tỏi đã ngả vàng và dậy mùi thì vớt ra.\n" +
-            "Bước 3: Đổ phần bã hành tỏi băm nát vào phi thơm, đổ bát nước mắm vào chảo, vặn lửa nhỏ nhất, cho hết cánh gà đã chiên vào chảo nước mắm đảo đều 3-4 phút, trộn tỏi đã phi vào, tắt bếp, nhấc chảo ra khỏi bếp.\n" +
-            "Bước 4: Trình bày cánh gà chiên ra chảo là bạn đã có món cánh gà chiên nước mắm thơm lừng rồi!";
+
 
     public List<Comment> getComments(List<Comment> comments) {
         comments = new ArrayList<Comment>();
