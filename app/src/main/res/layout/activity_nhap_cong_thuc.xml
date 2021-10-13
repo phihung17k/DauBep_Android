@@ -118,7 +118,31 @@ android:gravity="center"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
                 android:gravity="center"
-                android:hint="Nhập nguyên liệu -Khối lượng "
+                android:hint="Nhập nguyên liệu "
+                android:inputType="text"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_gravity="center"
+                android:id="@+id/editText2"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:hint="Nhập Khối lượng "
+                android:inputType="text"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_gravity="center"
+
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:hint="Số Lượng Người Ăn"
                 android:inputType="text"
                 android:textSize="15sp" />
 
