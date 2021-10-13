@@ -193,12 +193,26 @@
             android:layout_marginLeft="7dp"
 
             android:onClick="clickToCMT"
-            android:text="Comment"
+            android:text="Share"
             android:textSize="18dp"
             android:textStyle="bold" />
     </RelativeLayout>
-
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cmtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <EditText
+        android:padding="10dp"
+        android:gravity="start"
+        android:background="#F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bình luận"/>
 
 
 </LinearLayout>

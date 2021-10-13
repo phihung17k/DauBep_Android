@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/layout_bg"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cmtAvt"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar_seventh"/>
+
+        <TextView
+            android:id="@+id/cmtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_toEndOf="@id/cmtAvt"
+            android:text="Hồ Long"
+            android:textColor="@color/black"
+            android:textSize="17.5dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmtContent"
+            android:layout_below="@id/cmtName"
+            android:layout_toEndOf="@id/cmtAvt"
+            android:layout_marginLeft="25dp"
+            android:text="Mình ăn thử ở đây gà xào bắp cải và gà sốt mật ong. Về gà xào bắp cải. 1 phần gà thì hơi ít so với tưởng tượng nhưng gà nhiều, đúng là gà xào bắp cải chứ ko phải bắp cải xào gà ) gia vị nếm nếm vừa đủ, ăn kèm cơm trắng là ok luông. Bắp cải xào chín ăn kèm khoai ngọt thì tuyệt luôn.
+Gà sốt mật ong thì ăn hơi dễ ngấy. Nhưng gà ăn cũng k bị bở, thịt mềm, sốt ngon."/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

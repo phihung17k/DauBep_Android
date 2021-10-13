@@ -1,6 +1,8 @@
 package hungnp12.demo.daubep;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
@@ -9,15 +11,22 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
+import hungnp12.demo.daubep.model.Comment;
 import hungnp12.demo.daubep.model.Post;
 
 public class DetailPostActivity extends AppCompatActivity {
     static private Post post;
-    private TextView postTitle,contentPost,btnLike,btnCmt,btnShare;
-    private ImageButton likeIcon,cmtIcon,shareIcon;
+    private TextView postTitle, contentPost, btnLike, btnCmt, btnShare;
+    private ImageButton likeIcon, cmtIcon, shareIcon;
     private ImageView imgView;
+    private RecyclerView recyclerView;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
+    private List<Comment> cmtList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +49,21 @@ public class DetailPostActivity extends AppCompatActivity {
         postTitle.setText(post.getTitle());
         contentPost.setText(pattern);
         imgView.setImageResource(post.getImg());
+
+        cmtList = getComments(cmtList);
+        recyclerView = findViewById(R.id.cmtView);
+        adapter = new CommentAdapter(cmtList);
+        layoutManager = new LinearLayoutManager(this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(layoutManager);
     }
 
     public void clickToLike(View view) {
         boolean isLike = post.isLike();
-        if(!isLike){
+        if (!isLike) {
             likeIcon.setImageResource(R.drawable.fill_heart_foreground);
             post.setLike(true);
-        }else{
+        } else {
             likeIcon.setImageResource(R.drawable.unfill_heart_foreground);
             post.setLike(false);
         }
@@ -56,9 +72,10 @@ public class DetailPostActivity extends AppCompatActivity {
     public void clickToCMT(View view) {
     }
 
-public void clickToBack(View view){
+    public void clickToBack(View view) {
         finish();
-}
+    }
+
     private String pattern = "Nguyên liệu: \n" +
             "\n" +
             "5 cánh gà \n" +
@@ -77,5 +94,17 @@ public void clickToBack(View view){
             "Bước 3: Đổ phần bã hành tỏi băm nát vào phi thơm, đổ bát nước mắm vào chảo, vặn lửa nhỏ nhất, cho hết cánh gà đã chiên vào chảo nước mắm đảo đều 3-4 phút, trộn tỏi đã phi vào, tắt bếp, nhấc chảo ra khỏi bếp.\n" +
             "Bước 4: Trình bày cánh gà chiên ra chảo là bạn đã có món cánh gà chiên nước mắm thơm lừng rồi!";
 
-
+    public List<Comment> getComments(List<Comment> comments) {
+        comments = new ArrayList<Comment>();
+        Comment cmt;
+        cmt = new Comment("Thanh Huy", "12/11/2020", R.drawable.avatar_first, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        comments.add(cmt);
+        cmt = new Comment("Hai Dang", "12/11/2020", R.drawable.avatar_second, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        comments.add(cmt);
+        cmt = new Comment("Minh Nhat", "12/11/2020", R.drawable.avatar_third, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        comments.add(cmt);
+        cmt = new Comment("Phi Hung", "12/11/2020", R.drawable.avatar_fourth, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        comments.add(cmt);
+        return comments;
+    }
 }

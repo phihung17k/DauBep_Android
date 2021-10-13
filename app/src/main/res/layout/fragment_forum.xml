@@ -50,35 +50,43 @@
             <!--            android:onClick="ClickToShowMenu"-->
             <!--            android:src="@drawable/hamburge_foreground" />-->
         </RelativeLayout>
-        <LinearLayout
+
+        <RelativeLayout
             android:id="@+id/bodyLayout"
-            android:layout_below="@+id/topLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:backgroundTint="@color/turquoise"
-                android:backgroundTintMode="add"
+            android:layout_below="@+id/topLayout"
+           >
 
+            <Button
+                android:id="@+id/btnFeatured"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bài nổi bật"
-                android:id="@+id/btnFeatured"
-                android:textSize="17dp"
-                android:layout_marginRight="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
                 android:layout_marginLeft="15dp"
-                />
-            <Button
+                android:layout_marginRight="15dp"
                 android:backgroundTint="@color/turquoise"
                 android:backgroundTintMode="add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Bài mới nhất"
-                android:textSize="17dp"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="15dp"
-                android:id="@+id/btnMostRecent"/>
-        </LinearLayout>
+                android:text="Bài nổi bật"
+                android:textSize="15dp"
+                />
+
+                <Button
+                    android:layout_marginEnd="40dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnMostRecent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/turquoise"
+                    android:backgroundTintMode="add"
+                    android:text="Bài mới nhất"
+                    android:textSize="15dp" />
+
+
+        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/lastLayout"
