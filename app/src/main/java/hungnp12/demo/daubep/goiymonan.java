@@ -24,7 +24,9 @@ public class goiymonan extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void clickBack(View view) {
+
+
+    public void clickAbcde(View view) {
         finish();
     }
 

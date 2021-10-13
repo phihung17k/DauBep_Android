@@ -45,7 +45,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="268dp"
+            android:layout_height="234dp"
             android:gravity="center"
             android:orientation="vertical"
             android:paddingBottom="10dp"
@@ -81,19 +81,19 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/barrier" />
 
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Action"
-                android:layout_width="130dp"
-                android:layout_height="50dp"
-                android:background="#4CAF50"
-                android:checkable="true"
-                android:checked="true"
-                android:text="Đã Xác Minh"
-                android:textColor="#ffff"
-                android:textStyle="bold"
+            <!--            <com.google.android.material.chip.Chip-->
+            <!--                style="@style/Widget.MaterialComponents.Chip.Action"-->
+            <!--                android:layout_width="130dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:background="#4CAF50"-->
+            <!--           -->
+            <!--                android:text="Chưa Xác Minh"-->
 
-                android:theme="@style/Theme.MaterialComponents.Light"
-                app:closeIconEnabled="false" />
+            <!--                android:textColor="#ffff"-->
+            <!--                android:textStyle="bold"-->
+
+            <!--                android:theme="@style/Theme.MaterialComponents.Light"-->
+            <!--                app:closeIconEnabled="false" />-->
 
         </LinearLayout>
 
@@ -228,7 +228,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Name"
+                        android:text="Nam"
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold"
@@ -301,30 +301,30 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                >
+                android:layout_height="30dp">
 
                 <LinearLayout
                     android:layout_width="40dp"
                     android:layout_height="match_parent">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginHorizontal="10dp"
-                        android:onClick="clickBack"
-                        android:src="@drawable/daichi" />
+                        android:onClick="clickBack" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_marginLeft="30dp"
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent">
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="264dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Địa chỉ : "
+                        android:text="Địa Chỉ : Quận 9 , Thành Phố HCM"
                         android:textColor="@color/black"
                         android:textSize="14sp"
 
@@ -335,9 +335,6 @@
 
 
                 </LinearLayout>
-
-
-
 
 
             </RelativeLayout>
@@ -345,30 +342,30 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                >
+                android:layout_height="30dp">
 
                 <LinearLayout
                     android:layout_width="40dp"
                     android:layout_height="match_parent">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginHorizontal="10dp"
-                        android:onClick="clickBack"
-                        android:src="@drawable/mail" />
+                        android:onClick="clickBack" />
                 </LinearLayout>
+
                 <LinearLayout
-                    android:layout_marginLeft="30dp"
-                    android:layout_width="120dp"
-                    android:layout_height="match_parent">
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Email :"
+                        android:text="Email : abc@gmail.com "
                         android:textColor="@color/black"
                         android:textSize="14sp"
 
@@ -379,9 +376,6 @@
 
 
                 </LinearLayout>
-
-
-
 
 
             </RelativeLayout>

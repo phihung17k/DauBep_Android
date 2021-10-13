@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/layout_rounded_corner"
             android:orientation="vertical"
-            android:paddingTop="10dp"
+            android:paddingTop="20dp"
             android:paddingBottom="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -41,10 +41,8 @@
 
 
         <LinearLayout
-
             android:layout_width="match_parent"
-            android:layout_height="670dp"
-
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:paddingTop="10dp"
             android:paddingBottom="5dp"
@@ -69,32 +67,11 @@
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/barrier" />
 
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:layout_margin="15dp"
                 android:scaleType="fitXY"
-
-                android:src="@drawable/nguyenlieu" />
-
-            <Button
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="#ffffff"
-                android:text="Gợi Ý Bằng Nhập Nguyên Liệu"
-                android:textColor="#ef4c29"
-                android:textSize="13dp"
-                android:onClick="clickToInputMaterial"/>
-
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_margin="15dp"
-                android:scaleType="fitXY"
-
                 android:src="@drawable/quet" />
 
             <Button
@@ -102,42 +79,39 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="#ffffff"
+                android:onClick="clickToScan"
                 android:text="Gợi Ý Bằng Quét Nguyên Liệu"
                 android:textColor="#ef4c29"
-                android:textSize="13dp"
-                android:onClick="clickToScan"/>
+                android:textSize="13dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/nguyenlieu" />
+
+            <Button
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#ffffff"
+                android:onClick="clickToInputMaterial"
+                android:text="Gợi Ý Bằng Nhập Nguyên Liệu"
+                android:textColor="#ef4c29"
+                android:textSize="13dp" />
 
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="55dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="@color/black"
+                android:onClick="clickToHome"
                 android:text="Trang Chủ"
                 android:textColor="#ffffff"
-                android:textSize="13dp"
-                android:onClick="clickToHome"/>
-
-
+                android:textSize="14dp" />
         </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </LinearLayout>
-
-
-
-</ScrollView>
+</LinearLayout>
