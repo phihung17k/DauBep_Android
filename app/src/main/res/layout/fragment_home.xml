@@ -324,16 +324,17 @@
                             app:cardElevation="10dp"
                             app:cardMaxElevation="12dp"
                             app:cardPreventCornerOverlap="true"
-                            app:cardUseCompatPadding="true">
+                            app:cardUseCompatPadding="true"
+                            android:layout_marginLeft="5dp">
 
                             <LinearLayout
-                                android:layout_width="160dp"
-                                android:layout_height="250dp"
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
                                 android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="match_parent"
-                                    android:layout_height="220dp"
+                                    android:layout_height="170dp"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/km_thich_thit"/>
 
@@ -357,13 +358,13 @@
                             app:cardUseCompatPadding="true">
 
                             <LinearLayout
-                                android:layout_width="160dp"
-                                android:layout_height="250dp"
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
                                 android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="match_parent"
-                                    android:layout_height="220dp"
+                                    android:layout_height="170dp"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/km_lau" />
 
@@ -389,16 +390,17 @@
                             app:cardElevation="10dp"
                             app:cardMaxElevation="12dp"
                             app:cardPreventCornerOverlap="true"
-                            app:cardUseCompatPadding="true">
+                            app:cardUseCompatPadding="true"
+                            android:layout_marginLeft="5dp">
 
                             <LinearLayout
-                                android:layout_width="160dp"
-                                android:layout_height="250dp"
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
                                 android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="match_parent"
-                                    android:layout_height="220dp"
+                                    android:layout_height="170dp"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/km_salad" />
 
@@ -422,13 +424,13 @@
                             app:cardUseCompatPadding="true">
 
                             <LinearLayout
-                                android:layout_width="160dp"
-                                android:layout_height="250dp"
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
                                 android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="match_parent"
-                                    android:layout_height="220dp"
+                                    android:layout_height="170dp"
                                     android:scaleType="fitXY"
                                     android:src="@drawable/km_salad" />
 

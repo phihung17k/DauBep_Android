@@ -91,7 +91,7 @@ public class CommunityFragment extends Fragment implements ItemClickListener {
     public List<Post> initListData(List<Post> posts){
         posts = new ArrayList<Post>();
         Post post;
-        post = new Post(1,R.drawable.chicken,"Cách làm gà chiên  ngon?","Long",Integer.toString(15),true);
+        post = new Post(1,R.drawable.chicken,"Cách làm gà chiên?","Long",Integer.toString(15),true);
         posts.add(post);
         post.setContent(ForumPostConstant.CHICKEN);
         post = new Post(2,R.drawable.bun_rieu,"Cách nấu bún riêu?","Michael",Integer.toString(15),true);
