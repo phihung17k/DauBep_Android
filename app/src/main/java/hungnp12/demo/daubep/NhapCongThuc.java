@@ -14,7 +14,7 @@ import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 
 public class NhapCongThuc extends AppCompatActivity {
-    private EditText email;
+    private EditText email , email2;
     private Button submit ;
     private ChipGroup chipGroup ;
     private Button btn , btn2 , btn3 ,btn4 , btn5 , btn6 ;
@@ -134,7 +134,7 @@ public class NhapCongThuc extends AppCompatActivity {
 
             }
         });
-
+        email2 = findViewById(R.id.editText2) ;
         email = findViewById(R.id.editText) ;
         submit = findViewById(R.id.submitEmail) ;
         chipGroup = findViewById(R.id.chipGroup);
@@ -142,23 +142,28 @@ public class NhapCongThuc extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String emailText  = email.getText().toString();
-                setChips(emailText);
+//                String emailText  = email.getText().toString();
+//                String emailText2  = email2.getText().toString();
+                    String total = email.getText().toString() +" - "+email2.getText().toString();
+
+
+                setChips(total);
+
                 Toast.makeText( NhapCongThuc.this, "Thêm thành công", Toast.LENGTH_SHORT).show();
                 email.setText("");
+                email2.setText("");
+
             }
         });
     }
 
-    public void goiymonan(View view) {
-        Intent intent = new Intent(this , goiymonan.class);
-        startActivity(intent);
-    }
 
 
-    public void setChips(String e){
+
+    public void setChips(String e ){
         final Chip chip  = (Chip) this.getLayoutInflater().inflate(R.layout.single_input_chip_layout , null , false);
         chip.setText(e);
+//        chip.set
         chip.setOnCloseIconClickListener(new View.OnClickListener(){
 
             public void onClick(View view){
@@ -173,5 +178,10 @@ public class NhapCongThuc extends AppCompatActivity {
 
     public void clickAbcd(View view) {
         finish();
+    }
+
+    public void goiymonan(View view) {
+        Intent intent = new Intent(this , goiymonan.class);
+        startActivity(intent);
     }
 }

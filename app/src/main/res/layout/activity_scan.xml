@@ -8,6 +8,7 @@
     tools:context=".ScanActivity">
 
     <com.budiyev.android.codescanner.CodeScannerView
+
         android:id="@+id/scanner_view"
         android:layout_width="match_parent"
         android:layout_height="600dp"
@@ -22,7 +23,11 @@
         app:frameCornersSize="50dp"
         app:frameSize="0.75"
         app:frameThickness="2dp"
-        app:maskColor="#77000000"/>
+        app:maskColor="#77000000"
+
+
+        />
+
 
     <Button
         android:layout_width="wrap_content"
@@ -42,6 +47,7 @@
         android:textColor="@color/white"
         android:gravity="center"
         android:layout_marginTop="40dp"/>
+
 
     <TextView
         android:id="@+id/stateScan"
