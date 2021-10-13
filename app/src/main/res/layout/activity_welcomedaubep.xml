@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/layout_rounded_corner"
             android:orientation="vertical"
-            android:paddingTop="10dp"
+            android:paddingTop="20dp"
             android:paddingBottom="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -43,7 +43,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="670dp"
+            android:layout_height="695dp"
 
             android:orientation="vertical"
             android:paddingTop="10dp"
@@ -76,17 +76,21 @@
                 android:layout_margin="15dp"
                 android:scaleType="fitXY"
 
-                android:src="@drawable/nguyenlieu" />
+                android:src="@drawable/quet" />
+
+
 
             <Button
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="#ffffff"
-                android:text="Gợi Ý Bằng Nhập Nguyên Liệu"
+                android:onClick="clickToScan"
+                android:text="Gợi Ý Bằng Quét Nguyên Liệu"
                 android:textColor="#ef4c29"
-                android:textSize="13dp"
-                android:onClick="clickToInputMaterial"/>
+                android:textSize="13dp" />
+
+
 
 
             <ImageView
@@ -95,29 +99,29 @@
                 android:layout_margin="15dp"
                 android:scaleType="fitXY"
 
-                android:src="@drawable/quet" />
+                android:src="@drawable/nguyenlieu" />
 
             <Button
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:backgroundTint="#ffffff"
-                android:text="Gợi Ý Bằng Quét Nguyên Liệu"
+                android:onClick="clickToInputMaterial"
+                android:text="Gợi Ý Bằng Nhập Nguyên Liệu"
                 android:textColor="#ef4c29"
-                android:textSize="13dp"
-                android:onClick="clickToScan"/>
+                android:textSize="13dp" />
 
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_height="55dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="@color/black"
+                android:onClick="clickToHome"
                 android:text="Trang Chủ"
                 android:textColor="#ffffff"
-                android:textSize="13dp"
-                android:onClick="clickToHome"/>
+                android:textSize="14dp" />
 
 
         </LinearLayout>

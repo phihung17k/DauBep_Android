@@ -116,9 +116,12 @@ public class MainActivity extends AppCompatActivity{
         Intent intent = new Intent(this,SearchActivity.class);
         startActivity(intent);
     }
-
     public void clicktoCongThuc(View view) {
-        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        Intent intent = new Intent(this, NhapCongThuc.class);
+        startActivity(intent);
+    }
+    public void clicktoNguyenLieu(View view) {
+        Intent intent = new Intent(this, NhapCongThuc.class);
         startActivity(intent);
     }
 

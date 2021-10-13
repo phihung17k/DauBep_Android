@@ -2,9 +2,11 @@
 <com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/Widget.MaterialComponents.Chip.Entry"
-    android:textColor="@color/teal_200"
+    android:textColor="#ef4c29"
+    android:textStyle="bold"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:theme="@style/Theme.MaterialComponents.Light"
  />
 
 <!--    app:chipIcon="@drawable/icon_profile"-->
