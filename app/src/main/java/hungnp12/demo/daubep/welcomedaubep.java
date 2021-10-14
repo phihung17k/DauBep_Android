@@ -28,7 +28,7 @@ public class welcomedaubep extends AppCompatActivity {
     }
 
     public void clickToInputMaterial(View view) {
-        Intent intent = new Intent(this, NhapCongThuc.class);
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
         startActivity(intent);
     }
 
