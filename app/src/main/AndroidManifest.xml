@@ -15,6 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DauBep">
         <activity
+            android:name=".chitietnauanbon"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".chitietnauanba"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".chitietmonanhai"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -76,7 +84,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar"></activity>
+            android:theme="@style/ActivityTheme.NoActionBar" />
     </application>
 
 </manifest>

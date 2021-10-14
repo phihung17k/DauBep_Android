@@ -6,18 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class chitietmonanhai extends AppCompatActivity {
+public class chitietnauanba extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chitietmonanhai);
+        setContentView(R.layout.activity_chitietnauanba);
     }
-    public void clickToContacthai(View view) {
+
+    public void clickAbcdefgh(View view) {
+        finish();
+    }
+    public void clickToContactThree(View view) {
         Intent intent = new Intent(this, ContactActivity.class);
         startActivity(intent);
     }
-    public void clickAbcdefg(View view) {
-        finish();
-    }
+
 }

@@ -28,7 +28,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="5dp"
-                android:onClick="clickAbcdef"
+                android:onClick="clickAbcdefghj"
 
                 android:src="@drawable/back" />
 
@@ -59,7 +59,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bun_rieu" />
+                    android:src="@drawable/canhchuacaloc" />
 
 
                 <TextView
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
 
-                    android:text="Công thức Chế Biên Bún Riêu"
+                    android:text="Công thức Chế Biên Canh Chua Cá Lóc"
                     android:textColor="#094067"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -88,12 +88,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginBottom="5dp"
-                    android:text=" Bún tươi 400 gr
+                    android:text=" Bò phi lê 1.2 kg
                 \n
-Cua đồng xay 1 kg \n
-Giò sống 100 gr\n
-Tôm khô 50 gr \n
-Mắm tôm 20 gr \n
+Xương ống bò 2 kg \n
+Bắp bò 0.7 kg\n
+Bánh phở 1 kg \n
+Giá sống 300 gr \n
 Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:textColor="@color/black"
                     android:textSize="14sp"
@@ -116,7 +116,7 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Bước 1: Dùng thìa nhỏ nạo lấy phần gạch cua cho vào chén, ướp với một ít tiêu xay, hạt nêm.\nBước 2: Tôm khô và mực khô ngâm nước khoảng 30 phút, sau đó đem mực cắt nhỏ ô. \nBước 3: Sau đó cho phần cà chua, đậu hũ, huyết heo, hành lá cắt khúc, gạch cua còn lại vào nồi nêm gia vị."
+                    android:text="Bước 1: Cho sả vào nồi nước lớn, đun sôi sau đó cho xương ống bò vào.\nBước 2: Cho xương ống bò  trong nồi cùng hành tây, gừng, và gói hỗn hợp gia vị. \nBước 3: Cho vào nồi nước dùng chút bột ngọt,  đường, nêm  sao cho nước dùng có vị đậm đà vừa miệng"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />
@@ -126,9 +126,9 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:backgroundTint="#ef4c29"
-                        android:textStyle="bold"
-                    android:onClick="clickToContact"
-                        android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:onClick="clickToContactFour"
+                    android:textColor="@color/white"
 
                     android:text="Liên Hệ"
                     android:textSize="15dp" />
