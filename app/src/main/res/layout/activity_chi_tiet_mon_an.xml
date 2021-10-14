@@ -88,12 +88,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginBottom="10dp"
-                    android:text=" Teaespresso Berry Fantasy120ml
+                    android:text=" Bún tươi 400 gr
                 \n
-Nước ép cam 20ml \n
-Nước đường 20ml\n
-Hạt lựu 30gr \n
-Cam vàng 2 miếng"
+Cua đồng xay 1 kg \n
+Giò sống 100 gr\n
+Tôm khô 50 gr \n
+Mắm tôm 20 gr \n
+Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />
