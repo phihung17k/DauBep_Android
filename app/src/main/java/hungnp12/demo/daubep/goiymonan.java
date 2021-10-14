@@ -25,7 +25,10 @@ public class goiymonan extends AppCompatActivity {
     }
 
 
-
+    public void chitietnauanhai(View view) {
+        Intent intent = new Intent(this , chitietmonanhai.class);
+        startActivity(intent);
+    }
     public void clickAbcde(View view) {
         finish();
     }
