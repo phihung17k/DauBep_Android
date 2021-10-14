@@ -7,9 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,15 +22,17 @@ import hungnp12.demo.daubep.model.Comment;
 import hungnp12.demo.daubep.model.Post;
 
 public class DetailPostActivity extends AppCompatActivity {
+
     static private Post post;
     private TextView postTitle, contentPost, btnLike, btnCmt, btnShare;
     private ImageButton likeIcon, cmtIcon, shareIcon;
     private ImageView imgView;
     private RecyclerView recyclerView;
-    private RecyclerView.Adapter adapter;
+    private CommentAdapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private List<Comment> cmtList;
-
+    private Button btnNewCmnt;
+    private EditText edtContent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +61,26 @@ public class DetailPostActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(layoutManager);
+
+        edtContent = findViewById(R.id.edtContent);
+        btnNewCmnt = findViewById(R.id.btnNewCmt);
+        btnNewCmnt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String cmtContent =edtContent.getText().toString().trim();
+                if(!(cmtContent.length() <= 0)){
+                    Comment comment = new Comment("Thanh Huy","14/10/2021",R.drawable.avatar_first,cmtContent);
+                    cmtList.add(comment);
+                    adapter.setCmtList(cmtList);
+                    adapter.notifyDataSetChanged();
+                    edtContent.setText("");
+                    Toast.makeText(DetailPostActivity.this, "Bình luận thành công", Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(DetailPostActivity.this, "Bình luận thất bại", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
     }
 
     public void clickToLike(View view) {

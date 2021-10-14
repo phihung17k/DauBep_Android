@@ -54,4 +54,9 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
            cmtContent = itemView.findViewById(R.id.cmtContent);
        }
    }
+
+    public void setCmtList(List<Comment> cmtList) {
+        this.cmtList = cmtList;
+
+    }
 }
