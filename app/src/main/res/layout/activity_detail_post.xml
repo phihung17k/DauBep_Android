@@ -213,12 +213,14 @@
         android:layout_height="wrap_content">
     </androidx.recyclerview.widget.RecyclerView>
     <EditText
+        android:id="@+id/edtContent"
         android:padding="10dp"
         android:gravity="start"
         android:background="#F8F8F8"
         android:layout_width="match_parent"
         android:layout_height="100dp"/>
     <Button
+        android:id="@+id/btnNewCmt"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
