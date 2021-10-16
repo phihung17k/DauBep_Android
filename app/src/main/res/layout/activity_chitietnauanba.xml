@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ChiTietMonAnActivity">
+
+        <androidx.cardview.widget.CardView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="703dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="5dp"
+                android:onClick="clickAbcdefgh"
+
+                android:src="@drawable/back" />
+
+
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="690dp"
+
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/comtam" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:text="Công thức Chế Biên Cơm Tắm"
+                    android:textColor="#094067"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+
+
+                    android:text="Nguyên liệu:"
+                    android:textColor="#094067"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginBottom="5dp"
+                    android:text=" Gao tấm 150 g \n
+Sốt cà chua \n
+Cánh gà 0.7 kg\n
+Mật ông 45 g \n
+Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+
+
+                    android:text="Thực Hiện:"
+                    android:textColor="#094067"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Bước 1: Sử dụng nước sôi để nấu cơm giúp nồi cơm của bạn vừa ngon hơn vừa tiết kiệm thời gian hơn.\nBước 2: Bạn nên tiến hành ướp các gia vị vào phần cốt lên sao cho thấm gia vị, các loại gia vị cần tẩm là muối tiêu, mật ong. \nBước 3: Để tăng thêm độ hấp dẫn cho cơm tấm bạn nên chuẩn bị đồ ăn kèm đồ chua  chuẩn bị."
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+                <Button
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#ef4c29"
+                    android:textStyle="bold"
+                    android:onClick="clickToContactThree"
+                    android:textColor="@color/white"
+
+                    android:text="Liên Hệ"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -25,7 +25,19 @@ public class goiymonan extends AppCompatActivity {
     }
 
 
+    public void chitietnauanhai(View view) {
+        Intent intent = new Intent(this , chitietmonanhai.class);
+        startActivity(intent);
+    }
+    public void chitietnauanba(View view) {
+        Intent intent = new Intent(this , chitietnauanba.class);
+        startActivity(intent);
+    }
 
+    public void chitietnauanbon(View view) {
+        Intent intent = new Intent(this , chitietnauanbon.class);
+        startActivity(intent);
+    }
     public void clickAbcde(View view) {
         finish();
     }

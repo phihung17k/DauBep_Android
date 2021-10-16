@@ -87,13 +87,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
-                    android:layout_marginBottom="10dp"
-                    android:text=" Teaespresso Berry Fantasy120ml
+                    android:layout_marginBottom="5dp"
+                    android:text=" Bún tươi 400 gr
                 \n
-Nước ép cam 20ml \n
-Nước đường 20ml\n
-Hạt lựu 30gr \n
-Cam vàng 2 miếng"
+Cua đồng xay 1 kg \n
+Giò sống 100 gr\n
+Tôm khô 50 gr \n
+Mắm tôm 20 gr \n
+Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />
@@ -115,8 +116,8 @@ Cam vàng 2 miếng"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
+                    android:text="Bước 1: Dùng thìa nhỏ nạo lấy phần gạch cua cho vào chén, ướp với một ít tiêu xay, hạt nêm.\nBước 2: Tôm khô và mực khô ngâm nước khoảng 30 phút, sau đó đem mực cắt nhỏ ô. \nBước 3: Sau đó cho phần cà chua, đậu hũ, huyết heo, hành lá cắt khúc, gạch cua còn lại vào nồi nêm gia vị."
                     android:layout_marginRight="14dp"
-                    android:text="Bước 1: Cho lần lượt đá viên, nước ép cam và nước đường vào ly.\nBước 2: Đảo đều trà Berry Fantasy Teaespresso bằng máy hoặc shaker. \nBước 3: Rót nhẹ hỗn hơp trà lên trên và trang trí với một ít hạt lựu và cam vàng."
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />
@@ -128,7 +129,7 @@ Cam vàng 2 miếng"
                     android:backgroundTint="#ef4c29"
                         android:textStyle="bold"
                     android:onClick="clickToContact"
-
+                        android:textColor="@color/white"
 
                     android:text="Liên Hệ"
                     android:textSize="15dp" />
