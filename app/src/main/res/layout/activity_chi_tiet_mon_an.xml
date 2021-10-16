@@ -117,6 +117,7 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
                     android:text="Bước 1: Dùng thìa nhỏ nạo lấy phần gạch cua cho vào chén, ướp với một ít tiêu xay, hạt nêm.\nBước 2: Tôm khô và mực khô ngâm nước khoảng 30 phút, sau đó đem mực cắt nhỏ ô. \nBước 3: Sau đó cho phần cà chua, đậu hũ, huyết heo, hành lá cắt khúc, gạch cua còn lại vào nồi nêm gia vị."
+                    android:layout_marginRight="14dp"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />

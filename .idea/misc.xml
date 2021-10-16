@@ -9,20 +9,29 @@
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/drawable/layout_rounded_corner.xml" value="0.1625" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/drawable/layout_search.xml" value="0.2703125" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/drawable/list_item_checked.xml" value="0.15885416666666666" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/drawable/post_style.xml" value="0.2703125" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/drawable/shape_rounded_button.xml" value="0.16197916666666667" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/drawable/shape_rounded_image.xml" value="0.1625" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout-v31/activity_main.xml" value="0.14635416666666667" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat_detail.xml" value="0.2644927536231884" />
-        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.128" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.35773480662983426" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_contact.xml" value="0.264" />
-        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_detail_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_forgot_password.xml" value="0.134375" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_goiymonan.xml" value="0.3520286396181384" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_nhap_cong_thuc.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_scan.xml" value="0.264" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_search.xml" value="0.13489583333333333" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_welcomedaubep.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_bottom_nav_menu.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_community.xml" value="0.146875" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_forum.xml" value="0.4" />
-        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_notification.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_scan.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/item_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/item_user_contact.xml" value="0.12864583333333332" />
@@ -32,7 +41,9 @@
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/layout_rounded_button.xml" value="0.14583333333333334" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/layout_rounded_conner.xml" value="0.14635416666666667" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/list_row.xml" value="0.2" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/notification_card.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/post_item.xml" value="0.4" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/single_input_chip_layout.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
         <entry key="..\:/Fall2021_HCI201/New folder/DauBep/DauBep/app/src/main/res/drawable-hdpi/border_radius.xml" value="0.2703125" />
         <entry key="..\:/Fall2021_HCI201/New folder/DauBep/DauBep/app/src/main/res/drawable/back_background.xml" value="0.2703125" />
@@ -47,6 +58,12 @@
         <entry key="..\:/Fall2021_HCI201/New folder/DauBep/DauBep/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/New folder/DauBep/DauBep/app/src/main/res/layout/activity_scan.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/New folder/DauBep/DauBep/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/drawable/layout_rounded_corner.xml" value="0.23177083333333334" />
+        <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/activity_contact.xml" value="0.215625" />
+        <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/activity_detail_post.xml" value="0.215625" />
+        <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/activity_search.xml" value="0.215625" />
+        <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/fragment_forum.xml" value="0.215625" />
+        <entry key="..\:/My Libary/DauBep_Android/app/src/main/res/layout/fragment_home.xml" value="0.18645833333333334" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_chat.xml" value="0.221875" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.10208333333333333" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
@@ -100,10 +117,10 @@
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.2653985507246377" />
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietmonanhai.xml" value="0.33" />
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietnauanba.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietnauanbon.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietnauanbon.xml" value="0.33" />
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.2653985507246377" />
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_contact.xml" value="0.2513586956521739" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_goiymonan.xml" value="0.2653985507246377" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_goiymonan.xml" value="0.33" />
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_main.xml" value="0.223731884057971" />
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_nhap_cong_thuc.xml" value="0.33" />
         <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_scan.xml" value="0.223731884057971" />

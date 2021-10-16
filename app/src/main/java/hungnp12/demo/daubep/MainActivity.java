@@ -33,6 +33,9 @@ import com.google.android.material.navigation.NavigationBarView;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
+import hungnp12.demo.daubep.model.ForumPostConstant;
+import hungnp12.demo.daubep.model.Post;
+
 public class MainActivity extends AppCompatActivity{
 
     private BottomNavigationView bottomNavigationView;
@@ -117,11 +120,11 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
     public void clicktoCongThuc(View view) {
-        Intent intent = new Intent(this, NhapCongThuc.class);
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
         startActivity(intent);
     }
     public void clicktoNguyenLieu(View view) {
-        Intent intent = new Intent(this, NhapCongThuc.class);
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
         startActivity(intent);
     }
 
@@ -162,6 +165,14 @@ public class MainActivity extends AppCompatActivity{
         User user = new User(R.drawable.toto, "To To", "20 phút trước", "Đã gửi");
         bundle.putSerializable("object_user", user);
         intent.putExtras(bundle);
+        startActivity(intent);
+    }
+
+    public void clickToNavigatorPost(View view) {
+        Intent intent = new Intent(this, DetailPostActivity.class);
+        Post post = new Post(1,R.drawable.chicken,"Cách làm gà chiên  ngon?","Long",Integer.toString(15),true);
+        post.setContent(ForumPostConstant.CHICKEN);
+        intent.putExtra("post", post);
         startActivity(intent);
     }
 }

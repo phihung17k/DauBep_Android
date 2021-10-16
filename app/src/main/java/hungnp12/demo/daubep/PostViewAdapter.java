@@ -44,7 +44,7 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
             Post post = postList.get(position);
             holder.title.setText(post.getTitle());
             holder.name.setText(post.getName());
-            holder.replyNum.setText(post.getNumReply() + " Replies");
+            holder.replyNum.setText(post.getNumReply() + " phản hồi");
             if(post.isLike()){
                 holder.iconAction.setImageResource(R.drawable.fill_heart_foreground);
             }else{
@@ -122,5 +122,7 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
         }
 
     }
-
+    public void setListPost(List<Post> listPost) {
+        this.postList = listPost;
+    }
 }

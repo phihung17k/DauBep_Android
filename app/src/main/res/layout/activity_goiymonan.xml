@@ -53,96 +53,95 @@
 
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="80dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="80dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="165dp">
-
-                <LinearLayout
-                    android:id="@+id/lnAAA"
-                    android:layout_width="170dp"
-                    android:layout_height="match_parent">
-
-                    <ImageView
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:scaleType="fitXY"
+                        android:layout_height="165dp">
 
-                        android:src="@drawable/bun_rieu" />
-                </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/lnAAA"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@id/lnAAA"
-                    android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="10dp"
+                                android:scaleType="fitXY"
 
-                    <TextView
-                        android:layout_width="match_parent"
+                                android:src="@drawable/bun_rieu" />
+                        </LinearLayout>
 
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@id/lnAAA"
+                            android:orientation="vertical">
 
-                        android:text="Bún Riêu"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                            <TextView
 
-                    <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
 
-                        android:layout_width="match_parent"
-                        android:layout_height="90dp"
-                        android:text=" Bún tươi 300g \n
-Cua đồng xay 1 kg \n
-Giò sống 100g \n
-Hành tím 100 g \n
-Hành lá 20 g"
+                                android:text="Bún Riêu"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
 
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
+                            <TextView
 
-                    <LinearLayout
-                        android:layout_width="173dp"
-                        android:layout_height="40dp"
-                        android:orientation="horizontal">
+                                android:layout_width="match_parent"
+                                android:layout_height="95dp"
+                                android:text=" Cua đồng 300 g \n
+Bún tươi 1 kg \n
+Tôm khô ̀đ g\n
+Trứng ga 2 quả \n
+Hành lá, hành khô, tỏi"
 
-                        <Button
-                            android:layout_width="85dp"
-                            android:layout_height="40dp"
-                            android:backgroundTint="#F7F7F7"
-                            android:onClick="chitietnauan"
-                            android:text="Chi Tiết"
-                            android:textColor="#ef4c29"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
+                                android:textSize="13sp"
+                                android:textStyle="bold" />
 
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
+                            <LinearLayout
+                                android:layout_width="173dp"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
 
-                        <Button
-                            android:layout_width="85dp"
-                            android:layout_height="40dp"
-                            android:backgroundTint="#ef4c29"
-                            android:onClick="clickToContact"
-                            android:text="Liên Hệ"
-                            android:textColor="#F7F7F7"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                                <Button
+                                    android:layout_width="85dp"
+                                    android:layout_height="40dp"
+                                    android:backgroundTint="#F7F7F7"
+                                    android:onClick="chitietnauan"
+                                    android:text="Chi Tiết"
+                                    android:textColor="#ef4c29"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
 
-                </LinearLayout>
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
 
-            </RelativeLayout>
+                                <Button
+                                    android:layout_width="85dp"
+                                    android:layout_height="40dp"
+                                    android:backgroundTint="#ef4c29"
+                                    android:onClick="clickToContact"
+                                    android:text="Liên Hệ"
+                                    android:textColor="#F7F7F7"
+                                    android:textSize="11sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
 
 
         <androidx.cardview.widget.CardView
@@ -180,7 +179,7 @@ Hành lá 20 g"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+
                         android:text="Phở"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -189,12 +188,12 @@ Hành lá 20 g"
                     <TextView
 
                         android:layout_width="match_parent"
-                        android:layout_height="89dp"
-                        android:text=" Xương ống bò 2kg  \n
-Bò bắp 0.7 kg \n
-Ớt 3 quả \n
-Bánh phở 300g \n
-Hành tím 100 g"
+                        android:layout_height="95dp"
+                        android:text=" Bò phi lê 1.2 kg \n
+Bắp bò 0.7 kg\n
+Bánh phở 1 kg \n
+Giá sống 300 g \n
+Hành lá, hành khô, tỏi\n"
 
                         android:textSize="13sp"
                         android:textStyle="bold" />
@@ -208,7 +207,7 @@ Hành tím 100 g"
                             android:layout_width="85dp"
                             android:layout_height="40dp"
                             android:backgroundTint="#F7F7F7"
-                            android:onClick="chitietnauanhai"
+                            android:onClick="chitietnauan"
                             android:text="Chi Tiết"
                             android:textColor="#ef4c29"
                             android:textSize="11sp"
@@ -272,7 +271,7 @@ Hành tím 100 g"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+
                         android:text="Cơm Tấm"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -281,12 +280,12 @@ Hành tím 100 g"
                     <TextView
 
                         android:layout_width="match_parent"
-                        android:layout_height="90dp"
-                        android:text=" Sườn miếng 300 g \n
-Củ cải trắng 150g \n
-Cà chua: 1 quả \n
-Bì heo 100g \n
-Hành tím 100g"
+                        android:layout_height="95dp"
+                        android:text=" Gao tấm 150 g \n
+Sốt cà chua \n
+Cánh gà 0.7 kg\n
+Mật ông 45 g \n
+Gia vị 1 ít \n"
 
                         android:textSize="13sp"
                         android:textStyle="bold" />
@@ -300,7 +299,7 @@ Hành tím 100g"
                             android:layout_width="85dp"
                             android:layout_height="40dp"
                             android:backgroundTint="#F7F7F7"
-                            android:onClick="chitietnauanba"
+                            android:onClick="chitietnauan"
                             android:text="Chi Tiết"
                             android:textColor="#ef4c29"
                             android:textSize="11sp"
@@ -365,7 +364,7 @@ Hành tím 100g"
 
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+
                         android:text="Canh Chua Cá Lóc"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -374,15 +373,15 @@ Hành tím 100g"
                     <TextView
 
                         android:layout_width="match_parent"
-                        android:layout_height="89dp"
-                        android:text=" Cá lóc 500 g \n
-Giá đỗ 150g \n
-Đậu bắp 5 quả \n
-Me 2-3 quả \n
-Thơm 1 quả"
+                        android:layout_height="95dp"
+                        android:text=" Cá loc 500 g \n
+Thơm 100 g\n
+Cà chua 100g\n
+Me 50 g \n
+Bạc hà 100 g \n
+Gia vị 1 ít \n"
                         android:textSize="13sp"
                         android:textStyle="bold" />
-
                     <LinearLayout
                         android:layout_width="173dp"
                         android:layout_height="40dp"
@@ -392,7 +391,7 @@ Thơm 1 quả"
                             android:layout_width="85dp"
                             android:layout_height="40dp"
                             android:backgroundTint="#F7F7F7"
-                            android:onClick="chitietnauanbon"
+                            android:onClick="chitietnauan"
                             android:text="Chi Tiết"
                             android:textColor="#ef4c29"
                             android:textSize="11sp"

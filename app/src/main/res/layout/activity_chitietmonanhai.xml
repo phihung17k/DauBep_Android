@@ -116,9 +116,10 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Bước 1: Cho sả vào nồi nước lớn, đun sôi sau đó cho xương ống bò vào.\nBước 2: Cho xương ống bò  trong nồi cùng hành tây, gừng, và gói hỗn hợp gia vị. \nBước 3: Cho vào nồi nước dùng chút bột ngọt,  đường, nêm  sao cho nước dùng có vị đậm đà vừa miệng"
+                    android:text="Bước 1: Sơ chế nguyên liệu hầm nước dùng.\nBước 2: Cho xương ống bò ninh trong nồi  Đun cho đến khi nước dùng chuyển qua màu vàng đục \nBước 3: Thịt bò phi lê thái thành những lát mỏng, nên thái theo thớ để thịt bò không bị dai khi chế biến."
                     android:textColor="@color/black"
                     android:textSize="14sp"
+                    android:textStyle="normal" />
                     android:textStyle="normal" />
                 <Button
                     android:layout_width="113dp"

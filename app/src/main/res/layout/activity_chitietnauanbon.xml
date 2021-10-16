@@ -88,12 +88,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginBottom="5dp"
-                    android:text=" Bò phi lê 1.2 kg
-                \n
-Xương ống bò 2 kg \n
-Bắp bò 0.7 kg\n
-Bánh phở 1 kg \n
-Giá sống 300 gr \n
+                    android:text=" Cá loc 500 g \n
+Thơm 100 g\n
+Cà chua 100g\n
+Me 50 g \n
+Bạc hà 100 g \n
 Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:textColor="@color/black"
                     android:textSize="14sp"
@@ -116,7 +115,7 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Bước 1: Cho sả vào nồi nước lớn, đun sôi sau đó cho xương ống bò vào.\nBước 2: Cho xương ống bò  trong nồi cùng hành tây, gừng, và gói hỗn hợp gia vị. \nBước 3: Cho vào nồi nước dùng chút bột ngọt,  đường, nêm  sao cho nước dùng có vị đậm đà vừa miệng"
+                    android:text="Bước 1: cho cá vừa cắt vào tô cùng 1 muỗng canh nước mắm, 1/2 muỗng canh hạt nêm và trộn đều.\nBước 2: Để lấy nước cốt me vắt cùng 1 muỗng nước ấm vào chén sau đó dùng muỗng dầm đều cho thịt me mềm ra. \nBước 3: Sau khi nước cốt me được đun sôi bạn cho cá lóc vào nấu khoảng 10"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />

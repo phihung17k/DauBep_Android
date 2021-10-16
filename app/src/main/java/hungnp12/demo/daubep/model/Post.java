@@ -9,6 +9,7 @@ public class Post implements Serializable {
     private String name;
     private String numReply;
     private boolean isLike;
+    private String content;
 
     public Post(int id, int img, String title, String name, String numReply, boolean isLike) {
         this.id = id;
@@ -17,6 +18,14 @@ public class Post implements Serializable {
         this.name = name;
         this.numReply = numReply;
         this.isLike = isLike;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public int getId() {

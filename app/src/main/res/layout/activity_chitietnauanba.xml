@@ -88,12 +88,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginBottom="5dp"
-                    android:text=" Bò phi lê 1.2 kg
-                \n
-Xương ống bò 2 kg \n
-Bắp bò 0.7 kg\n
-Bánh phở 1 kg \n
-Giá sống 300 gr \n
+                    android:text=" Gao tấm 150 g \n
+Sốt cà chua \n
+Cánh gà 0.7 kg\n
+Mật ông 45 g \n
 Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:textColor="@color/black"
                     android:textSize="14sp"
@@ -116,7 +114,7 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Bước 1: Cho sả vào nồi nước lớn, đun sôi sau đó cho xương ống bò vào.\nBước 2: Cho xương ống bò  trong nồi cùng hành tây, gừng, và gói hỗn hợp gia vị. \nBước 3: Cho vào nồi nước dùng chút bột ngọt,  đường, nêm  sao cho nước dùng có vị đậm đà vừa miệng"
+                    android:text="Bước 1: Sử dụng nước sôi để nấu cơm giúp nồi cơm của bạn vừa ngon hơn vừa tiết kiệm thời gian hơn.\nBước 2: Bạn nên tiến hành ướp các gia vị vào phần cốt lên sao cho thấm gia vị, các loại gia vị cần tẩm là muối tiêu, mật ong. \nBước 3: Để tăng thêm độ hấp dẫn cho cơm tấm bạn nên chuẩn bị đồ ăn kèm đồ chua  chuẩn bị."
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />

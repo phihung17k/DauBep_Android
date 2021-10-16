@@ -300,112 +300,153 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/sv_recommend" />
 
-                <GridLayout
+                <LinearLayout
                     android:id="@+id/gr_promotion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:columnCount="2"
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:paddingHorizontal="10dp"
                     app:layout_constraintBottom_toTopOf="@id/btnEmpty"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/titlePromotion">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="10dp"
-                        app:cardMaxElevation="12dp"
-                        app:cardPreventCornerOverlap="true"
-                        app:cardUseCompatPadding="true">
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp"
+                            app:cardMaxElevation="12dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            android:layout_marginLeft="5dp">
 
-                        <LinearLayout
-                            android:layout_width="160dp"
-                            android:layout_height="250dp"
-                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
+                                android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/km_thich_thit"/>
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/km_thich_thit"/>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/title_barbecue"
-                                android:textAlignment="center"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_barbecue"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp"
+                            app:cardMaxElevation="12dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/km_lau" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_hotpot"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="10dp"
-                        app:cardMaxElevation="12dp"
-                        app:cardPreventCornerOverlap="true"
-                        app:cardUseCompatPadding="true">
+                        android:orientation="horizontal">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp"
+                            app:cardMaxElevation="12dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true"
+                            android:layout_marginLeft="5dp">
 
-                        <LinearLayout
-                            android:layout_width="160dp"
-                            android:layout_height="250dp"
-                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
+                                android:orientation="vertical">
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/km_lau" />
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/km_salad" />
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/title_hotpot"
-                                android:textAlignment="center"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_salad"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="10dp"
+                            app:cardMaxElevation="12dp"
+                            app:cardPreventCornerOverlap="true"
+                            app:cardUseCompatPadding="true">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="20dp"
-                        app:cardElevation="10dp"
-                        app:cardMaxElevation="12dp"
-                        app:cardPreventCornerOverlap="true"
-                        app:cardUseCompatPadding="true">
+                            <LinearLayout
+                                android:layout_width="128dp"
+                                android:layout_height="200dp"
+                                android:orientation="vertical">
 
-                        <LinearLayout
-                            android:layout_width="160dp"
-                            android:layout_height="250dp"
-                            android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/km_salad" />
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="220dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/km_salad" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/title_salad"
+                                    android:textAlignment="center"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="@string/title_salad"
-                                android:textAlignment="center"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
 
-                </GridLayout>
+                </LinearLayout>
 
                 <Button
                     android:id="@+id/btnEmpty"
