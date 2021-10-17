@@ -432,12 +432,12 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="170dp"
                                     android:scaleType="fitXY"
-                                    android:src="@drawable/km_salad" />
+                                    android:src="@drawable/poster4" />
 
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="@string/title_salad"
+                                    android:text="Ức gà"
                                     android:textAlignment="center"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
