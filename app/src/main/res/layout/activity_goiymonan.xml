@@ -97,11 +97,11 @@
 
                                 android:layout_width="match_parent"
                                 android:layout_height="95dp"
-                                android:text=" Ếch 300 g \n
-Hành tím 2 củ \n
-Ớt 3 quả \n
-Tỏi 1 củ \n
-Hành lá 2 n hánh"
+                                android:text=" Cua đồng 300 g \n
+Bún tươi 1 kg \n
+Tôm khô ̀đ g\n
+Trứng ga 2 quả \n
+Hành lá, hành khô, tỏi"
 
                                 android:textSize="13sp"
                                 android:textStyle="bold" />
@@ -166,7 +166,7 @@ Hành lá 2 n hánh"
                         android:layout_margin="10dp"
                         android:scaleType="fitXY"
 
-                        android:src="@drawable/bun_rieu" />
+                        android:src="@drawable/pho" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -180,7 +180,7 @@ Hành lá 2 n hánh"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="Bún Riêu"
+                        android:text="Phở"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -189,11 +189,11 @@ Hành lá 2 n hánh"
 
                         android:layout_width="match_parent"
                         android:layout_height="95dp"
-                        android:text=" Ếch 300 g \n
-Hành tím 2 củ \n
-Ớt 3 quả \n
-Tỏi 1 củ \n
-Hành lá 2 n hánh"
+                        android:text=" Bò phi lê 1.2 kg \n
+Bắp bò 0.7 kg\n
+Bánh phở 1 kg \n
+Giá sống 300 g \n
+Hành lá, hành khô, tỏi\n"
 
                         android:textSize="13sp"
                         android:textStyle="bold" />
@@ -258,7 +258,7 @@ Hành lá 2 n hánh"
                         android:layout_margin="10dp"
                         android:scaleType="fitXY"
 
-                        android:src="@drawable/bun_rieu" />
+                        android:src="@drawable/comtam" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -272,7 +272,7 @@ Hành lá 2 n hánh"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="Bún Riêu"
+                        android:text="Cơm Tấm"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -281,11 +281,11 @@ Hành lá 2 n hánh"
 
                         android:layout_width="match_parent"
                         android:layout_height="95dp"
-                        android:text=" Ếch 300 g \n
-Hành tím 2 củ \n
-Ớt 3 quả \n
-Tỏi 1 củ \n
-Hành lá 2 n hánh"
+                        android:text=" Gao tấm 150 g \n
+Sốt cà chua \n
+Cánh gà 0.7 kg\n
+Mật ông 45 g \n
+Gia vị 1 ít \n"
 
                         android:textSize="13sp"
                         android:textStyle="bold" />
@@ -351,7 +351,7 @@ Hành lá 2 n hánh"
                         android:layout_margin="10dp"
                         android:scaleType="fitXY"
 
-                        android:src="@drawable/berry" />
+                        android:src="@drawable/canhchuacaloc" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -365,7 +365,7 @@ Hành lá 2 n hánh"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:text="Berry"
+                        android:text="Canh Chua Cá Lóc"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -374,11 +374,14 @@ Hành lá 2 n hánh"
 
                         android:layout_width="match_parent"
                         android:layout_height="95dp"
-                        android:text="Teaespresso Berry Fantasy120ml \nNước ép cam  \nNước đường 20ml \nHạt lựu 30gr"
-
+                        android:text=" Cá loc 500 g \n
+Thơm 100 g\n
+Cà chua 100g\n
+Me 50 g \n
+Bạc hà 100 g \n
+Gia vị 1 ít \n"
                         android:textSize="13sp"
                         android:textStyle="bold" />
-
                     <LinearLayout
                         android:layout_width="173dp"
                         android:layout_height="40dp"
