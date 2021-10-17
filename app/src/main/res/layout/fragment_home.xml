@@ -88,7 +88,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    android:onClick="clickToInputMaterialMeat">
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
@@ -114,7 +115,8 @@
                     app:layout_constraintStart_toEndOf="@+id/btnMeat"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    android:onClick="clickToInputMaterialEgg">
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
@@ -140,7 +142,8 @@
                     app:layout_constraintStart_toEndOf="@+id/btnEgg"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    android:onClick="clickToInputMaterialVegetable">
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
@@ -166,7 +169,8 @@
                     app:layout_constraintStart_toEndOf="@+id/btnVegetable"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    android:onClick="clickToInputMaterialBean">
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
@@ -234,7 +238,8 @@
                                 <LinearLayout
                                     android:layout_width="200dp"
                                     android:layout_height="150dp"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:onClick="clickToDetailPho">
 
                                     <ImageView
                                         android:layout_width="match_parent"
@@ -266,7 +271,8 @@
                                 <LinearLayout
                                     android:layout_width="200dp"
                                     android:layout_height="150dp"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:onClick="clickToBunRieu">
 
                                     <ImageView
                                         android:layout_width="match_parent"

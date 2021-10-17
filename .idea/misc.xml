@@ -16,11 +16,14 @@
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat_detail.xml" value="0.2644927536231884" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.35773480662983426" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chitietmonanhai.xml" value="0.14947916666666666" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chitietnauanba.xml" value="0.14947916666666666" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chitietnauanbon.xml" value="0.14947916666666666" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_detail_post.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_forgot_password.xml" value="0.134375" />
-        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_goiymonan.xml" value="0.3520286396181384" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_goiymonan.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_main.xml" value="0.4" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_nhap_cong_thuc.xml" value="0.25416666666666665" />
@@ -69,68 +72,6 @@
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/item_user_contact.xml" value="0.264" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/drawable/icon_profile.xml" value="0.1" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_chat.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_chat_detail.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.2884963768115942" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_contact.xml" value="0.2391304347826087" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_detail_post.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_goiymonan.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_main.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_nhap_cong_thuc.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_search.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/activity_welcomedaubep.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/item_user.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/item_user_contact.xml" value="0.1" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/layout_header.xml" value="0.23007246376811594" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/list_row.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/post_item.xml" value="0.26132246376811596" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/single_input_chip_layout.xml" value="0.22" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android/app/src/main/res/layout/welcomeDauBep.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable-hdpi/border.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable-hdpi/border_radius.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable-hdpi/border_radius_edittext.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable-hdpi/border_radius_layout.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/back_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/back_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/bottom_nav_item_color.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/comment_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/comment_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/fill_heart_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/fill_heart_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/hamburge_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/icon_profile.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/layout_bg.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/layout_bg_gray.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/list_item_checked.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/post_style.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/serach_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/serach_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/shape_gray_line.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/share_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/share_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/unfill_heart_background.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/drawable/unfill_heart_foreground.xml" value="0.3828125" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.2653985507246377" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietmonanhai.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietnauanba.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietnauanbon.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.2653985507246377" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_contact.xml" value="0.2513586956521739" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_goiymonan.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_main.xml" value="0.223731884057971" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_nhap_cong_thuc.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_scan.xml" value="0.223731884057971" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_search.xml" value="0.223731884057971" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_welcomedaubep.xml" value="0.2513586956521739" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/fragment_home.xml" value="0.223731884057971" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/fragment_personal.xml" value="0.33" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/input_chip.xml" value="0.24818840579710144" />
-        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/single_input_chip_layout.xml" value="0.2653985507246377" />
-        <entry key="..\:/Users/nguye/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.22010869565217392" />
       </map>
     </option>
   </component>

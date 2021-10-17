@@ -175,4 +175,38 @@ public class MainActivity extends AppCompatActivity{
         intent.putExtra("post", post);
         startActivity(intent);
     }
+
+    public void clickToDetailPho(View view) {
+        Intent intent = new Intent(this, chitietmonanhai.class);
+        startActivity(intent);
+    }
+
+    public void clickToBunRieu(View view) {
+        Intent intent = new Intent(this , ChiTietMonAnActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickToInputMaterialMeat(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "thịt");
+        startActivity(intent);
+    }
+
+    public void clickToInputMaterialEgg(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "trứng");
+        startActivity(intent);
+    }
+
+    public void clickToInputMaterialVegetable(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "rau");
+        startActivity(intent);
+    }
+
+    public void clickToInputMaterialBean(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "đậu");
+        startActivity(intent);
+    }
 }

@@ -216,6 +216,11 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         edtAddNL = findViewById(R.id.edtAddMaterial);
         edtAddKlg = findViewById(R.id.edtAddPrice);
 
+        String materialCategory = intent.getStringExtra("materialX");
+        if(materialCategory!=null){
+            edtAddNL.setText(materialCategory);
+        }
+
         btnAddNL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
