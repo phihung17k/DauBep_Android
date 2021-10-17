@@ -57,6 +57,8 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         List<String> newData = new ArrayList<>();
         newData.add("gam");
         newData.add("kilogam");
+        newData.add("lit");
+        newData.add("mililit ");
 
         ArrayAdapter<String> dataAdapterA = new ArrayAdapter<>(CongThucNauAnActivity.this ,
                 android.R.layout.simple_spinner_item, newData);
@@ -292,6 +294,8 @@ public class CongThucNauAnActivity extends AppCompatActivity {
             List<String> dataSrc = new ArrayList<>();
             dataSrc.add("gam");
             dataSrc.add("kilogam");
+            dataSrc.add("lit");
+            dataSrc.add("mililit ");
 
             ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(CongThucNauAnActivity.this ,
                     android.R.layout.simple_spinner_item, dataSrc);
