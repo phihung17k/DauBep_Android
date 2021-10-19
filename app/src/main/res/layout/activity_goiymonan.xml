@@ -378,8 +378,7 @@ Gia vị 1 ít \n"
 Thơm 100 g\n
 Cà chua 100g\n
 Me 50 g \n
-Bạc hà 100 g \n
-Gia vị 1 ít \n"
+Bạc hà 100 g \n"
                         android:textSize="13sp"
                         android:textStyle="bold" />
                     <LinearLayout
