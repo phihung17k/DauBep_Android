@@ -47,9 +47,9 @@ public class UserContactAdapter extends RecyclerView.Adapter<UserContactAdapter.
         }
 
         holder.imgUser.setImageResource(user.getAvatar());
-        holder.imgCall.setImageResource(user.getCallIcon());
         holder.imgMessage.setImageResource(user.getMessIcon());
         holder.txtName.setText(user.getName());
+        holder.txtLocation.setText(user.getLocation());
         holder.layoutContactItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,15 +113,15 @@ public class UserContactAdapter extends RecyclerView.Adapter<UserContactAdapter.
 
     public class UserContactViewHolder extends RecyclerView.ViewHolder {// interact with item_user.xml
         private LinearLayout layoutContactItem;
-        private TextView txtName;
+        private TextView txtName, txtLocation;
         private CircleImageView imgUser;
-        private ImageView imgCall, imgMessage;
+        private ImageView imgMessage;
 
         public UserContactViewHolder(@NonNull View itemView) {
             super(itemView);
             layoutContactItem = itemView.findViewById(R.id.layout_contact_item);
             imgUser = itemView.findViewById(R.id.imgUser);
-            imgCall = itemView.findViewById(R.id.imgCall);
+            txtLocation = itemView.findViewById(R.id.txtLocation);
             imgMessage = itemView.findViewById(R.id.imgMessage);
             txtName = itemView.findViewById(R.id.txtName);
 
