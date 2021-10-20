@@ -269,6 +269,11 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         finish();
     }
 
+    public void clickToScanAgain(View view) {
+        Intent intent = new Intent(this, ScanActivity.class);
+        startActivity(intent);
+    }
+
     public class MaterialAdapter extends ArrayAdapter<String> {
 
         ArrayList<String> list = new ArrayList<>();
