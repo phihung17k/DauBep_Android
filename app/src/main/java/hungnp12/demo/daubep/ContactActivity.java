@@ -51,16 +51,16 @@ public class ContactActivity extends AppCompatActivity {
 
     private List<UserContact> getListUsers() {
         List<UserContact> list = new ArrayList<>();
-        list.add(new UserContact("Evil_Gwi", R.drawable.kontum, R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Be Cun", R.drawable.becun, R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("To To", R.drawable.toto,  R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Alex", R.drawable.avatar_first,  R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Nung Nguyen", R.drawable.avatar_second,  R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Teo Le", R.drawable.avatar_third,  R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Tun Tun", R.drawable.avatar_fourth,  R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Min Min", R.drawable.avatar_fifth,  R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Natto", R.drawable.avatar_sixth,  R.drawable.telephone, R.drawable.messenger));
-        list.add(new UserContact("Ruby", R.drawable.avatar_seventh,  R.drawable.telephone, R.drawable.messenger));
+        list.add(new UserContact("Evil_Gwi", "Cách bạn khoảng 5km", R.drawable.kontum, R.drawable.messenger));
+        list.add(new UserContact("Be Cun", "Cách bạn khoảng 4km",R.drawable.becun, R.drawable.messenger));
+        list.add(new UserContact("To To", "Cách bạn khoảng 3km",R.drawable.toto, R.drawable.messenger));
+        list.add(new UserContact("Alex", "Cách bạn khoảng 5km",R.drawable.avatar_first, R.drawable.messenger));
+        list.add(new UserContact("Nung Nguyen", "Cách bạn khoảng 3km",R.drawable.avatar_second, R.drawable.messenger));
+        list.add(new UserContact("Teo Le", "Cách bạn khoảng 5km",R.drawable.avatar_third, R.drawable.messenger));
+        list.add(new UserContact("Tun Tun", "Cách bạn khoảng 2km",R.drawable.avatar_fourth, R.drawable.messenger));
+        list.add(new UserContact("Min Min", "Cách bạn khoảng 3km",R.drawable.avatar_fifth, R.drawable.messenger));
+        list.add(new UserContact("Natto", "Cách bạn khoảng 5km",R.drawable.avatar_sixth, R.drawable.messenger));
+        list.add(new UserContact("Ruby", "Cách bạn khoảng 4km",R.drawable.avatar_seventh, R.drawable.messenger));
         return list;
     }
 
