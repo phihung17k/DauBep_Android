@@ -1,5 +1,6 @@
 package hungnp12.demo.daubep;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.SearchView;
@@ -75,5 +76,10 @@ public class ContactActivity extends AppCompatActivity {
 
     public void clickContactBack(View view) {
         finish();
+    }
+
+    public void clickToHome2(View view) {
+        Intent intent = new Intent(this , MainActivity.class);
+        startActivity(intent);
     }
 }
