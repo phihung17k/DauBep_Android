@@ -32,6 +32,9 @@
             android:name=".RegisterActivity"
             android:exported="true"
             android:theme="@style/ActivityTheme.NoActionBar" />
+
+
+
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -60,26 +63,14 @@
             android:name=".NhapCongThuc"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-<<<<<<< HEAD
+
         <activity
             android:name=".welcomedaubep"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-=======
-        <activity
-            android:name=".ForgotPasswordActivity"
-            android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
-        <activity
-            android:name=".welcomedaubep"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-        </activity>
->>>>>>> origin/main
+
+
+
         <activity
             android:name=".Capture"
             android:screenOrientation="portrait"
@@ -124,11 +115,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-<<<<<<< HEAD
+
             android:theme="@style/ActivityTheme.NoActionBar"></activity>
-=======
-            android:theme="@style/ActivityTheme.NoActionBar" />
->>>>>>> origin/main
+
+
+
     </application>
 
 </manifest>
