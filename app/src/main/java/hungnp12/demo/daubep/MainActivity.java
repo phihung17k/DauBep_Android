@@ -209,4 +209,38 @@ public class MainActivity extends AppCompatActivity{
         intent.putExtra("materialX", "đậu");
         startActivity(intent);
     }
+
+    public void clickToInputMaterialFish(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "cá");
+        startActivity(intent);
+    }
+
+    public void clickToInputMaterialRice(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "gạo");
+        startActivity(intent);
+    }
+
+    public void clickToInputMaterialMilk(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "sữa");
+        startActivity(intent);
+    }
+
+    public void clickToInputMaterialMore(View view) {
+        Intent intent = new Intent(this, CongThucNauAnActivity.class);
+        intent.putExtra("materialX", "");
+        startActivity(intent);
+    }
+
+    public void clickToCanhChuaCaLoc(View view) {
+        Intent intent = new Intent(this, chitietnauanbon.class);
+        startActivity(intent);
+    }
+
+    public void clickToComTam(View view) {
+        Intent intent = new Intent(this, chitietnauanba.class);
+        startActivity(intent);
+    }
 }
