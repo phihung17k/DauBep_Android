@@ -42,4 +42,8 @@ public class goiymonan extends AppCompatActivity {
         finish();
     }
 
+    public void clickToHome(View view) {
+        Intent intent = new Intent(this , MainActivity.class);
+        startActivity(intent);
+    }
 }
