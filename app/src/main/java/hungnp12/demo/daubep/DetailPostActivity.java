@@ -18,14 +18,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import hungnp12.demo.daubep.model.Comment;
 import hungnp12.demo.daubep.model.Post;
 
 public class DetailPostActivity extends AppCompatActivity {
 
     static private Post post;
-    private TextView postTitle, contentPost, btnLike, btnCmt, btnShare;
+    private TextView postTitle, contentPost, btnLike, btnCmt, btnShare,writer,level;
     private ImageButton likeIcon, cmtIcon, shareIcon;
+    private CircleImageView imgWriter;
     private ImageView imgView;
     private RecyclerView recyclerView;
     private CommentAdapter adapter;
@@ -38,6 +40,23 @@ public class DetailPostActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_post);
         post = (Post) getIntent().getSerializableExtra("post");
+
+        cmtList = getComments(cmtList);
+        switch (post.getId()){
+            case 1:cmtList.remove(0);
+                break;
+            case 2:cmtList = new ArrayList<>();
+                break;
+            case 3:cmtList.remove(2);
+                break;
+            case 4:cmtList.remove(3);cmtList.remove(1);
+                break;
+            default:cmtList.remove(3);cmtList.remove(1);cmtList.remove(2);
+                break;
+        }
+        writer = findViewById(R.id.writerName);
+        imgWriter = findViewById(R.id.userImgPost);
+
         postTitle = findViewById(R.id.postTitle);
         contentPost = findViewById(R.id.txtContent);
 
@@ -50,12 +69,18 @@ public class DetailPostActivity extends AppCompatActivity {
         likeIcon = findViewById(R.id.likeIcon);
         cmtIcon = findViewById(R.id.cmtIcon);
         shareIcon = findViewById(R.id.shareIcon);
+    level = findViewById(R.id.level);
+        if(post.getId() == 3){
+            writer.setText(post.getName());
+            imgWriter.setImageResource(R.drawable.alex2);
+            level.setText("Phụ Bếp");
+        }
 
         postTitle.setText(post.getTitle());
         contentPost.setText(post.getContent());
         imgView.setImageResource(post.getImg());
 
-        cmtList = getComments(cmtList);
+
         recyclerView = findViewById(R.id.cmtView);
         adapter = new CommentAdapter(cmtList);
         layoutManager = new LinearLayoutManager(this);
@@ -106,13 +131,13 @@ public class DetailPostActivity extends AppCompatActivity {
     public List<Comment> getComments(List<Comment> comments) {
         comments = new ArrayList<Comment>();
         Comment cmt;
-        cmt = new Comment("Thanh Huy", "12/11/2020", R.drawable.avatar_first, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        cmt = new Comment("Thanh Huy", "12/11/2020", R.drawable.avatar_first, "Nó thật sự rất hữu ích!!");
         comments.add(cmt);
-        cmt = new Comment("Hai Dang", "12/11/2020", R.drawable.avatar_second, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        cmt = new Comment("Hai Dang", "12/11/2020", R.drawable.avatar_second, "Tại sao tôi thử nhưng không làm được :((");
         comments.add(cmt);
-        cmt = new Comment("Minh Nhat", "12/11/2020", R.drawable.avatar_third, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        cmt = new Comment("Minh Nhat", "12/11/2020", R.drawable.avatar_third, "Bài viết rất hay");
         comments.add(cmt);
-        cmt = new Comment("Phi Hung", "12/11/2020", R.drawable.avatar_fourth, "Nếu có bất kỳ sự kiểm soát chất lượng nào xảy ra đối với KFC Bromma, nhà hàng này sẽ bị đóng cửa ngay lập tức. Chúng tôi đã nhiều lần thử ăn ở KFC Bromma và lần nào cũng tệ hơn lần khác.");
+        cmt = new Comment("Phi Hung", "12/11/2020", R.drawable.avatar_fourth, "Cảm ơn bạn rất nhiều");
         comments.add(cmt);
         return comments;
     }

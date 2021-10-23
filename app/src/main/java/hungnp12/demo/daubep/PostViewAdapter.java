@@ -52,7 +52,7 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
             }
             holder.circleImageView.setImageResource(post.getImg());
             if (position==postList.size()-1){
-                holder.itemView.setPadding(0,0,0,200);
+                holder.itemView.setPadding(0,0,0,400);
             }else{
                 holder.itemView.setPadding(0,0,0,0);
             }
@@ -118,7 +118,24 @@ public class PostViewAdapter extends RecyclerView.Adapter<PostViewAdapter.PostVi
                     clickListener.onclickItem(getAdapterPosition());
                 }
             });
-
+            iconAction.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Integer tag =(Integer) view.getTag();
+                    ImageButton btn = (ImageButton) view;
+                    if(tag==null){
+                        btn.setTag(R.drawable.fill_heart_foreground);
+                        tag =(Integer) btn.getTag();
+                    }
+                    if(tag.equals(R.drawable.fill_heart_foreground)){
+                        btn.setImageResource(R.drawable.unfill_heart_foreground);
+                        view.setTag(R.drawable.unfill_heart_foreground);
+                    }else{
+                        btn.setImageResource(R.drawable.fill_heart_foreground);
+                        view.setTag(R.drawable.fill_heart_foreground);
+                    }
+                }
+            });
         }
 
     }
