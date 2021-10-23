@@ -11,19 +11,20 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="0dp"
       >
+
         <RelativeLayout
             android:id="@+id/topLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:layout_marginBottom="25dp"
-            >
+            android:layout_marginBottom="25dp">
 
             <TextView
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="Forum"
+                android:text="Cộng Đồng"
                 android:textSize="35dp"
                 android:textStyle="bold" />
 
@@ -33,10 +34,20 @@
                 android:layout_height="33dp"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
                 android:background="@color/cardview_light_background"
                 android:onClick="ClickToSearch"
-                android:layout_marginRight="20dp"
                 android:src="@drawable/serach_foreground" />
+
+            <ImageView
+                android:id="@+id/btnAddPost"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btnSearch"
+                android:background="@color/cardview_light_background"
+                android:src="@drawable/plus2" />
 
             <!--        <ImageButton-->
             <!--            android:id="@+id/btnCollapse"-->
@@ -69,21 +80,20 @@
                 android:backgroundTint="@color/turquoise"
                 android:backgroundTintMode="add"
                 android:text="Bài nổi bật"
-                android:textSize="15dp"
-                />
+                android:textSize="15dp" />
 
-                <Button
-                    android:layout_marginEnd="40dp"
-                    android:layout_alignParentRight="true"
-                    android:id="@+id/btnMostRecent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
-                    android:backgroundTint="@color/turquoise"
-                    android:backgroundTintMode="add"
-                    android:text="Bài mới nhất"
-                    android:textSize="15dp" />
+            <Button
+                android:id="@+id/btnMostRecent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#F68D76"
+                android:backgroundTintMode="add"
+                android:text="Bài mới nhất"
+                android:textSize="15dp" />
 
 
         </RelativeLayout>

@@ -13,6 +13,7 @@ import android.widget.EditText;
 import java.util.ArrayList;
 import java.util.List;
 
+import hungnp12.demo.daubep.model.ForumPostConstant;
 import hungnp12.demo.daubep.model.ItemClickListener;
 import hungnp12.demo.daubep.model.Post;
 
@@ -56,16 +57,23 @@ public class SearchActivity extends AppCompatActivity implements ItemClickListen
     public List<Post> initListData(List<Post> posts){
         posts = new ArrayList<Post>();
         Post post;
-        post = new Post(1,R.drawable.chicken,"Cách làm gà chiên  ngon?","Long",Integer.toString(15),true);
+        post = new Post(1,R.drawable.chicken,"Cách làm gà chiên?","Long Phan",Integer.toString(4),true);
         posts.add(post);
-        post = new Post(1,R.drawable.bun_rieu,"Cách nấu bún riêu?","Michael",Integer.toString(15),true);
+        post.setContent(ForumPostConstant.CHICKEN);
+        post = new Post(2,R.drawable.bun_rieu,"Cách nấu bún riêu?","Long Phan",Integer.toString(0),true);
         posts.add(post);
-        post = new Post(1,R.drawable.thiheo,"Bí quyết ướp thịt?","Michael",Integer.toString(15),true);
+        post.setContent(ForumPostConstant.NODBLE);
+        post = new Post(3,R.drawable.thiheo,"Bí quyết ướp thịt?","Alex Trí",Integer.toString(3),true);
         posts.add(post);
-        post = new Post(1,R.drawable.caloc,"Khử tanh cá hiệu quả?","Michael",Integer.toString(15),true);
+        post.setContent(ForumPostConstant.MEAT);
+        post = new Post(4,R.drawable.caloc,"Khử tanh cá hiệu quả?","Long Phan",Integer.toString(2),true);
         posts.add(post);
-        post = new Post(1,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Michael",Integer.toString(15),true);
+        post.setContent(ForumPostConstant.VEGABLE);
+        post = new Post(5,R.drawable.rau2,"Chia sẻ cách tỉa rau!!","Long Phan",Integer.toString(1),true);
         posts.add(post);
+        post.setContent(ForumPostConstant.VEGABLE);
+
+
         return posts;
     }
 

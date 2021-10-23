@@ -6,14 +6,35 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DauBep" >
+
+        android:theme="@style/Theme.DauBep">
+        <activity
+            android:name=".CreatePostActivity"
+            android:exported="true"
+            android:theme="@style/ActivityTheme.NoActionBar"
+            />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="true"
+            android:theme="@style/ActivityTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:theme="@style/ActivityTheme.NoActionBar" />
+
+
+
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -42,19 +63,14 @@
             android:name=".NhapCongThuc"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".ForgotPasswordActivity"
-            android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+
         <activity
             android:name=".welcomedaubep"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+
+
+
         <activity
             android:name=".Capture"
             android:screenOrientation="portrait"
@@ -99,7 +115,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/ActivityTheme.NoActionBar" />
+
+            android:theme="@style/ActivityTheme.NoActionBar"></activity>
+
+
+
     </application>
 
 </manifest>
