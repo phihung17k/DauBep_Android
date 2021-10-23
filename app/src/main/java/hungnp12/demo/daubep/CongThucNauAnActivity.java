@@ -322,4 +322,9 @@ public class CongThucNauAnActivity extends AppCompatActivity {
             return view;
         }
     }
+
+    public void clickToHome3(View view) {
+        Intent intent = new Intent(this , MainActivity.class);
+        startActivity(intent);
+    }
 }
