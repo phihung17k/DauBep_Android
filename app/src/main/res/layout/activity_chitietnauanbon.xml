@@ -9,8 +9,8 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-    android:layout_marginTop="13dp"
         android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
         android:orientation="vertical"
         tools:context=".ChiTietMonAnActivity">
 
@@ -30,7 +30,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="8dp"
-                android:onClick="clickAbcdef"
+                android:onClick="clickAbcdefghj"
 
                 android:src="@drawable/back" />
 
@@ -61,7 +61,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bun_rieu" />
+                    android:src="@drawable/canhchuacaloc" />
 
 
                 <TextView
@@ -69,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
 
-                    android:text="Công thức Chế Biên Bún Riêu"
+                    android:text="Công thức Chế Biên Canh Chua Cá Lóc"
                     android:textColor="#094067"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -90,12 +90,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginBottom="5dp"
-                    android:text=" Bún tươi 400 gr
-                \n
-Cua đồng xay 1 kg \n
-Giò sống 100 gr\n
-Tôm khô 50 gr \n
-Mắm tôm 20 gr \n
+                    android:text=" Cá loc 500 g \n
+Thơm 100 g\n
+Cà chua 100g\n
+Me 50 g \n
+Bạc hà 100 g \n
 Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:textColor="@color/black"
                     android:textSize="14sp"
@@ -118,8 +117,7 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Bước 1: Dùng thìa nhỏ nạo lấy phần gạch cua cho vào chén, ướp với một ít tiêu xay, hạt nêm.\nBước 2: Tôm khô và mực khô ngâm nước khoảng 30 phút, sau đó đem mực cắt nhỏ ô. \nBước 3: Sau đó cho phần cà chua, đậu hũ, huyết heo, hành lá cắt khúc, gạch cua còn lại vào nồi nêm gia vị."
-                    android:layout_marginRight="14dp"
+                    android:text="Bước 1: cho cá vừa cắt vào tô cùng 1 muỗng canh nước mắm, 1/2 muỗng canh hạt nêm và trộn đều.\nBước 2: Để lấy nước cốt me vắt cùng 1 muỗng nước ấm vào chén sau đó dùng muỗng dầm đều cho thịt me mềm ra. \nBước 3: Sau khi nước cốt me được đun sôi bạn cho cá lóc vào nấu khoảng 10"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="normal" />
@@ -129,9 +127,9 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:backgroundTint="#ef4c29"
-                        android:textStyle="bold"
-                    android:onClick="clickToContact"
-                        android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:onClick="clickToContactFour"
+                    android:textColor="@color/white"
 
                     android:text="Liên Hệ"
                     android:textSize="15dp" />
@@ -141,5 +139,5 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
         </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

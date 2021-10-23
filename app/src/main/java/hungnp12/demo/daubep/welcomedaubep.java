@@ -23,6 +23,7 @@ public class welcomedaubep extends AppCompatActivity {
     }
 
     public void clickToHome(View view) {
+        System.out.println("clickTohome");
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

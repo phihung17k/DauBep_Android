@@ -1,425 +1,742 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    tools:context=".goiymonan"
     android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:context=".CongThucNauAnActivity">
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:orientation="horizontal"
             android:background="@drawable/layout_rounded_corner">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal">
+
+
 
                 <ImageView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
                     android:layout_marginHorizontal="10dp"
                     android:src="@drawable/back"
                     app:tint="@color/white"
                     android:onClick="clickAbcde"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:gravity="center"
-                    android:paddingTop="14dp"
-                    android:text="Gợi Ý Món Ăn"
-                    android:textColor="@color/white"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingTop="14dp"
+                android:text="Gợi Ý Món Ăn"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-            </RelativeLayout>
+            <ImageView
+
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="15dp"
+                android:onClick="clickToHome"
+                android:src="@drawable/home"
+                app:tint="@color/white"
+                />
 
         </LinearLayout>
 
 
 
 
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="80dp">
 
-        <androidx.cardview.widget.CardView
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="170dp">
+
+            <ImageView
+                android:id="@+id/bun_rieu"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/ContentBunRieu"
+                android:scaleType="fitXY"
+                android:src="@drawable/bun_rieu" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/bun_rieu"
+                android:id="@+id/ContentBunRieu"
+                android:layout_width="220dp"
+                android:padding="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="170dp"
-                    android:layout_margin="8dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="80dp">
+                    android:layout_height="wrap_content"
+                    android:text="Bún Riêu"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="165dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text=" Cua đồng 300 g \n
+Bún tươi 1 kg \n
+Tôm khô ̀đ g\n
+Trứng ga 2 quả \n
+Hành lá, hành khô, tỏi"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
 
-                        <LinearLayout
-                            android:id="@+id/lnAAA"
-                            android:layout_width="170dp"
-                            android:layout_height="match_parent">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_margin="10dp"
-                                android:scaleType="fitXY"
-
-                                android:src="@drawable/bun_rieu" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent"
-                            android:layout_toRightOf="@id/lnAAA"
-                            android:orientation="vertical">
-
-                            <TextView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-
-                                android:text="Bún Riêu"
-                                android:textColor="@color/black"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-
-                                android:layout_width="match_parent"
-                                android:layout_height="95dp"
-                                android:text=" Ếch 300 g \n
-Hành tím 2 củ \n
-Ớt 3 quả \n
-Tỏi 1 củ \n
-Hành lá 2 n hánh"
-
-                                android:textSize="13sp"
-                                android:textStyle="bold" />
-
-                            <LinearLayout
-                                android:layout_width="173dp"
-                                android:layout_height="40dp"
-                                android:orientation="horizontal">
-
-                                <Button
-                                    android:layout_width="85dp"
-                                    android:layout_height="40dp"
-                                    android:backgroundTint="#F7F7F7"
-                                    android:onClick="chitietnauan"
-                                    android:text="Chi Tiết"
-                                    android:textColor="#ef4c29"
-                                    android:textSize="11sp"
-                                    android:textStyle="bold" />
-
-                                <View
-                                    android:layout_width="0dp"
-                                    android:layout_height="0dp"
-                                    android:layout_weight="1" />
-
-                                <Button
-                                    android:layout_width="85dp"
-                                    android:layout_height="40dp"
-                                    android:backgroundTint="#ef4c29"
-                                    android:onClick="clickToContact"
-                                    android:text="Liên Hệ"
-                                    android:textColor="#F7F7F7"
-                                    android:textSize="11sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-                    </RelativeLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="80dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="165dp">
 
                 <LinearLayout
-                    android:id="@+id/lnBBB"
-                    android:layout_width="170dp"
-                    android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:scaleType="fitXY"
-
-                        android:src="@drawable/bun_rieu" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@id/lnBBB"
-                    android:orientation="vertical">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-                        android:text="Bún Riêu"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="95dp"
-                        android:text=" Ếch 300 g \n
-Hành tím 2 củ \n
-Ớt 3 quả \n
-Tỏi 1 củ \n
-Hành lá 2 n hánh"
-
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="173dp"
+                    <Button
+                        android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:layout_width="85dp"
-                            android:layout_height="40dp"
-                            android:backgroundTint="#F7F7F7"
-                            android:onClick="chitietnauan"
-                            android:text="Chi Tiết"
-                            android:textColor="#ef4c29"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <Button
-                            android:layout_width="85dp"
-                            android:layout_height="40dp"
-                            android:backgroundTint="#ef4c29"
-                            android:onClick="clickToContact"
-                            android:text="Liên Hệ"
-                            android:textColor="#F7F7F7"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="80dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="165dp">
-
-                <LinearLayout
-                    android:id="@+id/lnCCC"
-                    android:layout_width="170dp"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:scaleType="fitXY"
-
-                        android:src="@drawable/bun_rieu" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="200dp"
-                    android:layout_height="match_parent"
-                    android:layout_toRightOf="@id/lnCCC"
-                    android:orientation="vertical">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-                        android:text="Bún Riêu"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:backgroundTint="#F7F7F7"
+                        android:onClick="chitietnauan"
+                        android:text="Chi Tiết"
+                        android:textColor="#ef4c29"
+                        android:textSize="10sp"
                         android:textStyle="bold" />
 
-                    <TextView
+<!--                    <View-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_weight="1" />-->
 
-                        android:layout_width="match_parent"
-                        android:layout_height="95dp"
-                        android:text=" Ếch 300 g \n
-Hành tím 2 củ \n
-Ớt 3 quả \n
-Tỏi 1 củ \n
-Hành lá 2 n hánh"
-
-                        android:textSize="13sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="173dp"
+                    <Button
+                        android:layout_width="wrap_content"
                         android:layout_height="40dp"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:layout_width="85dp"
-                            android:layout_height="40dp"
-                            android:backgroundTint="#F7F7F7"
-                            android:onClick="chitietnauan"
-                            android:text="Chi Tiết"
-                            android:textColor="#ef4c29"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
-
-                        <Button
-                            android:layout_width="85dp"
-                            android:layout_height="40dp"
-                            android:backgroundTint="#ef4c29"
-                            android:onClick="clickToContact"
-                            android:text="Liên Hệ"
-                            android:textColor="#F7F7F7"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
+                        android:backgroundTint="#ef4c29"
+                        android:onClick="clickToContact"
+                        android:text="TÌM NGƯỜI NẤU"
+                        android:textColor="#F7F7F7"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
-            </RelativeLayout>
+            </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="80dp">
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="165dp">
+                android:padding="10dp"
+                android:layout_height="170dp">
 
-                <LinearLayout
-                    android:id="@+id/lnberry"
-                    android:layout_width="170dp"
-                    android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/pho"
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="10dp"
-                        android:scaleType="fitXY"
-
-                        android:src="@drawable/berry" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="200dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_toRightOf="@id/lnberry"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/ContentPho"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pho" />
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/pho"
+                    android:id="@+id/ContentPho"
+                    android:layout_width="220dp"
+                    android:padding="0dp"
+                    android:layout_height="match_parent"
                     android:orientation="vertical">
 
                     <TextView
-
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
-                        android:text="Berry"
+                        android:text="Phở"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <TextView
-
                         android:layout_width="match_parent"
-                        android:layout_height="95dp"
-                        android:text="Teaespresso Berry Fantasy120ml \nNước ép cam  \nNước đường 20ml \nHạt lựu 30gr"
-
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text=" Bò phi lê 1.2 kg \n
+Bắp bò 0.7 kg\n
+Bánh phở 1 kg \n
+Giá sống 300 g \n
+Hành lá, hành khô, tỏi\n"
                         android:textSize="13sp"
                         android:textStyle="bold" />
 
+
                     <LinearLayout
-                        android:layout_width="173dp"
-                        android:layout_height="40dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
                         android:orientation="horizontal">
-
-                        <Button
-                            android:layout_width="85dp"
-                            android:layout_height="40dp"
-                            android:backgroundTint="#F7F7F7"
-                            android:onClick="chitietnauan"
-                            android:text="Chi Tiết"
-                            android:textColor="#ef4c29"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-
-                        <View
-                            android:layout_width="0dp"
-                            android:layout_height="0dp"
-                            android:layout_weight="1" />
 
                         <Button
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#F7F7F7"
+                            android:onClick="chitietnauanhai"
+                            android:text="Chi Tiết"
+                            android:textColor="#ef4c29"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+<!--                        <View-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_weight="1" />-->
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
                             android:backgroundTint="#ef4c29"
                             android:onClick="clickToContact"
-                            android:text="Liên Hệ"
+                            android:text="TÌM NGƯỜI NẤU"
                             android:textColor="#F7F7F7"
-                            android:textSize="11sp"
+                            android:textSize="10sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
                 </LinearLayout>
 
-            </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
 
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="80dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="170dp">
+
+                <ImageView
+                    android:id="@+id/comtam"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/ContentComtam"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/comtam" />
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/comtam"
+                    android:id="@+id/ContentComtam"
+                    android:layout_width="220dp"
+
+                    android:padding="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cơm Tấm"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text=" Cua đồng 300 g \n
+Bún tươi 1 kg \n
+Tôm khô ̀đ g\n
+Trứng ga 2 quả \n
+Hành lá, hành khô, tỏi"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#F7F7F7"
+                            android:onClick="chitietnauanba"
+                            android:text="Chi Tiết"
+                            android:textColor="#ef4c29"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#ef4c29"
+                            android:onClick="clickToContact"
+                            android:text="TÌM NGƯỜI NẤU"
+                            android:textColor="#F7F7F7"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="80dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="170dp">
+
+                <ImageView
+                    android:id="@+id/canhchua"
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/ContentCanhchua"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/canhchuacaloc" />
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/canhchua"
+                    android:id="@+id/ContentCanhchua"
+                    android:layout_width="220dp"
+                    android:padding="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Canh Chua Cá Lóc"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text=" Cá loc 500 g \n
+Thơm 100 g\n
+Cà chua 100g\n
+Me 50 g \n
+Bạc hà 100 g \n"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#F7F7F7"
+                            android:onClick="chitietnauanbon"
+                            android:text="Chi Tiết"
+                            android:textColor="#ef4c29"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#ef4c29"
+                            android:onClick="clickToContact"
+                            android:text="TÌM NGƯỜI NẤU"
+                            android:textColor="#F7F7F7"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="170dp"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="80dp">-->
 
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="165dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/lnBBB"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:scaleType="fitXY"-->
+
+<!--                    android:src="@drawable/pho" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="220dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_toRightOf="@id/lnBBB"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+
+<!--                    android:text="Phở"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="90dp"-->
+<!--                    android:text=" Bò phi lê 1.2 kg \n-->
+<!--Bắp bò 0.7 kg\n-->
+<!--Bánh phở 1 kg \n-->
+<!--Giá sống 300 g \n-->
+<!--Hành lá, hành khô, tỏi\n"-->
+
+<!--                    android:textSize="13sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="220dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="85dp"-->
+<!--                        android:layout_height="43dp"-->
+<!--                        android:backgroundTint="#F7F7F7"-->
+<!--                        android:onClick="chitietnauanhai"-->
+<!--                        android:text="Chi Tiết"-->
+<!--                        android:textColor="#ef4c29"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="0dp"-->
+<!--                        android:layout_weight="1" />-->
+<!--                    <Button-->
+<!--                        android:layout_width="125dp"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:layout_height="44dp"-->
+<!--                        android:backgroundTint="#ef4c29"-->
+<!--                        android:onClick="clickToContact"-->
+<!--                        android:text="TÌM NGƯỜI NẤU"-->
+<!--                        android:textColor="#F7F7F7"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                    &lt;!&ndash;                        <Button&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:layout_width="85dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:layout_height="40dp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:backgroundTint="#ef4c29"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:onClick="clickToContact"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:text="Liên Hệ"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:textColor="#F7F7F7"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:textSize="11sp"&ndash;&gt;-->
+<!--                    &lt;!&ndash;                            android:textStyle="bold" />&ndash;&gt;-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="170dp"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="80dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="165dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/lnCCC"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:scaleType="fitXY"-->
+
+<!--                    android:src="@drawable/comtam" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="220dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_toRightOf="@id/lnCCC"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+
+<!--                    android:text="Cơm Tấm"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="90dp"                        android:text=" Gao tấm 150 g \n-->
+<!--Sốt cà chua \n-->
+<!--Cánh gà 0.7 kg\n-->
+<!--Mật ông 45 g \n-->
+<!--Gia vị 1 ít \n"-->
+
+<!--                    android:textSize="13sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="220dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="85dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:backgroundTint="#F7F7F7"-->
+<!--                        android:onClick="chitietnauanba"-->
+<!--                        android:text="Chi Tiết"-->
+<!--                        android:textColor="#ef4c29"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="0dp"-->
+<!--                        android:layout_weight="1" />-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="125dp"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:backgroundTint="#ef4c29"-->
+<!--                        android:onClick="clickToContact"-->
+<!--                        android:text="TÌM NGƯỜI NẤU"-->
+<!--                        android:textColor="#F7F7F7"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="170dp"-->
+<!--        android:layout_margin="5dp"-->
+<!--        app:cardCornerRadius="15dp"-->
+<!--        app:cardElevation="80dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="165dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/lnberry"-->
+<!--                android:layout_width="170dp"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    android:scaleType="fitXY"-->
+
+<!--                    android:src="@drawable/canhchuacaloc" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="220dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_toRightOf="@id/lnberry"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+
+<!--                    android:text="Canh Chua Cá Lóc"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="90dp"-->
+<!--                    android:text=" Cá loc 500 g \n-->
+<!--Thơm 100 g\n-->
+<!--Cà chua 100g\n-->
+<!--Me 50 g \n-->
+<!--Bạc hà 100 g \n"-->
+<!--                    android:textSize="13sp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="220dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="85dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:backgroundTint="#F7F7F7"-->
+<!--                        android:onClick="chitietnauanbon"-->
+<!--                        android:text="Chi Tiết"-->
+<!--                        android:textColor="#ef4c29"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="0dp"-->
+<!--                        android:layout_weight="1" />-->
+
+<!--                    <Button-->
+<!--                        android:layout_width="125dp"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:backgroundTint="#ef4c29"-->
+<!--                        android:onClick="clickToContact"-->
+<!--                        android:text="TÌM NGƯỜI NẤU"-->
+<!--                        android:textColor="#F7F7F7"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
 
 </ScrollView>
+
+
+
+
+</LinearLayout>

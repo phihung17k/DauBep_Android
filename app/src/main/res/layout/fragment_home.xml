@@ -77,108 +77,201 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:id="@+id/btnMeat"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintBottom_toTopOf="@id/barrier"
-                    app:layout_constraintEnd_toStartOf="@+id/btnEgg"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginTop="20dp">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/meat_2"
-                        android:scaleType="centerInside"/>
-
-                    <TextView
-                        android:onClick="clicktoCongThuc"
-                        android:layout_width="match_parent"
+                    app:layout_constraintBottom_toTopOf="@id/linear2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/img_meat"
-                        android:textAlignment="center"/>
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialMeat">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/meat_2"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:onClick="clicktoCongThuc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/img_meat"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialEgg">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/egg2"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/img_egg"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialVegetable">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/vegetable1"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/img_vegetable"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialBean">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/bean1"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/img_bean"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/btnEgg"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toStartOf="@+id/btnVegetable"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/btnMeat"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0"
-                    android:layout_marginTop="20dp">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/egg2"
-                        android:scaleType="centerInside"/>
-
-                    <TextView
-                        android:onClick="clicktoCongThuc"
-                        android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/linear1"
+                    app:layout_constraintBottom_toBottomOf="@id/barrier"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+                    <LinearLayout
+                        android:id="@+id/btnMeat"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/img_egg"
-                        android:textAlignment="center"/>
-                </LinearLayout>
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialFish">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/fish"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
 
-                <LinearLayout
-                    android:id="@+id/btnVegetable"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toStartOf="@+id/btnBean"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/btnEgg"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginTop="20dp">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/vegetable1"
-                        android:scaleType="centerInside"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cá"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
 
-                    <TextView
-                        android:onClick="clicktoCongThuc"
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:id="@+id/btnEgg"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/img_vegetable"
-                        android:textAlignment="center"/>
-                </LinearLayout>
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialRice">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/rice"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"/>
 
-                <LinearLayout
-                    android:id="@+id/btnBean"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@android:color/transparent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/btnVegetable"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    android:layout_marginTop="20dp">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/bean1"
-                        android:scaleType="centerInside"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gạo"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
 
-                    <TextView
-                        android:onClick="clicktoCongThuc"
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:id="@+id/btnVegetable"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/img_bean"
-                        android:textAlignment="center"/>
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialMilk">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/milk"
+                            android:scaleType="centerInside"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sữa"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btnBean"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="clickToInputMaterialMore">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/more"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            app:tint="@color/turquoise" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Khác"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
                 </LinearLayout>
 
                 <androidx.constraintlayout.widget.Barrier
@@ -221,7 +314,6 @@
                             android:orientation="horizontal">
 
                             <androidx.cardview.widget.CardView
-                                android:id="@+id/card_view1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:cardBackgroundColor="@color/white"
@@ -234,7 +326,8 @@
                                 <LinearLayout
                                     android:layout_width="200dp"
                                     android:layout_height="150dp"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:onClick="clickToDetailPho">
 
                                     <ImageView
                                         android:layout_width="match_parent"
@@ -253,7 +346,6 @@
                             </androidx.cardview.widget.CardView>
 
                             <androidx.cardview.widget.CardView
-                                android:id="@+id/card_view2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:cardBackgroundColor="@color/white"
@@ -266,7 +358,8 @@
                                 <LinearLayout
                                     android:layout_width="200dp"
                                     android:layout_height="150dp"
-                                    android:orientation="vertical">
+                                    android:orientation="vertical"
+                                    android:onClick="clickToBunRieu">
 
                                     <ImageView
                                         android:layout_width="match_parent"
@@ -278,6 +371,70 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:text="@string/title_noodle_soup"
+                                        android:textAlignment="center"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="10dp"
+                                app:cardMaxElevation="12dp"
+                                app:cardPreventCornerOverlap="true"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="150dp"
+                                    android:orientation="vertical"
+                                    android:onClick="clickToComTam">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="120dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/comtam" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cơm tấm"
+                                        android:textAlignment="center"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:cardBackgroundColor="@color/white"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="10dp"
+                                app:cardMaxElevation="12dp"
+                                app:cardPreventCornerOverlap="true"
+                                app:cardUseCompatPadding="true">
+
+                                <LinearLayout
+                                    android:layout_width="200dp"
+                                    android:layout_height="150dp"
+                                    android:orientation="vertical"
+                                    android:onClick="clickToCanhChuaCaLoc">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="120dp"
+                                        android:scaleType="fitXY"
+                                        android:src="@drawable/canhchuacaloc" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Canh chua cá lóc"
                                         android:textAlignment="center"
                                         android:textSize="14sp"
                                         android:textStyle="bold" />
@@ -300,159 +457,160 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/sv_recommend" />
 
+
                 <LinearLayout
-                    android:id="@+id/gr_promotion"
+                    android:id="@+id/ll_km1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:columnCount="2"
-                    android:orientation="vertical"
-                    android:paddingHorizontal="10dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/titlePromotion"
+                    app:layout_constraintBottom_toTopOf="@id/ll_km2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardMaxElevation="12dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/km_thich_thit"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_barbecue"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardMaxElevation="12dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/km_lau"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_hotpot"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_km2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/ll_km1"
                     app:layout_constraintBottom_toTopOf="@id/btnEmpty"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/titlePromotion">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    app:layout_constraintRight_toRightOf="parent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardBackgroundColor="@color/white"
-                            app:cardCornerRadius="20dp"
-                            app:cardElevation="10dp"
-                            app:cardMaxElevation="12dp"
-                            app:cardPreventCornerOverlap="true"
-                            app:cardUseCompatPadding="true"
-                            android:layout_marginLeft="5dp">
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardMaxElevation="12dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        android:layout_weight="1">
 
-                            <LinearLayout
-                                android:layout_width="128dp"
-                                android:layout_height="200dp"
-                                android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:orientation="vertical">
 
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="170dp"
-                                    android:scaleType="fitXY"
-                                    android:src="@drawable/km_thich_thit"/>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/km_salad"/>
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/title_barbecue"
-                                    android:textAlignment="center"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardBackgroundColor="@color/white"
-                            app:cardCornerRadius="20dp"
-                            app:cardElevation="10dp"
-                            app:cardMaxElevation="12dp"
-                            app:cardPreventCornerOverlap="true"
-                            app:cardUseCompatPadding="true">
-
-                            <LinearLayout
-                                android:layout_width="128dp"
-                                android:layout_height="200dp"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="170dp"
-                                    android:scaleType="fitXY"
-                                    android:src="@drawable/km_lau" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/title_hotpot"
-                                    android:textAlignment="center"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/title_salad"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardBackgroundColor="@color/white"
-                            app:cardCornerRadius="20dp"
-                            app:cardElevation="10dp"
-                            app:cardMaxElevation="12dp"
-                            app:cardPreventCornerOverlap="true"
-                            app:cardUseCompatPadding="true"
-                            android:layout_marginLeft="5dp">
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="10dp"
+                        app:cardMaxElevation="12dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        android:layout_weight="1">
 
-                            <LinearLayout
-                                android:layout_width="128dp"
-                                android:layout_height="200dp"
-                                android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:orientation="vertical">
 
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="170dp"
-                                    android:scaleType="fitXY"
-                                    android:src="@drawable/km_salad" />
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/poster4"/>
 
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/title_salad"
-                                    android:textAlignment="center"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:cardBackgroundColor="@color/white"
-                            app:cardCornerRadius="20dp"
-                            app:cardElevation="10dp"
-                            app:cardMaxElevation="12dp"
-                            app:cardPreventCornerOverlap="true"
-                            app:cardUseCompatPadding="true">
-
-                            <LinearLayout
-                                android:layout_width="128dp"
-                                android:layout_height="200dp"
-                                android:orientation="vertical">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="170dp"
-                                    android:scaleType="fitXY"
-                                    android:src="@drawable/km_salad" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="@string/title_salad"
-                                    android:textAlignment="center"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-
-
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ức gà"
+                                android:textAlignment="center"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
 
                 <Button
                     android:id="@+id/btnEmpty"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    app:layout_constraintTop_toBottomOf="@id/gr_promotion"
+                    app:layout_constraintTop_toBottomOf="@id/ll_km2"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"

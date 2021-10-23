@@ -34,7 +34,7 @@
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_community.xml" value="0.146875" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_forum.xml" value="0.4" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_home.xml" value="0.264" />
-        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_notification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_notification.xml" value="0.1" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/fragment_scan.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/item_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/item_user_contact.xml" value="0.12864583333333332" />
@@ -79,6 +79,18 @@
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Practice/HCI201/assignment/DauBep/app/src/main/res/layout/item_user_contact.xml" value="0.264" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chat.xml" value="0.26902173913043476" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chat_detail.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.33" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietmonanhai.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietnauanba.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_chitietnauanbon.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.25" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_contact.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_goiymonan.xml" value="0.25" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_nhap_cong_thuc.xml" value="0.17831813576494426" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/activity_welcomedaubep.xml" value="0.2703804347826087" />
+        <entry key="..\:/Users/nguye/AndroidStudioProjects/DauBep_Android3/app/src/main/res/layout/fragment_home.xml" value="0.2703804347826087" />
       </map>
     </option>
   </component>

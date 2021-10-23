@@ -3,13 +3,13 @@ package hungnp12.demo.daubep;
 import java.io.Serializable;
 
 public class UserContact implements Serializable {
-    private String name;
-    private int avatar, callIcon, messIcon;
+    private String name, location;
+    private int avatar, messIcon;
 
-    public UserContact(String name, int avatar, int callIcon, int messIcon){
+    public UserContact(String name, String location, int avatar, int messIcon){
         this.name = name;
         this.avatar = avatar;
-        this.callIcon = callIcon;
+        this.location = location;
         this.messIcon = messIcon;
     }
 
@@ -21,12 +21,12 @@ public class UserContact implements Serializable {
         this.avatar = avatar;
     }
 
-    public int getCallIcon() {
-        return callIcon;
+    public String getLocation() {
+        return location;
     }
 
-    public void setCallIcon(int callIcon) {
-        this.callIcon = callIcon;
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public int getMessIcon() {

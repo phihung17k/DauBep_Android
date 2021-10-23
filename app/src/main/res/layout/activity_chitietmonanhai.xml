@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent">
-    <androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-    android:layout_marginTop="13dp"
+        android:layout_marginTop="13dp"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".ChiTietMonAnActivity">
@@ -30,7 +30,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginHorizontal="10dp"
                 android:layout_marginTop="8dp"
-                android:onClick="clickAbcdef"
+                android:onClick="clickAbcdefg"
 
                 android:src="@drawable/back" />
 
@@ -61,7 +61,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/bun_rieu" />
+                    android:src="@drawable/pho" />
 
 
                 <TextView
@@ -69,7 +69,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
 
-                    android:text="Công thức Chế Biên Bún Riêu"
+                    android:text="Công thức Chế Biên Phở"
                     android:textColor="#094067"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -90,12 +90,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="11dp"
                     android:layout_marginBottom="5dp"
-                    android:text=" Bún tươi 400 gr
+                    android:text=" Bò phi lê 1.2 kg
                 \n
-Cua đồng xay 1 kg \n
-Giò sống 100 gr\n
-Tôm khô 50 gr \n
-Mắm tôm 20 gr \n
+Xương ống bò 2 kg \n
+Bắp bò 0.7 kg\n
+Bánh phở 1 kg \n
+Giá sống 300 gr \n
 Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:textColor="@color/black"
                     android:textSize="14sp"
@@ -118,10 +118,10 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
                     android:layout_marginBottom="10dp"
-                    android:text="Bước 1: Dùng thìa nhỏ nạo lấy phần gạch cua cho vào chén, ướp với một ít tiêu xay, hạt nêm.\nBước 2: Tôm khô và mực khô ngâm nước khoảng 30 phút, sau đó đem mực cắt nhỏ ô. \nBước 3: Sau đó cho phần cà chua, đậu hũ, huyết heo, hành lá cắt khúc, gạch cua còn lại vào nồi nêm gia vị."
-                    android:layout_marginRight="14dp"
+                    android:text="Bước 1: Sơ chế nguyên liệu hầm nước dùng.\nBước 2: Cho xương ống bò ninh trong nồi  Đun cho đến khi nước dùng chuyển qua màu vàng đục \nBước 3: Thịt bò phi lê thái thành những lát mỏng, nên thái theo thớ để thịt bò không bị dai khi chế biến."
                     android:textColor="@color/black"
                     android:textSize="14sp"
+                    android:textStyle="normal" />
                     android:textStyle="normal" />
                 <Button
                     android:layout_width="113dp"
@@ -129,9 +129,9 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:backgroundTint="#ef4c29"
-                        android:textStyle="bold"
-                    android:onClick="clickToContact"
-                        android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:onClick="clickToContacthai"
+                    android:textColor="@color/white"
 
                     android:text="Liên Hệ"
                     android:textSize="15dp" />
@@ -141,5 +141,5 @@ Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
         </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

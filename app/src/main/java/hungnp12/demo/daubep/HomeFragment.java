@@ -1,6 +1,5 @@
 package hungnp12.demo.daubep;
 
-import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 

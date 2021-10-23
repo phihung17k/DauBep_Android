@@ -57,6 +57,8 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         List<String> newData = new ArrayList<>();
         newData.add("gam");
         newData.add("kilogam");
+        newData.add("lit");
+        newData.add("mililit ");
 
         ArrayAdapter<String> dataAdapterA = new ArrayAdapter<>(CongThucNauAnActivity.this ,
                 android.R.layout.simple_spinner_item, newData);
@@ -216,6 +218,11 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         edtAddNL = findViewById(R.id.edtAddMaterial);
         edtAddKlg = findViewById(R.id.edtAddPrice);
 
+        String materialCategory = intent.getStringExtra("materialX");
+        if(materialCategory!=null){
+            edtAddNL.setText(materialCategory);
+        }
+
         btnAddNL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -262,6 +269,11 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         finish();
     }
 
+    public void clickToScanAgain(View view) {
+        Intent intent = new Intent(this, ScanActivity.class);
+        startActivity(intent);
+    }
+
     public class MaterialAdapter extends ArrayAdapter<String> {
 
         ArrayList<String> list = new ArrayList<>();
@@ -287,6 +299,8 @@ public class CongThucNauAnActivity extends AppCompatActivity {
             List<String> dataSrc = new ArrayList<>();
             dataSrc.add("gam");
             dataSrc.add("kilogam");
+            dataSrc.add("lit");
+            dataSrc.add("mililit ");
 
             ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(CongThucNauAnActivity.this ,
                     android.R.layout.simple_spinner_item, dataSrc);
@@ -307,5 +321,10 @@ public class CongThucNauAnActivity extends AppCompatActivity {
             }
             return view;
         }
+    }
+
+    public void clickToHome3(View view) {
+        Intent intent = new Intent(this , MainActivity.class);
+        startActivity(intent);
     }
 }
