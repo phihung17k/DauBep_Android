@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
 import com.google.zxing.Result;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -38,6 +40,7 @@ public class ScanActivity extends AppCompatActivity {
     private List<String> listString;
     private Button btnScan, btnNext;
     private CodeScannerView scannerView;
+    private boolean isScanAgain;
 //    private MaterialAdapter adapter;
     private TextView stateScan;
 
@@ -45,6 +48,9 @@ public class ScanActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
+        Intent intent = getIntent();
+        String resultScanAgain = intent.getStringExtra("isScanAgain");
+        isScanAgain = new Boolean(resultScanAgain);
         scannerView = findViewById(R.id.scanner_view);
         mCodeScanner = new CodeScanner(this, scannerView);
         stateScan = findViewById(R.id.stateScan);
@@ -85,11 +91,34 @@ public class ScanActivity extends AppCompatActivity {
         stateScan.setText("Đang Quét ...");
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
-                intent.putExtra("info", new String[]{"Bắp cải", "Cà chua"});
-                stateScan.setText("");
-                startActivity(intent);
+                Intent resultIntent;
+                System.out.println("MESSAGE:"+isScanAgain);
+                if(isScanAgain){
+                    resultIntent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
+                    ArrayList<String> material = new ArrayList<>();
+                    material.add("Bắp cải");
+                    material.add("Cà chua");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    resultIntent.putExtra("info",material);
+                    stateScan.setText("");
+                    setResult(Activity.RESULT_OK,resultIntent);
+                    Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
+                    finish();
+                }else{
+                    resultIntent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
+                    resultIntent.putExtra("info", new String[]{"Bắp cải", "Cà chua"});
+                    stateScan.setText("");
+                    Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
+                    startActivity(resultIntent);
+                }
+
+
             }
         }, 5000);
     }
