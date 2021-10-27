@@ -113,7 +113,7 @@ public class ScanActivity extends AppCompatActivity {
                     finish();
                 }else{
                     resultIntent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
-                    resultIntent.putExtra("info", new String[]{"Bắp cải", "Cà chua"});
+                    resultIntent.putExtra("info", new String[]{"Bắp cải", "Cà chua", "Cà chua", "Cà chua", "Cà chua", "Cà chua", "Cà chua", "Cà chua", "Cà chua"});
                     stateScan.setText("");
                     Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
                     startActivity(resultIntent);

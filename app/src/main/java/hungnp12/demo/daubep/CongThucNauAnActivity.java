@@ -36,7 +36,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
     Boolean btn2Flag = false ;
     private Spinner spAdd;
     private String selectedKL;
-    private TextView txtNotScanning;
+    private TextView txtNotScanning, txtQuantity;
 
     private ListView listView;
     private ArrayAdapter materialAdapter;
@@ -54,6 +54,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         listView = findViewById(R.id.lvMaterial);
         spAdd = findViewById(R.id.spnAddP);
         txtNotScanning = findViewById(R.id.txtNotScan);
+        txtQuantity = findViewById(R.id.quantity);
 
         List<String> newData = new ArrayList<>();
         newData.add("gam");
@@ -91,6 +92,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
                     android.R.layout.simple_list_item_multiple_choice,
                     temp);
             listView.setAdapter(materialAdapter);
+            txtQuantity.setText("Số lượng: " + arr.length);
         } else {
             txtNotScanning.setText("Bạn chưa quét");
         }
@@ -295,6 +297,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
                         list);
                 listView.setAdapter(materialAdapter);
                 materialAdapter.notifyDataSetChanged();
+                txtQuantity.setText("Số lượng: " + list.size());
 
 //                ArrayList<String> temp = new ArrayList<>();
 //                String[] arr = getIntent().getStringArrayExtra("info");
