@@ -28,6 +28,7 @@ import java.util.List;
 
 public class CongThucNauAnActivity extends AppCompatActivity {
 
+    public static final int CREATE = 6789;
     private EditText email, edtAddNL, edtAddKlg;
     private Button submit, btnAddNL ;
     private ChipGroup chipGroup;
@@ -80,10 +81,13 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         Intent intent = getIntent();
         ArrayList<String> temp = new ArrayList<>();
         String[] arr = intent.getStringArrayExtra("info");
+        System.out.println("lengthaaaaaaaaaaa: "+arr.length);
         if(arr != null && arr.length > 0){
             for (String s : arr) {
                 temp.add(s);
+                System.out.println("itemmmmmmmmmmmmm "+s);
             }
+            System.out.println("lengthaaaaaaaaaaa temp: "+temp.size());
             materialAdapter = new MaterialAdapter(this,
                     android.R.layout.simple_list_item_multiple_choice,
                     temp);

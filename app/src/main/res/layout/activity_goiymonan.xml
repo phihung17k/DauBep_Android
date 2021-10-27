@@ -75,7 +75,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:padding="10dp"
-            android:layout_height="170dp">
+            android:layout_height="180dp">
 
             <ImageView
                 android:id="@+id/bun_rieu"
@@ -174,7 +174,7 @@ Hành lá, hành khô, tỏi"
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:layout_height="170dp">
+                android:layout_height="180dp">
 
                 <ImageView
                     android:id="@+id/pho"
@@ -272,7 +272,7 @@ Hành lá, hành khô, tỏi\n"
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:layout_height="170dp">
+                android:layout_height="180dp">
 
                 <ImageView
                     android:id="@+id/comtam"
@@ -365,7 +365,7 @@ Hành lá, hành khô, tỏi"
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:padding="10dp"
-                android:layout_height="170dp">
+                android:layout_height="180dp">
 
                 <ImageView
                     android:id="@+id/canhchua"
