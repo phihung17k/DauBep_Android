@@ -39,7 +39,8 @@ public class CongThucNauAnActivity extends AppCompatActivity {
     private TextView txtNotScanning, txtQuantity;
 
     private ListView listView;
-    private ArrayAdapter materialAdapter;
+    private MaterialAdapter materialAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,6 +92,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
             materialAdapter = new MaterialAdapter(this,
                     android.R.layout.simple_list_item_multiple_choice,
                     temp);
+            materialAdapter.notifyDataSetChanged();
             listView.setAdapter(materialAdapter);
             txtQuantity.setText("Số lượng: " + arr.length);
         } else {
@@ -276,20 +278,18 @@ public class CongThucNauAnActivity extends AppCompatActivity {
     }
 
     public void clickToScanAgain(View view) {
-//        Intent intent = new Intent(this, ScanActivity.class);
-//        intent.putExtra("ScanAgain", "true");
-//        startActivityForResult(intent, CREATE);
+
         Intent intent = new Intent(this, ScanActivity.class);
         intent.putExtra("isScanAgain","true");
-        startActivityForResult(intent,CREATE);
+        startActivityForResult(intent,1);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaa");
-        if(requestCode == CREATE){
+
+        if(requestCode == 1){
             if(resultCode == RESULT_OK){
+                super.onActivityResult(requestCode, resultCode, data);
                 ArrayList<String> list = data.getStringArrayListExtra("info");
                 System.out.println("MESSAGE:"+list);
                 materialAdapter = new MaterialAdapter(this,
@@ -316,6 +316,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
 //                }
             }
         }
+
     }
 
     public class MaterialAdapter extends ArrayAdapter<String> {
@@ -327,6 +328,10 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         public MaterialAdapter(@NonNull Context context, int resource, @NonNull ArrayList<String> objects) {
             super(context, resource, objects);
             list = objects;
+        }
+
+        public void setList(ArrayList<String> list) {
+            this.list = list;
         }
 
         @NonNull

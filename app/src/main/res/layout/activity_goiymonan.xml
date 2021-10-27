@@ -295,7 +295,6 @@ Hành lá, hành khô, tỏi\n"
                     app:layout_constraintLeft_toRightOf="@+id/comtam"
                     android:id="@+id/ContentComtam"
                     android:layout_width="200dp"
-
                     android:padding="0dp"
                     android:layout_height="match_parent"
                     android:orientation="vertical">

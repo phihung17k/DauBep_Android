@@ -28,6 +28,7 @@ import com.budiyev.android.codescanner.CodeScannerView;
 import com.budiyev.android.codescanner.DecodeCallback;
 import com.google.zxing.Result;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -39,6 +40,7 @@ public class ScanActivity extends AppCompatActivity {
     private List<String> listString;
     private Button btnScan, btnNext;
     private CodeScannerView scannerView;
+
 //    private MaterialAdapter adapter;
     private TextView stateScan;
     private boolean isScanAgain = false;
@@ -47,6 +49,9 @@ public class ScanActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
+        Intent intent = getIntent();
+        String resultScanAgain = intent.getStringExtra("isScanAgain");
+        isScanAgain = new Boolean(resultScanAgain);
         scannerView = findViewById(R.id.scanner_view);
         mCodeScanner = new CodeScanner(this, scannerView);
         stateScan = findViewById(R.id.stateScan);
@@ -64,10 +69,7 @@ public class ScanActivity extends AppCompatActivity {
 //                android.R.layout.simple_list_item_multiple_choice,
 //                new ArrayList<>());
 //        listView.setAdapter(adapter);
-        Intent intent = getIntent();
-        if(intent.getStringExtra("ScanAgain") != null){
-            isScanAgain = true;
-        }
+
     }
 
     @Override
@@ -91,7 +93,7 @@ public class ScanActivity extends AppCompatActivity {
         stateScan.setText("Đang Quét ...");
         new Handler().postDelayed(new Runnable() {
             public void run() {
-//                Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
+
                 Intent resultIntent;
                 System.out.println("MESSAGE:"+isScanAgain);
                 if(isScanAgain){
@@ -99,6 +101,12 @@ public class ScanActivity extends AppCompatActivity {
                     ArrayList<String> material = new ArrayList<>();
                     material.add("Bắp cải");
                     material.add("Cà chua");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
                     material.add("Muop dang");
                     material.add("Muop dang");
                     material.add("Muop dang");
@@ -118,18 +126,7 @@ public class ScanActivity extends AppCompatActivity {
                     Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
                     startActivity(resultIntent);
                 }
-//                System.out.println("isScanAgain "+isScanAgain);
-//                if(isScanAgain){
-//                    Intent intent = getIntent();
-//                    intent.putExtra("info", new String[]{"Bắp cải", "Cà chua", "Mướp đắng", "Rau Xanh", "Nước dừa", "Bắp cải", "Cà chua", "Mướp đắng", "Rau Xanh"});
-//                    setResult(RESULT_OK, intent);
-//                    finish();
-//                } else {
-//                    Intent intent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
-//                    intent.putExtra("info", new String[]{"Bắp cải", "Cà chua"});
-//                    stateScan.setText("");
-//                    startActivity(intent);
-//                }
+
 
             }
         }, 5000);
