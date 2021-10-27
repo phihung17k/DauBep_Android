@@ -63,22 +63,10 @@
             android:id="@+id/quantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Số lượng: "
+            android:text="Số lượng: 0"
             android:textSize="16dp"
             android:textStyle="bold"
             android:gravity="center"/>
-
-        <TextView
-            android:id="@+id/txtNotScan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginTop="0dp"
-            android:text=""
-            android:textColor="@color/grey"
-            android:textSize="13sp"
-            android:textStyle="bold"
-            />
 
 
         <ListView

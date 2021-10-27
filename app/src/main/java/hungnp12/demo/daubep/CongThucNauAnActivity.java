@@ -36,7 +36,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
     Boolean btn2Flag = false ;
     private Spinner spAdd;
     private String selectedKL;
-    private TextView txtNotScanning, txtQuantity;
+    private TextView txtQuantity;
 
     private ListView listView;
     private MaterialAdapter materialAdapter;
@@ -54,7 +54,6 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         btn6 = findViewById(R.id.button6);
         listView = findViewById(R.id.lvMaterial);
         spAdd = findViewById(R.id.spnAddP);
-        txtNotScanning = findViewById(R.id.txtNotScan);
         txtQuantity = findViewById(R.id.quantity);
 
         List<String> newData = new ArrayList<>();
@@ -96,7 +95,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
             listView.setAdapter(materialAdapter);
             txtQuantity.setText("Số lượng: " + arr.length);
         } else {
-            txtNotScanning.setText("Bạn chưa quét");
+            txtQuantity.setText("Bạn chưa quét");
         }
 
         btn.setOnClickListener(new View.OnClickListener() {
