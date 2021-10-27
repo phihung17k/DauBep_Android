@@ -121,7 +121,8 @@
                 app:cardElevation="10dp"
                 app:cardMaxElevation="0dp"
                 app:cardPreventCornerOverlap="true"
-                android:layout_margin="15dp">
+                android:layout_margin="15dp"
+                android:onClick="clickToNavigatorPost">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -130,7 +131,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/r1"/>
+                        android:src="@drawable/avatar_fourth"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -175,7 +176,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/user"/>
+                        android:src="@drawable/avatar_second"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -184,7 +185,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/noti_4"/>
+                            android:text="@string/noti_5"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -210,7 +211,8 @@
                 app:cardElevation="10dp"
                 app:cardMaxElevation="0dp"
                 app:cardPreventCornerOverlap="true"
-                android:layout_margin="15dp">
+                android:layout_margin="15dp"
+                android:onClick="clickToNavigatorPost">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -219,7 +221,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/fb_img_1559050010803"/>
+                        android:src="@drawable/user"/>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -228,7 +230,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/noti_5"/>
+                            android:text="@string/noti_4"/>
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"

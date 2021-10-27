@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -40,6 +41,7 @@ public class ScanActivity extends AppCompatActivity {
     private CodeScannerView scannerView;
 //    private MaterialAdapter adapter;
     private TextView stateScan;
+    private boolean isScanAgain = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,10 @@ public class ScanActivity extends AppCompatActivity {
 //                android.R.layout.simple_list_item_multiple_choice,
 //                new ArrayList<>());
 //        listView.setAdapter(adapter);
+        Intent intent = getIntent();
+        if(intent.getStringExtra("ScanAgain") != null){
+            isScanAgain = true;
+        }
     }
 
     @Override
@@ -85,11 +91,46 @@ public class ScanActivity extends AppCompatActivity {
         stateScan.setText("Đang Quét ...");
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
-                intent.putExtra("info", new String[]{"Bắp cải", "Cà chua"});
-                stateScan.setText("");
-                startActivity(intent);
+//                Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
+                Intent resultIntent;
+                System.out.println("MESSAGE:"+isScanAgain);
+                if(isScanAgain){
+                    resultIntent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
+                    ArrayList<String> material = new ArrayList<>();
+                    material.add("Bắp cải");
+                    material.add("Cà chua");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    material.add("Muop dang");
+                    resultIntent.putExtra("info",material);
+                    stateScan.setText("");
+                    setResult(Activity.RESULT_OK,resultIntent);
+                    Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
+                    finish();
+                }else{
+                    resultIntent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
+                    resultIntent.putExtra("info", new String[]{"Bắp cải", "Cà chua"});
+                    stateScan.setText("");
+                    Toast.makeText(ScanActivity.this, "Đã quét xong", Toast.LENGTH_SHORT).show();
+                    startActivity(resultIntent);
+                }
+//                System.out.println("isScanAgain "+isScanAgain);
+//                if(isScanAgain){
+//                    Intent intent = getIntent();
+//                    intent.putExtra("info", new String[]{"Bắp cải", "Cà chua", "Mướp đắng", "Rau Xanh", "Nước dừa", "Bắp cải", "Cà chua", "Mướp đắng", "Rau Xanh"});
+//                    setResult(RESULT_OK, intent);
+//                    finish();
+//                } else {
+//                    Intent intent = new Intent(ScanActivity.this, CongThucNauAnActivity.class);
+//                    intent.putExtra("info", new String[]{"Bắp cải", "Cà chua"});
+//                    stateScan.setText("");
+//                    startActivity(intent);
+//                }
+
             }
         }, 5000);
     }
