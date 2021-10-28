@@ -128,10 +128,10 @@ public class MainActivity extends AppCompatActivity{
         startActivity(intent);
     }
 
-    public void clickToChat(View view) {
-        Intent intent = new Intent(this, ChatActivity.class);
-        startActivity(intent);
-    }
+//    public void clickToChat(View view) {
+//        Intent intent = new Intent(this, ChatActivity.class);
+//        startActivity(intent);
+//    }
 
     private View.OnClickListener fabListen = new View.OnClickListener() {
         @Override
