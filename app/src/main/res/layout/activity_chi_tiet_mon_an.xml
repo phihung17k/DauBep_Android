@@ -1,145 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
-    <androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-    android:layout_marginTop="13dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".ChiTietMonAnActivity">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true" >
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="13dp"
+           android:orientation="vertical"
+           tools:context=".ChiTietMonAnActivity">
 
-
-            android:layout_width="match_parent"
-            android:layout_height="703dp"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="8dp"
-            tools:ignore="MissingConstraints">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="8dp"
-                android:onClick="clickAbcdef"
-
-                android:src="@drawable/back" />
+           <androidx.cardview.widget.CardView
 
 
+               android:layout_width="match_parent"
+               android:layout_height="703dp"
+               android:layout_margin="10dp"
+               app:cardCornerRadius="6dp"
+               app:cardElevation="8dp"
+               tools:ignore="MissingConstraints">
+
+               <ImageView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+                   android:layout_marginHorizontal="10dp"
+                   android:layout_marginTop="8dp"
+                   android:onClick="clickAbcdef"
+
+                   android:src="@drawable/back" />
 
 
+               <LinearLayout
+
+                   android:layout_width="match_parent"
+                   android:layout_height="690dp"
+
+                   android:orientation="vertical"
+                   android:paddingTop="20dp"
+                   android:paddingBottom="10dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintLeft_toLeftOf="parent"
+                   app:layout_constraintRight_toRightOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0">
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="270dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/bun_rieu" />
 
 
-            <LinearLayout
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="11dp"
 
-                android:layout_width="match_parent"
-                android:layout_height="690dp"
+                       android:text="Công thức Chế Biên Bún Riêu"
+                       android:textColor="#094067"
+                       android:textSize="20sp"
+                       android:textStyle="bold" />
 
-                android:orientation="vertical"
-                android:paddingTop="20dp"
-                android:paddingBottom="10dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="270dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/bun_rieu" />
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="12dp"
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="11dp"
+                       android:text="Nguyên liệu:"
+                       android:textColor="#094067"
+                       android:textSize="18sp"
+                       android:textStyle="normal" />
 
-                    android:text="Công thức Chế Biên Bún Riêu"
-                    android:textColor="#094067"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
-
-
-                    android:text="Nguyên liệu:"
-                    android:textColor="#094067"
-                    android:textSize="18sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="11dp"
-                    android:layout_marginBottom="5dp"
-                    android:text=" Bún tươi 400 gr
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="11dp"
+                       android:layout_marginBottom="5dp"
+                       android:text=" Bún tươi 400 gr
                 \n
 Cua đồng xay 1 kg \n
 Giò sống 100 gr\n
 Tôm khô 50 gr \n
 Mắm tôm 20 gr \n
 Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
+                       android:textColor="@color/black"
+                       android:textSize="14sp"
+                       android:textStyle="normal" />
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="12dp"
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="12dp"
 
 
-                    android:text="Thực Hiện:"
-                    android:textColor="#094067"
-                    android:textSize="18sp"
-                    android:textStyle="normal" />
+                       android:text="Thực Hiện:"
+                       android:textColor="#094067"
+                       android:textSize="18sp"
+                       android:textStyle="normal" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="14dp"
-                    android:layout_marginBottom="10dp"
-                    android:text="Bước 1: Dùng thìa nhỏ nạo lấy phần gạch cua cho vào chén, ướp với một ít tiêu xay, hạt nêm.\nBước 2: Tôm khô và mực khô ngâm nước khoảng 30 phút, sau đó đem mực cắt nhỏ ô. \nBước 3: Sau đó cho phần cà chua, đậu hũ, huyết heo, hành lá cắt khúc, gạch cua còn lại vào nồi nêm gia vị."
-                    android:layout_marginRight="14dp"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="normal" />
-                <Button
-                    android:layout_width="113dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="5dp"
-                    android:backgroundTint="#ef4c29"
-                        android:textStyle="bold"
-                    android:onClick="clickToContact"
-                        android:textColor="@color/white"
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="14dp"
+                       android:layout_marginRight="14dp"
+                       android:layout_marginBottom="10dp"
+                       android:text="Bước 1: Dùng thìa nhỏ nạo lấy phần gạch cua cho vào chén, ướp với một ít tiêu xay, hạt nêm.\nBước 2: Tôm khô và mực khô ngâm nước khoảng 30 phút, sau đó đem mực cắt nhỏ ô. \nBước 3: Sau đó cho phần cà chua, đậu hũ, huyết heo, hành lá cắt khúc, gạch cua còn lại vào nồi nêm gia vị."
+                       android:textColor="@color/black"
+                       android:textSize="14sp"
+                       android:textStyle="normal" />
 
-                    android:text="Liên Hệ"
-                    android:textSize="15dp" />
+                   <Button
+                       android:layout_width="113dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="5dp"
+                       android:backgroundTint="#ef4c29"
+                       android:onClick="clickToContact"
+                       android:text="Liên Hệ"
+                       android:textColor="@color/white"
 
-            </LinearLayout>
+                       android:textSize="15dp"
+                       android:textStyle="bold" />
 
-        </androidx.cardview.widget.CardView>
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+</LinearLayout>
