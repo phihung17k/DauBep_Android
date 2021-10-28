@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -81,7 +82,6 @@ public class CongThucNauAnActivity extends AppCompatActivity {
         Intent intent = getIntent();
         ArrayList<String> temp = new ArrayList<>();
         String[] arr = intent.getStringArrayExtra("info");
-        System.out.println("lengthaaaaaaaaaaa: "+arr.length);
         if(arr != null && arr.length > 0){
             for (String s : arr) {
                 temp.add(s);
@@ -92,9 +92,25 @@ public class CongThucNauAnActivity extends AppCompatActivity {
                     android.R.layout.simple_list_item_multiple_choice,
                     temp);
             materialAdapter.notifyDataSetChanged();
+//            listView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, 150));
+//            listView.setVisibility(View.VISIBLE);
+//            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) listView.getLayoutParams();
+//            params.width = LinearLayout.LayoutParams.MATCH_PARENT;
+//            params.height = 130;
+//            listView.setLayoutParams(params);
+            listView.setVisibility(View.VISIBLE);
             listView.setAdapter(materialAdapter);
             txtQuantity.setText("Số lượng: " + arr.length);
+
         } else {
+//            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) listView.getLayoutParams();
+//            params.width = 0;
+//            params.height = 0;
+//            LayoutParams layoutParams = view.getLayoutParams();
+//            layoutParams.width = newWidth;
+//            view.setLayoutParams(layoutParams);
+//            listView.setLayoutParams(params);
+            listView.setVisibility(View.GONE);
             txtQuantity.setText("Bạn chưa quét");
         }
 
@@ -294,6 +310,7 @@ public class CongThucNauAnActivity extends AppCompatActivity {
                 materialAdapter = new MaterialAdapter(this,
                         android.R.layout.simple_list_item_multiple_choice,
                         list);
+                listView.setVisibility(View.VISIBLE);
                 listView.setAdapter(materialAdapter);
                 materialAdapter.notifyDataSetChanged();
                 txtQuantity.setText("Số lượng: " + list.size());

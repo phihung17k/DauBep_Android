@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">DauBep</string>
-    <string name="header_hello">Xin chào ABC, \nBạn muốn nấu món gì?</string>
+    <string name="header_hello">Xin chào ABC, \nBạn có những nguyên liệu gì?</string>
     <string name="personal">Cá nhân</string>
     <string name="search_hint">Tìm nguyên liệu</string>
     <string name="btn_home">Trang chủ</string>
