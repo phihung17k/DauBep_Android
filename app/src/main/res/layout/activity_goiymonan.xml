@@ -138,7 +138,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" 4.5 "
+                                android:text="4.5 "
                                 android:textColor="@color/yellow" />
 
                             <RatingBar
@@ -154,7 +154,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" (44)"/>
+                                android:text="(44)"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -243,7 +243,7 @@ Hành lá, hành khô, tỏi\n"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" 4 "
+                                android:text="4 "
                                 android:textColor="@color/yellow" />
 
                             <RatingBar
@@ -259,7 +259,7 @@ Hành lá, hành khô, tỏi\n"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" (32)"/>
+                                android:text="(32)"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -348,7 +348,7 @@ Hành lá, hành khô, tỏi"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" 4 "
+                                android:text="4 "
                                 android:textColor="@color/yellow" />
 
                             <RatingBar
@@ -363,7 +363,7 @@ Hành lá, hành khô, tỏi"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" (22)"/>
+                                android:text="(22)"/>
                         </LinearLayout>
 
                     </LinearLayout>
@@ -453,7 +453,7 @@ Bạc hà 100 g \n"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" 4 "
+                                android:text="4 "
                                 android:textColor="@color/yellow" />
 
                             <RatingBar
@@ -469,7 +469,7 @@ Bạc hà 100 g \n"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" (18)"/>
+                                android:text="(18)"/>
                         </LinearLayout>
 
                     </LinearLayout>
