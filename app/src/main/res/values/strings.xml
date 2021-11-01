@@ -36,4 +36,30 @@
     <string name="noti_5"><b>Hai Dang</b> đã bình luận về bài viết mà bạn theo dõi</string>
     <string name="noti_6"><b>Hệ thống thông báo</b><br /> Bảo trì ứng dụng lúc 0h - 1h 10/10/2021</string>
     <string name="noti_7"><b>Hệ thống thông báo</b><br /> Bảo trì ứng dụng lúc 0h - 2h 8/10/2021</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="pho_detail">1 kg xương sườn bò<br />Bánh phở<br />1 củ gừng<br />1 củ hành tây, vài củ hành tím
+        <br />Gia vị nấu phở: tiểu hồi, đại hồi, đinh hương, quế cây, hạt ngò, thảo quả (siêu thị có bán gói đầy đủ)
+        <br />Bắp bò thái mỏng
+    </string>
+    <string name="pho_1">Rửa sạch xương, cho vào nồi với nước, muối, đun đến khi sôi thì vớt bỏ bọt.
+        Đun 30p, tắt bếp để nguội, đun lần 2 30p, tắt bếp để nguội, đun lần 3 1 tiếng. Đun nhiều lần
+        giúp thịt mềm nhanh mà đỡ tốn điện hơn đun nhiều giờ cùng 1 lúc. Nhớ để lửa nhỏ ko trào, hẹn
+        giờ cho bếp để ko phải canh, đun từ tối hôm trước 2 lần thì sáng hôm sau chỉ cần đun lại lần
+        3 là ăn được.</string>
+    <string name="pho_2">
+        Hành tây, gừng rửa sạch, cắt đôi. Hành tím bóc vỏ, rửa sạch. Cho tất cả vào nckd nướng 180đ 10p. Gia vị phở nướng nckd 140d 5p. Cho tất cả vào nồi trc khi đun lần 3. Sau khi ninh xong thì vớt bỏ gia vị, vớt xương ra, nêm hạt nêm, nước mắm, muối, đợi nước sôi lại là ăn được
+    </string>
+    <string name="pho_3">
+        Rau sống rửa sạch, chẻ đầu hành, phần thân hành cắt nhỏ, phở trụng lại cho nóng, rồi xếp tất cả ra tô, chan nước vào.
+    </string>
+    <string name="pho_4">
+        Lưu ý: dùng xương ống sẽ ngọt nước hơn xương sườn nhưng xương sườn có nhiều thịt để gặm hơn. Có thể kết hợp cả 2 loại tuỳ sở thích.
+        <br/>
+        Lưu ý 2: nêm nước dùng mặn 1 chút khi chan vào phở ăn sẽ vừa, nếu nêm vừa thì chan vào phở sẽ nhạt.
+    </string>
+    <string name="cmt1">
+        <b>Jisoo</b> hay quá em ơi
+    </string>
 </resources>

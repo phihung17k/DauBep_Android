@@ -26,7 +26,7 @@ public class goiymonan extends AppCompatActivity {
 
 
     public void chitietnauanhai(View view) {
-        Intent intent = new Intent(this , chitietmonanhai.class);
+        Intent intent = new Intent(this , FoodDetailActivity.class);
         startActivity(intent);
     }
     public void chitietnauanba(View view) {

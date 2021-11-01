@@ -56,7 +56,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@color/white_light"
+            >
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -97,7 +99,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Bún Riêu"
-                            android:textColor="@color/black"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -116,6 +117,12 @@ Hành lá, hành khô, tỏi"
                             android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginBottom="3dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -228,7 +235,6 @@ Hành lá, hành khô, tỏi"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Phở"
-                            android:textColor="@color/black"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -248,6 +254,12 @@ Hành lá, hành khô, tỏi\n"
                             android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginBottom="3dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -353,7 +365,6 @@ Hành lá, hành khô, tỏi\n"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Cơm Tấm"
-                            android:textColor="@color/black"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -373,6 +384,12 @@ Hành lá, hành khô, tỏi"
                             android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginBottom="3dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -480,7 +497,6 @@ Hành lá, hành khô, tỏi"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Canh Chua Cá Lóc"
-                            android:textColor="@color/black"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -499,6 +515,12 @@ Bạc hà 100 g \n"
                             android:layout_width="wrap_content"
                             android:layout_height="0dp"
                             android:layout_weight="1" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@android:color/darker_gray"
+                            android:layout_marginBottom="3dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"

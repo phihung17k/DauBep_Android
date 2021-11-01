@@ -16,14 +16,16 @@
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chat_detail.xml" value="0.2644927536231884" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chi_tiet_mon_an.xml" value="0.35773480662983426" />
-        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chitietmonanhai.xml" value="0.14947916666666666" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chitietmonanhai.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chitietnauanba.xml" value="0.14947916666666666" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_chitietnauanbon.xml" value="0.14947916666666666" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_cong_thuc_nau_an.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_contact.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_create_post.xml" value="0.2" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_detail_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_food_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_forgot_password.xml" value="0.134375" />
+        <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_fullscreen.xml" value="0.15052083333333333" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_goiymonan.xml" value="0.264" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Fall2021_HCI201/DauBep/app/src/main/res/layout/activity_main.xml" value="0.4" />

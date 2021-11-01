@@ -95,13 +95,12 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="11dp"
                         android:layout_marginBottom="5dp"
-                        android:text=" Bò phi lê 1.2 kg
-                \n
+                        android:text="Bò phi lê 1.2 kg\n
 Xương ống bò 2 kg \n
 Bắp bò 0.7 kg\n
 Bánh phở 1 kg \n
 Giá sống 300 gr \n
-Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt) \n"
+Gia vị 1 ít (tiêu/ hạt nêm/ muối/ đường/ bột ngọt)"
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="normal" />
