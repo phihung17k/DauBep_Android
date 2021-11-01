@@ -40,12 +40,48 @@
                 app:layout_constraintTop_toBottomOf="@id/imgHeader"
                 android:padding="10dp">
                 <TextView
+                    android:id="@+id/txtFoodName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Phở bò"
                     android:textSize="23sp"
-                    android:textStyle="bold"
-                    app:layout_constraintTop_toBottomOf="@+id/imgHeader"/>
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đánh giá:" />
+
+                    <TextView
+                        android:id="@+id/txtRatingStarNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 4.5 "
+                        android:textColor="@color/yellow" />
+
+                    <RatingBar
+                        android:id="@+id/rsRatingStar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="4.5"
+                        android:stepSize="0.5"
+                        android:layout_gravity="center"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:progressTint="@color/yellow"/>
+                    <TextView
+                        android:id="@+id/txtAmountUserRating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" (44)"/>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -54,11 +90,12 @@
                     android:paddingVertical="10dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/userImgPost"
+                        android:id="@+id/civUserImage"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/rosie" />
                     <TextView
+                        android:id="@+id/txtUsername"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="roses_are_rosie"
@@ -77,6 +114,7 @@
                         android:layout_height="18dp"
                         android:src="@drawable/clock"/>
                     <TextView
+                        android:id="@+id/txtEstimatedTime"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Thời gian dự tính: 3 giờ"
@@ -93,9 +131,10 @@
                         android:layout_height="18dp"
                         android:src="@drawable/personal"/>
                     <TextView
+                        android:id="@+id/txtSetPerson"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="phần ăn 2 người"
+                        android:text="Phần ăn 2 người"
                         android:paddingLeft="5dp"/>
                 </LinearLayout>
 
@@ -113,6 +152,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
+                    android:id="@+id/txtFoodDetailMaterial"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/pho_detail"/>
@@ -143,6 +183,7 @@
                         android:textStyle="bold"/>
 
                     <TextView
+                        android:id="@+id/txtStep1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
@@ -162,6 +203,7 @@
                         android:textStyle="bold"/>
 
                     <TextView
+                        android:id="@+id/txtStep2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
@@ -181,6 +223,7 @@
                         android:textStyle="bold"/>
 
                     <TextView
+                        android:id="@+id/txtStep3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
@@ -195,11 +238,12 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="3."
+                        android:text="4."
                         android:textSize="18sp"
                         android:textStyle="bold"/>
 
                     <TextView
+                        android:id="@+id/txtStep4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
@@ -226,17 +270,96 @@
                     android:paddingVertical="10dp">
 
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civUserCmt"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/j1" />
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/cmt1"
-                        android:paddingLeft="10dp"/>
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+                            <TextView
+                                android:id="@+id/txtUserCmtName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Jisoo"
+                                android:textStyle="bold"
+                                />
+                            <TextView
+                                android:id="@+id/txtUserCmtRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 5 "
+                                android:textColor="@color/yellow" />
+
+                            <RatingBar
+                                android:id="@+id/rsUserCmtRating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="5"
+                                android:stepSize="0.5"
+                                android:layout_gravity="center"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:progressTint="@color/yellow"/>
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/txtCmt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hay quá em ơi"/>
+                    </LinearLayout>
                 </LinearLayout>
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đánh giá sao"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="0.5"
+                        android:progressTint="@color/yellow"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/kontum" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="5dp"
+                        android:background="@drawable/border_radius_edittext"
+                        android:drawableRight="@drawable/rightarrow"
+                        android:fontFamily="@font/arialceb"
+                        android:hint="Thêm bình luận"/>
+                </LinearLayout>
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

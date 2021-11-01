@@ -105,11 +105,11 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text=" Cua đồng 300 g \n
-Bún tươi 1 kg \n
-Tôm khô ̀đ g\n
-Trứng ga 2 quả \n
-Hành lá, hành khô, tỏi"
+                            android:text=" 200 g thịt nạc xay \n
+200 g tôm tươi\n
+1 kg bún\n
+1 trứng vịt\n
+3 trái cà chua"
                             android:textSize="13sp"
                             android:textStyle="bold" />
 
@@ -141,52 +141,20 @@ Hành lá, hành khô, tỏi"
                                 android:text=" 4.5 "
                                 android:textColor="@color/yellow" />
 
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/star_half"
-                                app:tint="@color/yellow" />
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="4.5"
+                                android:stepSize="0.5"
+                                android:layout_gravity="center"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:progressTint="@color/yellow"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text=" (44)"/>
-
-<!--                            <ImageView-->
-<!--                                android:layout_width="13dp"-->
-<!--                                android:layout_height="13dp"-->
-<!--                                android:layout_marginTop="2.5dp"-->
-<!--                                android:src="@drawable/star"-->
-<!--                                app:tint="@color/yellow" />-->
                         </LinearLayout>
 
                     </LinearLayout>
@@ -278,40 +246,15 @@ Hành lá, hành khô, tỏi\n"
                                 android:text=" 4 "
                                 android:textColor="@color/yellow" />
 
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/star"
-                                app:tint="@color/yellow" />
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="4"
+                                android:stepSize="0.5"
+                                android:layout_gravity="center"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:progressTint="@color/yellow"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -408,41 +351,15 @@ Hành lá, hành khô, tỏi"
                                 android:text=" 4 "
                                 android:textColor="@color/yellow" />
 
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/star"
-                                app:tint="@color/yellow" />
-
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="4"
+                                android:stepSize="0.5"
+                                android:layout_gravity="center"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:progressTint="@color/yellow"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -536,43 +453,18 @@ Bạc hà 100 g \n"
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=" 3 "
+                                android:text=" 4 "
                                 android:textColor="@color/yellow" />
 
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/favourite"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/star"
-                                app:tint="@color/yellow" />
-
-                            <ImageView
-                                android:layout_width="13dp"
-                                android:layout_height="13dp"
-                                android:layout_marginTop="2.5dp"
-                                android:src="@drawable/star"
-                                app:tint="@color/yellow" />
+                            <RatingBar
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:numStars="5"
+                                android:rating="4"
+                                android:stepSize="0.5"
+                                android:layout_gravity="center"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:progressTint="@color/yellow"/>
 
                             <TextView
                                 android:layout_width="wrap_content"

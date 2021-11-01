@@ -15,7 +15,8 @@ public class goiymonan extends AppCompatActivity {
     }
 
     public void chitietnauan(View view) {
-        Intent intent = new Intent(this , ChiTietMonAnActivity.class);
+        Intent intent = new Intent(this , FoodDetailActivity.class);
+        intent.putExtra("stt", 0);
         startActivity(intent);
     }
 
@@ -27,15 +28,18 @@ public class goiymonan extends AppCompatActivity {
 
     public void chitietnauanhai(View view) {
         Intent intent = new Intent(this , FoodDetailActivity.class);
+        intent.putExtra("stt", 1);
         startActivity(intent);
     }
     public void chitietnauanba(View view) {
-        Intent intent = new Intent(this , chitietnauanba.class);
+        Intent intent = new Intent(this , FoodDetailActivity.class);
+        intent.putExtra("stt", 2);
         startActivity(intent);
     }
 
     public void chitietnauanbon(View view) {
-        Intent intent = new Intent(this , chitietnauanbon.class);
+        Intent intent = new Intent(this , FoodDetailActivity.class);
+        intent.putExtra("stt", 3);
         startActivity(intent);
     }
     public void clickAbcde(View view) {
